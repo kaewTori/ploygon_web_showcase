@@ -29,6 +29,11 @@ ul li {
   z-index: 9999;
   background-color: #1a1a1d;
 }
+.start-screen::after {
+  -webkit-transition: 10s;
+  -moz-transition: 10s;
+  transition: 10s;
+}
 .start-screen .start-screen-content {
   width: 100%;
   position: absolute;
@@ -102,6 +107,7 @@ ul li {
   position: absolute;
   height: 100%;
   right: 90%;
+  text-align: right;
 }
 .stage .menu-nav a {
   border-width: 2px;
@@ -127,6 +133,7 @@ ul li {
   width: 100%;
   height: 100%;
   position: absolute;
+  z-index: -1;
 }
 .stage .animalinfo-wapper .animalinfo {
   top: 70%;
@@ -156,6 +163,44 @@ ul li {
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   transition: 0.5s;
+}
+
+.overlay::-webkit-scrollbar {
+  height: 12px;
+  width: 20px;
+  background: transparent;
+  border-radius: 20px;
+}
+
+.overlay {
+  background-color: rgba(4, 8, 33, 0.9);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow-y: scroll;
+  pointer-events: none;
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: 0.6s ease-in;
+  -moz-transition: 0.6s ease-in;
+  transition: 0.6s ease-in;
+}
+.overlay.active {
+  pointer-events: auto;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+.overlay div {
+  display: none;
+}
+.overlay div.active {
+  display: block;
 }
 
 .base-shard:nth-child(1) .shard {

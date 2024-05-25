@@ -1,1 +1,185 @@
-@import "bourbon/bourbon"
+@import "bourbon/bourbon";
+
+body {
+    background-color: #1a1a1d;
+    color: wheat;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.start-screen {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: #1a1a1d;
+    display: none;
+
+    .start-screen-content {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+    }
+
+    .header-project {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 4em;
+    }
+
+    .descri {
+        margin-bottom: 30px;
+    }
+
+    .start-btn {
+        padding: 10px;
+        border-radius: 10px;
+        border-color: greenyellow;
+        border-style: solid;
+        border-width: 2px;
+
+        &:hover {
+            border-width: 5px;
+            @include transition(0.5s)
+        }
+    }
+}
+
+.exhibizone {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    margin: 40px auto 40px;
+    background-color: red;
+    left: 35%;
+}
+
+.stage {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: auto;
+
+
+    .select-animal {
+        position: absolute;
+        height: 100%;
+        right: auto;
+        bottom: auto;
+        left: 90%;
+
+        a {
+            border-width: 2px;
+            border-color: greenyellow;
+            border-style: dashed;
+            border-radius: 100px;
+            padding: 10px;
+
+            &:hover {
+                border-width: 5px;
+                @include transition(0.5s)
+            }
+
+        }
+
+        .thobbing {
+            margin: 40px 0 40px 0;
+        }
+
+        li {
+            position: relative;
+            top: 50%;
+        }
+
+    }
+
+    .menu-nav {
+        position: absolute;
+        height: 100%;
+        right: 90%;
+
+        a {
+            border-width: 2px;
+            border-color: greenyellow;
+            border-style: dashed;
+            border-radius: 100px;
+            padding: 10px;
+
+            &:hover {
+                border-width: 5px;
+                @include transition(0.5s)
+            }
+
+        }
+
+        .thobbing {
+            margin: 40px 0 40px 0;
+        }
+
+        li {
+            position: relative;
+            top: 50%;
+        }
+    }
+
+    .animalinfo-wapper {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+
+        .animalinfo {
+            top: 70%;
+            left: 43%;
+            position: absolute;
+            align-items: center;
+        }
+
+        li{
+            display: inline-block;
+        }
+
+    }
+}
+
+.aboutme {
+    position: absolute;
+
+    a {
+        border-width: 2px;
+        border-color: greenyellow;
+        border-style: dashed;
+        border-radius: 100px;
+        padding: 10px;
+
+        &:hover {
+            border-width: 5px;
+            @include transition(0.5s)
+        }
+
+    }
+
+    right: auto;
+    bottom: 10%;
+    left: 90%;
+}
+
+@import "pinguin.sass";

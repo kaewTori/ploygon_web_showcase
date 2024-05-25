@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <script>
+        function overlayprocess() {
+            // turnoffslideshow(),
+            // $("div").removeClass("main-screen"),
+            // animationstateaddition(),
+            $(overlayContent).toggleClass("active"),
+                setTimeout(function () {
+                    $(".overlay").toggleClass("active")
+                }, 10)
+        }
+
+        function startexhibition() {
+            setTimeout(function() {
+                $(".start_screen").hide()
+                
+            }, 400);
+        }
+
+        $(document).ready(function () {
+
+            $(".start_btn").on("click", function () {
+                startexhibition()
+            })
+
+            $(".test-overlay").on("click", function () {
+                overlayContent = ".overlay .about",
+                    overlayprocess()
+            }),
+                $("footer p").on("click", function () {
+                    overlayContent = ".overlay .author",
+                        overlayprocess()
+                }),
+                $(".overlay .close").on("click", function () {
+                    $(".overlay").toggleClass("active"),
+                        setTimeout(function () {
+                            $(".overlay div").removeClass("active")
+                        }, 500)
+                })
+
+        })
+    </script>
+</body>
+
+</html>

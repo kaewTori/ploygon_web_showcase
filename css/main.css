@@ -89,7 +89,6 @@ ul li {
   width: 600px;
   height: 400px;
   position: absolute;
-  background-color: #727cba;
 }
 
 .stage {
@@ -101,9 +100,8 @@ ul li {
 .stage .select-animal {
   position: absolute;
   height: 100%;
-  right: auto;
-  bottom: auto;
   left: 90%;
+  right: auto;
 }
 .stage .select-animal a {
   border-width: 2px;
@@ -124,6 +122,7 @@ ul li {
 .stage .select-animal li {
   position: relative;
   top: 50%;
+  word-break: break-all;
 }
 .stage .menu-nav {
   position: absolute;
@@ -150,18 +149,20 @@ ul li {
 .stage .menu-nav li {
   position: relative;
   top: 50%;
+  word-break: break-all;
 }
 .stage .animalinfo-wapper {
   width: 100%;
-  height: 100%;
+  height: 90%;
   position: absolute;
   display: flex;
+  align-items: flex-end;
   justify-content: center;
   z-index: -1;
 }
 .stage .animalinfo-wapper .animalinfo {
   position: absolute;
-  top: 80%;
+  margin-top: 10px;
 }
 .stage .animalinfo-wapper li {
   display: inline-block;
@@ -172,10 +173,12 @@ ul li {
 }
 
 .aboutme {
+  width: 100%;
+  height: 95%;
   position: absolute;
-  right: auto;
-  bottom: 10%;
-  left: 90%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 .aboutme a {
   border-width: 2px;
@@ -183,6 +186,7 @@ ul li {
   border-style: dashed;
   border-radius: 100px;
   padding: 10px;
+  margin-right: 15px;
 }
 .aboutme a:hover {
   border-width: 5px;

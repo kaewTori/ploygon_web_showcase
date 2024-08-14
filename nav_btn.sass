@@ -1,0 +1,26 @@
+.icon
+    height: 54px 
+    width: 54px
+    border-radius: 100px
+    position: relative
+    margin-bottom: 10px
+    &.close
+        display: block 
+        margin: 0 auto
+        position: relative
+        .icon
+            position: absolute
+            top: 50% 
+            left: 50%
+            margin-left: -12px
+            margin-top: -4px
+            z-index: 99
+            &::before, &::after
+                content: ""
+                position: absolute
+                top: 0 
+                left: 0
+                width: 25px 
+                height: 7px 
+                border-radius: 2px
+                background-size: 30px 30px

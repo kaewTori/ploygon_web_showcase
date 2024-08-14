@@ -1,0 +1,39 @@
+.overlay {
+    background-color: rgba($color: #040821, $alpha: 0.9);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow-y: scroll;
+    pointer-events: none;
+    text-align: center;
+    @include transform(translateY(100%));
+    @include transition(.6s ease-in);
+
+    a {
+        position: relative;
+        top: 90%;
+        border-width: 2px;
+        border-color: greenyellow;
+        border-style: dashed;
+        border-radius: 100px;
+        padding: 10px;
+
+        &:hover {
+            border-width: 5px;
+            @include transition(0.5s)
+        }
+    }
+
+    &.active {
+        pointer-events: auto;
+        @include transform(translateY(0));
+    }
+
+    div {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+}

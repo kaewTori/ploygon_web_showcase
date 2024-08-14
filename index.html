@@ -4,17 +4,17 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>No Tales in the Sea</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href='css/main.css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
-<body class="main-screen">
+<body id="animalchanger" class="vaquita">
 
     <div class="start-screen">
         <div class="start-screen-content">
-            <div class="header-project">PROJECT NAME</div>
+            <div class="header-project">NO TALES IN the sea NO SEE</div>
             <p class="descri">
                 a short description for the project
             </p>
@@ -137,14 +137,14 @@
             </li>
             <li>
                 <a href="#">
-                    music On/Off
-                    <div class="popout">Get that racket off</div>
+                    music On
                 </a>
+                <div class="popout">Get that racket off</div>
             </li>
         </ul>
 
         <ul class="select-animal">
-            <li>
+            <li class="next">
                 <a href="#">next
                     <div class="popout" popanimal="vaquita">Animal Name</div>
                 </a>
@@ -152,7 +152,7 @@
             <li class="thobbing">
                 <a href="#">what is this</a>
             </li>
-            <li>
+            <li class="prev">
                 <a href="#">privous
                     <div class="popout" popanimal="vaquita">Animal Name</div>
                 </a>
@@ -255,6 +255,7 @@
     </div>
 </body>
 
+<script src="js/var.js"></script>
 <script src="js/main.js"></script>
 
 </html>

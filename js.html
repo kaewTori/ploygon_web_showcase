@@ -43,7 +43,27 @@
                         setTimeout(function () {
                             $(".overlay div").removeClass("active")
                         }, 500)
-                })
+                }),
+                $(".menu-nav li:nth-child(3)").on("click", function () {
+            $(".menu-nav li:nth-child(3).muted").length ? (
+                $(this).removeClass("muted"),
+                $(".menu-nav li:nth-child(3) .popout").addClass("text-change"),
+                $(".menu-nav li:nth-child(3) a").addClass("text-change"),
+                setTimeout(function () {
+                    $(".menu-nav li:nth-child(3) .popout").removeClass("text-change"),
+                        $(".menu-nav li:nth-child(3) .popout").text("Get that racket off"),
+                        $(".menu-nav li:nth-child(3) a").text("music On")
+                }, 150)) : (
+                $(this).addClass("muted"),
+                $(".menu-nav li:nth-child(3) .popout").addClass("text-change"),
+                $(".menu-nav li:nth-child(3) a").addClass("text-change"),
+                setTimeout(function () {
+                    $(".menu-nav li:nth-child(3) .popout").removeClass("text-change"),
+                        $(".menu-nav li:nth-child(3) .popout").text("Beautify with sound"),
+                        $(".menu-nav li:nth-child(3) a").text("music Off").
+                }, 150)
+            )
+        })
 
         })
     </script>

@@ -1,5 +1,7 @@
 @import "bourbon/bourbon";
 
+$smootheaseout: 0.62, 0.02, 0.34, 1;
+
 body {
     background-color: #1a1a1d;
     color: wheat;
@@ -218,7 +220,7 @@ ul {
                 top: 6px;
                 opacity: 0;
                 pointer-events: none;
-                margin-left: 60px;
+                margin-left: 40px;
                 @include transform(translateX(8px));
                 &.text-change {
                     opacity: 0;
@@ -238,7 +240,6 @@ ul {
                 }
             }
         }
-
     }
 
     .animalinfo-wapper {

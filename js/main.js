@@ -28,6 +28,22 @@ function previousAnimalProcess() {
         nextorprevanimal()
 }
 
+function sizeshards() {
+    $(".stg-exhibi").each(function() {
+        var t = .99 * $(window).width()
+          , a = .7 * t
+          , n = -0.2 * (a / 2);
+        $(this).each(function() {
+            $(this).css({
+                width: t,
+                height: a,
+                "margin-top": n,
+            })
+        })
+    }),
+    $(window).width() < 700 || $("html.touch").length || $(".nowebkitbrowser").length ? $("html").addClass("small-nav") : $("html.webkitbrowser").length && $("html").removeClass("small-nav")
+}
+
 function nextorprevanimal() {
     setTimeout(function () {
         $(".shadow").removeClass("inactive")
@@ -56,8 +72,6 @@ function updateText(text) {
     let delay = 200;
     let h1 = document.getElementsByClassName("header-project")[0];
 
-    
-
     h1.innerHTML = text.split("").map(letter => {
         return `<span>` + letter + `</span>`;
     }).join("");
@@ -73,7 +87,8 @@ function updateText(text) {
 
 newAnimal = 0;
 $(document).ready(function () {
-    updateText("NO TALES IN the sea NO SEE");
+    sizeshards()
+    updateText("NO TALES IN the sea NO SEE")
     $(".start-btn").on("click", function () {
         startexhibition(),
             prevAnimal = 2,
@@ -120,6 +135,9 @@ $(document).ready(function () {
                     $(".menu-nav li:nth-child(3) a").text("music Off")
                 }, 150)
             )
-        })
-
+        }),
+        sizeshards()
+})
+$(window).resize(function() {
+    sizeshards()
 })

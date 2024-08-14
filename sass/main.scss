@@ -76,19 +76,18 @@ ul {
     }
 }
 
-.exhibizone {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.stg-exhibi {
     position: absolute;
+    @include transition(0.33s cubic-bezier(0.7, 0.3, 0, 1));
 }
 
-.stg-exhibi {
-    width: 600px;
-    height: 400px;
+.exhibizone {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
     position: absolute;
+    @include transform(scale(0.5));
 }
 
 .popout {
@@ -263,6 +262,6 @@ ul {
 
 @import "overlay.scss";
 
-@import "animal/pinguin.sass";
 @import "animal/vaquita.scss";
+@import "animal/pinguin.sass";
 @import "effect.scss";

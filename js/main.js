@@ -14,14 +14,14 @@ function startexhibition() {
 }
 
 function nextAnimalProcess() {
-        prevAnimal = animalList.indexOf($("#animalchanger").attr("class")),
+    prevAnimal = animalList.indexOf($("#animalchanger").attr("class")),
         newAnimal = prevAnimal + 1,
         2 == newAnimal && (newAnimal = 0),
         nextorprevanimal()
 }
 
 function previousAnimalProcess() {
-        $("body").removeClass("animal-animations-on"),
+    $("body").removeClass("animal-animations-on"),
         prevAnimal = animalList.indexOf($("#animalchanger").attr("class")),
         newAnimal = prevAnimal - 1,
         -1 == newAnimal && (newAnimal = 1),
@@ -42,19 +42,38 @@ function nextorprevanimal() {
         $(".animalinfo").addClass("text-change"),
         setTimeout(function () {
             $(".animalinfo h2").text(animalNames[newAnimal]),
-            $(".animalinfo li:nth-child(1) span").text(newAnimal + 1),
-            $(".popout").removeClass("text-change"),
-            $(".animalinfo").removeClass("text-change"),
-            0 == newAnimal ? ($(".prev .popout").text(animalNames[1]),
-            $(".next .popout").text(animalNames[1])) : 1 == newAnimal ? ($(".prev .popout").text(animalNames[0]),
-            $(".next .popout").text(animalNames[0])) : ($(".prev .popout").text(animalNames[newAnimal - 1]),
-            $(".next .popout").text(animalNames[newAnimal + 1]))
+                $(".animalinfo li:nth-child(1) span").text(newAnimal + 1),
+                $(".popout").removeClass("text-change"),
+                $(".animalinfo").removeClass("text-change"),
+                0 == newAnimal ? ($(".prev .popout").text(animalNames[1]),
+                    $(".next .popout").text(animalNames[1])) : 1 == newAnimal ? ($(".prev .popout").text(animalNames[0]),
+                        $(".next .popout").text(animalNames[0])) : ($(".prev .popout").text(animalNames[newAnimal - 1]),
+                            $(".next .popout").text(animalNames[newAnimal + 1]))
         }, 150)
+}
+
+function updateText(text) {
+    let delay = 200;
+    let h1 = document.getElementsByClassName("header-project")[0];
+
+    
+
+    h1.innerHTML = text.split("").map(letter => {
+        return `<span>` + letter + `</span>`;
+    }).join("");
+
+    console.log("test " + h1.innerHTML);
+
+    Array.from(h1.children).forEach((span, index) => {
+        setTimeout(() => {
+            span.classList.add("wavy");
+        }, index * 60 + delay);
+    });
 }
 
 newAnimal = 0;
 $(document).ready(function () {
-
+    updateText("NO TALES IN the sea NO SEE");
     $(".start-btn").on("click", function () {
         startexhibition(),
             prevAnimal = 2,

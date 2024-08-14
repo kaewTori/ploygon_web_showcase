@@ -281,7 +281,7 @@ ul li {
   top: 6px;
   opacity: 0;
   pointer-events: none;
-  margin-right: 30px;
+  margin-right: 10px;
   -webkit-transform: translateX(8px);
   -moz-transform: translateX(8px);
   -ms-transform: translateX(8px);
@@ -523,13 +523,19 @@ ul li {
     display: none;
   }
   .stage .menu-nav {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     position: absolute;
-    justify-content: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 100px;
   }
   .stage .menu-nav .autoplay {
     display: none;
+  }
+  .stage li:nth-child(3) {
+    margin-left: 20px;
   }
   .stage .animalinfo-wapper {
     width: 100vw;
@@ -541,12 +547,11 @@ ul li {
     z-index: -1;
     margin-left: 20px;
   }
-  .stage .animalinfo-wapper li {
-    display: inline-block;
-  }
   .stage .animalinfo-wapper h2 {
+    width: 50%;
     font-weight: 600;
     font-size: 3rem;
+    line-height: 1;
   }
 }
 .penguin {

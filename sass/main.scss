@@ -146,7 +146,7 @@ ul {
                 top: 6px;
                 opacity: 0;
                 pointer-events: none;
-                margin-right: 30px;
+                margin-right: 10px;
                 @include transform(translateX(8px));
 
                 &.text-change {

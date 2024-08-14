@@ -1,8 +1,10 @@
-.start_seq {
+.hawaii_seal {
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: -1;
+    background-color: #141414;
+
 
     .shard-wrap {
         &:nth-child(1) {

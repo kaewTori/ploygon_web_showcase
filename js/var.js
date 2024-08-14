@@ -1,6 +1,7 @@
-var animalList = ["vaquita", "penguin"]
-var animalNames = ["Vaquita", "African Penguin"]
+var animalList = ["vaquita", "marin_otter", "hawaii_seal","jp_shark","oren_stork","white_shark","smol_saw","eu_eel","blue_tuna","man_ray","gharial","hawk_turtle","pela_shark","india_dolphin","tri_alba","icefish","penguin","sei_whale","n_right_whale","blue_whale"]
+var animalNames = ["Vaquita", "Marine Otter", "Hawaiian Monk Seal","Japanese Angel Shark","Oriental Stork","Oceanic White Tip Shark","Smalltooth Sawfish","European Eel","Atlantic Bluefin Tuna","Oceanic Manta Ray","Gharial","Hawksbill Turtle","Pelagic Thresher Shark","Indian Ocean Humpback Dolphin","Tristan Albatross","South Georgia Icefish","Erect-crested Penguin","Sei Whale","North Atlantic Right Whale","Blue Whale"]
 var animalScientificName = ["Phocoena sinus", "Strigops habroptilus"]
+
 var animalDetail1 = ["The greatest threat to the remaining vaquita is incidental death caused by fishing gear.",
     "This glorious hornbill uplisted 3 levels from Near Threatened to <span>Critically endangered</span> in late 2015."
 ]

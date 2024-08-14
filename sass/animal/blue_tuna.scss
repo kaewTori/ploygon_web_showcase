@@ -1,8 +1,9 @@
-.start_seq {
+.blue_tuna {
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: -1;
+    background-color: #141414;
 
     .shard-wrap {
         &:nth-child(1) {

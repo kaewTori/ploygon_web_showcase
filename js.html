@@ -11,9 +11,6 @@
 <body>
     <script>
         function overlayprocess() {
-            // turnoffslideshow(),
-            // $("div").removeClass("main-screen"),
-            // animationstateaddition(),
             $(overlayContent).toggleClass("active"),
                 setTimeout(function () {
                     $(".overlay").toggleClass("active")
@@ -21,9 +18,9 @@
         }
 
         function startexhibition() {
-            setTimeout(function() {
-                $(".start_screen").hide()
-                
+            setTimeout(function () {
+                $(".start_screen").fadeOut(2).hide()
+
             }, 400);
         }
 
@@ -33,8 +30,8 @@
                 startexhibition()
             })
 
-            $(".test-overlay").on("click", function () {
-                overlayContent = ".overlay .about",
+            $(".thobbing").on("click", function () {
+                overlayContent = ".overlay .detail",
                     overlayprocess()
             }),
                 $("footer p").on("click", function () {

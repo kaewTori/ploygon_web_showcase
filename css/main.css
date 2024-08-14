@@ -29,154 +29,154 @@ ul li {
   position: absolute;
 }
 .shard-wrap:nth-child(1) .shard {
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 0.05s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -moz-transition: 0.05s cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition: 0.05s cubic-bezier(0.62, 0.02, 0.34, 1);
 }
 .shard-wrap:nth-child(2) .shard {
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 0.1s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -moz-transition: 0.1s cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition: 0.1s cubic-bezier(0.62, 0.02, 0.34, 1);
 }
 .shard-wrap:nth-child(3) .shard {
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 0.15s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -moz-transition: 0.15s cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition: 0.15s cubic-bezier(0.62, 0.02, 0.34, 1);
 }
 .shard-wrap:nth-child(4) .shard {
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 0.2s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -moz-transition: 0.2s cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition: 0.2s cubic-bezier(0.62, 0.02, 0.34, 1);
 }
 .shard-wrap:nth-child(5) .shard {
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 0.25s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -moz-transition: 0.25s cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition: 0.25s cubic-bezier(0.62, 0.02, 0.34, 1);
 }
 .shard-wrap:nth-child(6) .shard {
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 0.3s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -moz-transition: 0.3s cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition: 0.3s cubic-bezier(0.62, 0.02, 0.34, 1);
 }
 .shard-wrap:nth-child(7) .shard {
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 0.35s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -moz-transition: 0.35s cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition: 0.35s cubic-bezier(0.62, 0.02, 0.34, 1);
 }
 .shard-wrap:nth-child(8) .shard {
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 0.4s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -moz-transition: 0.4s cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition: 0.4s cubic-bezier(0.62, 0.02, 0.34, 1);
 }
 .shard-wrap:nth-child(9) .shard {
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 0.45s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -moz-transition: 0.45s cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition: 0.45s cubic-bezier(0.62, 0.02, 0.34, 1);
 }
 .shard-wrap:nth-child(10) .shard {
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 0.5s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -moz-transition: 0.5s cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition: 0.5s cubic-bezier(0.62, 0.02, 0.34, 1);
 }
 .shard-wrap:nth-child(11) .shard {
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 0.55s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -moz-transition: 0.55s cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition: 0.55s cubic-bezier(0.62, 0.02, 0.34, 1);
 }
 .shard-wrap:nth-child(12) .shard {
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 0.6s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -moz-transition: 0.6s cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition: 0.6s cubic-bezier(0.62, 0.02, 0.34, 1);
 }
 .shard-wrap:nth-child(13) .shard {
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 0.65s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -moz-transition: 0.65s cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition: 0.65s cubic-bezier(0.62, 0.02, 0.34, 1);
 }
 .shard-wrap:nth-child(14) .shard {
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 0.7s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -moz-transition: 0.7s cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition: 0.7s cubic-bezier(0.62, 0.02, 0.34, 1);
 }
 .shard-wrap:nth-child(15) .shard {
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 0.75s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -moz-transition: 0.75s cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition: 0.75s cubic-bezier(0.62, 0.02, 0.34, 1);
 }
 .shard-wrap:nth-child(16) .shard {
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 0.8s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -moz-transition: 0.8s cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition: 0.8s cubic-bezier(0.62, 0.02, 0.34, 1);
 }
 .shard-wrap:nth-child(17) .shard {
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 0.85s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -moz-transition: 0.85s cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition: 0.85s cubic-bezier(0.62, 0.02, 0.34, 1);
 }
 .shard-wrap:nth-child(18) .shard {
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 0.9s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -moz-transition: 0.9s cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition: 0.9s cubic-bezier(0.62, 0.02, 0.34, 1);
 }
 .shard-wrap:nth-child(19) .shard {
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 0.95s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -moz-transition: 0.95s cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition: 0.95s cubic-bezier(0.62, 0.02, 0.34, 1);
 }
 .shard-wrap:nth-child(20) .shard {
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 1s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -moz-transition: 1s cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition: 1s cubic-bezier(0.62, 0.02, 0.34, 1);
 }
 .shard-wrap:nth-child(21) .shard {
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 1.05s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -moz-transition: 1.05s cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition: 1.05s cubic-bezier(0.62, 0.02, 0.34, 1);
 }
 .shard-wrap:nth-child(22) .shard {
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 1.1s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -moz-transition: 1.1s cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition: 1.1s cubic-bezier(0.62, 0.02, 0.34, 1);
 }
 .shard-wrap:nth-child(23) .shard {
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 1.15s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -moz-transition: 1.15s cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition: 1.15s cubic-bezier(0.62, 0.02, 0.34, 1);
 }
 .shard-wrap:nth-child(24) .shard {
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 1.2s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -moz-transition: 1.2s cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition: 1.2s cubic-bezier(0.62, 0.02, 0.34, 1);
 }
 .shard-wrap:nth-child(25) .shard {
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 1.25s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -moz-transition: 1.25s cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition: 1.25s cubic-bezier(0.62, 0.02, 0.34, 1);
 }
 .shard-wrap:nth-child(26) .shard {
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 1.3s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -moz-transition: 1.3s cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition: 1.3s cubic-bezier(0.62, 0.02, 0.34, 1);
 }
 .shard-wrap:nth-child(27) .shard {
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 1.35s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -moz-transition: 1.35s cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition: 1.35s cubic-bezier(0.62, 0.02, 0.34, 1);
 }
 .shard-wrap:nth-child(28) .shard {
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 1.4s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -moz-transition: 1.4s cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition: 1.4s cubic-bezier(0.62, 0.02, 0.34, 1);
 }
 .shard-wrap:nth-child(29) .shard {
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 1.45s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -moz-transition: 1.45s cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition: 1.45s cubic-bezier(0.62, 0.02, 0.34, 1);
 }
 .shard-wrap:nth-child(30) .shard {
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 1.5s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -moz-transition: 1.5s cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition: 1.5s cubic-bezier(0.62, 0.02, 0.34, 1);
 }
 
 .shard {
@@ -644,6 +644,133 @@ ul li {
 .shard-wrap:nth-child(30) .shard {
   -webkit-clip-path: polygon(40.85% 84.5%, 57.1% 74.2%, 51.75% 81.857%);
   background-color: #756e60;
+}
+
+.start_seq {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.start_seq .shard-wrap:nth-child(1) .shard {
+  -webkit-clip-path: polygon(12.762% 61.464%, 17.986% 76.893%, 21.367% 69.321%);
+  background-color: #181818;
+}
+.start_seq .shard-wrap:nth-child(2) .shard {
+  -webkit-clip-path: polygon(78.188% 35.179%, 83.275% 54.179%, 85.792% 43.179%);
+  background-color: #181818;
+}
+.start_seq .shard-wrap:nth-child(3) .shard {
+  -webkit-clip-path: polygon(83.584% 85.607%, 82.494% 97.893%, 89.503% 96.607%);
+  background-color: #181818;
+}
+.start_seq .shard-wrap:nth-child(4) .shard {
+  -webkit-clip-path: polygon(69.013% 68.464%, 64.753% 77.036%, 70.342% 74.179%);
+  background-color: #181818;
+}
+.start_seq .shard-wrap:nth-child(5) .shard {
+  -webkit-clip-path: polygon(18.5% 44.286%, 15.2% 42.286%, 15.9% 44.857%);
+  background-color: #181818;
+}
+.start_seq .shard-wrap:nth-child(6) .shard {
+  -webkit-clip-path: polygon(28.027% 30.75%, 20.63% 44.75%, 30.912% 46.321%);
+  background-color: #181818;
+}
+.start_seq .shard-wrap:nth-child(7) .shard {
+  -webkit-clip-path: polygon(30.5% 13.321%, 26.8% 10.321%, 31% 8.464%);
+  background-color: #181818;
+}
+.start_seq .shard-wrap:nth-child(8) .shard {
+  -webkit-clip-path: polygon(60.5% 58.036%, 62.6% 64.179%, 62.6% 58.036%);
+  background-color: #181818;
+}
+.start_seq .shard-wrap:nth-child(9) .shard {
+  -webkit-clip-path: polygon(13.4% 93.75%, 8.2% 93.464%, 12.7% 97.036%);
+  background-color: #181818;
+}
+.start_seq .shard-wrap:nth-child(10) .shard {
+  -webkit-clip-path: polygon(25% 92%, 25.5% 92.5%, 26% 92%);
+  background-color: #181818;
+}
+.start_seq .shard-wrap:nth-child(11) .shard {
+  -webkit-clip-path: polygon(6.5% 17.893%, 6.9% 10.893%, 2.8% 19.464%);
+  background-color: #181818;
+}
+.start_seq .shard-wrap:nth-child(12) .shard {
+  -webkit-clip-path: polygon(32.1% 84%, 34.1% 86.429%, 35.5% 81.714%);
+  background-color: #181818;
+}
+.start_seq .shard-wrap:nth-child(13) .shard {
+  -webkit-clip-path: polygon(32.3% 34.607%, 31.3% 39.607%, 33.3% 36.036%);
+  background-color: #181818;
+}
+.start_seq .shard-wrap:nth-child(14) .shard {
+  -webkit-clip-path: polygon(14.008% 88.179%, 18.023% 93.464%, 16.653% 89.321%);
+  background-color: #181818;
+}
+.start_seq .shard-wrap:nth-child(15) .shard {
+  -webkit-clip-path: polygon(84.234% 7.893%, 90.231% 6.607%, 87.93% 5.75%);
+  background-color: #181818;
+}
+.start_seq .shard-wrap:nth-child(16) .shard {
+  -webkit-clip-path: polygon(59.9% 94.714%, 60.4% 99.9%, 63.6% 98.714%);
+  background-color: #181818;
+}
+.start_seq .shard-wrap:nth-child(17) .shard {
+  -webkit-clip-path: polygon(8.75% 52.607%, 6.123% 59.036%, 11.425% 57.321%);
+  background-color: #181818;
+}
+.start_seq .shard-wrap:nth-child(18) .shard {
+  -webkit-clip-path: polygon(70% 92%, 71% 94%, 72% 93%);
+  background-color: #181818;
+}
+.start_seq .shard-wrap:nth-child(19) .shard {
+  -webkit-clip-path: polygon(73.5% 18.857%, 76.3% 16.857%, 74.4% 14.429%);
+  background-color: #181818;
+}
+.start_seq .shard-wrap:nth-child(20) .shard {
+  -webkit-clip-path: polygon(80% 92%, 81% 94%, 82% 93%);
+  background-color: #181818;
+}
+.start_seq .shard-wrap:nth-child(21) .shard {
+  -webkit-clip-path: polygon(73.3% 30.429%, 75.5% 28.714%, 74.8% 27.857%);
+  background-color: #181818;
+}
+.start_seq .shard-wrap:nth-child(22) .shard {
+  -webkit-clip-path: polygon(85% 27%, 86% 29%, 87% 28%);
+  background-color: #181818;
+}
+.start_seq .shard-wrap:nth-child(23) .shard {
+  -webkit-clip-path: polygon(22.6% 35.571%, 19.8% 34.714%, 21.8% 32%);
+  background-color: #181818;
+}
+.start_seq .shard-wrap:nth-child(24) .shard {
+  -webkit-clip-path: polygon(86.9% 44.643%, 90.5% 44.929%, 89.8% 41.786%);
+  background-color: #181818;
+}
+.start_seq .shard-wrap:nth-child(25) .shard {
+  -webkit-clip-path: polygon(47.769% 99.732%, 48.769% 100%, 50.169% 98%);
+  background-color: #181818;
+}
+.start_seq .shard-wrap:nth-child(26) .shard {
+  -webkit-clip-path: polygon(5.669% 36.589%, 4.769% 33.018%, 4.069% 36.304%);
+  background-color: #181818;
+}
+.start_seq .shard-wrap:nth-child(27) .shard {
+  -webkit-clip-path: polygon(84.1% 69.857%, 85.5% 70.714%, 85.3% 69.286%);
+  background-color: #181818;
+}
+.start_seq .shard-wrap:nth-child(28) .shard {
+  -webkit-clip-path: polygon(24% 95.732%, 27.769% 98%, 25.969% 99.161%);
+  background-color: #181818;
+}
+.start_seq .shard-wrap:nth-child(29) .shard {
+  -webkit-clip-path: polygon(85% 80%, 85.5% 80.5%, 86% 80%);
+  background-color: #181818;
+}
+.start_seq .shard-wrap:nth-child(30) .shard {
+  -webkit-clip-path: polygon(60.769% 12.875%, 64.769% 10.018%, 65.669% 14.875%);
+  background-color: #181818;
 }
 
 .vaquita {

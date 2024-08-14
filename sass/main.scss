@@ -37,9 +37,12 @@ ul {
 
     @for $i from 1 through 30 {
         &:nth-child(#{$i}) .shard {
-            @include transition(0.75s);
-        }
+            $td: (
+                $i * 0.05s
+            );
+        @include transition($td cubic-bezier($smootheaseout));
     }
+}
 }
 
 .shard {
@@ -267,6 +270,7 @@ ul {
 @import "overlay.scss";
 
 @import "animal/pinguin.scss";
+@import "animal/startAnimal.scss";
 @import "animal/vaquita.scss";
 
 @import "effect.scss";

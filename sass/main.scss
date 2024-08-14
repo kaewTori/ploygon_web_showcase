@@ -34,6 +34,12 @@ ul {
     width: 100%;
     height: 100%;
     position: absolute;
+
+    @for $i from 1 through 30 {
+        &:nth-child(#{$i}) .shard {
+            @include transition(1s);
+        }
+    }
 }
 
 .shard {

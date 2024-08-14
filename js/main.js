@@ -127,9 +127,9 @@ $(document).ready(function () {
     sizeshards(),
     updateText("NO TALES IN the sea NO SEE"),
     $(".start-btn").on("click", function () {
-        SOUNDS.init(),
         startexhibition(),
             prevAnimal = 2,
+            SOUNDS.init(),
             nextorprevanimal()
     }),
         $(".thobbing").on("click", function () {
@@ -188,16 +188,15 @@ document.addEventListener("visibilitychange", function() {
 SOUNDS = {
     btn: $("<a>").attr("href", "#").attr("id", "toggle-mute").addClass("toggle-mute").text(""),
     looping: null,
-    fading: null,
     init: function() {
         soundManager.setup({
-            url: "swf/",
-            debugMode: !1,
-            waitForWindowLoad: !1,
-            useHighPerformance: !0,
-            useHTML5Audio: !0,
+            url: "sound/",
+            debugMode: false,
+            waitForWindowLoad: false,
+            useHighPerformance: true,
+            useHTML5Audio: true,
             flashVersion: 9,
-            multiShot: !0,
+            multiShot: true,
             onready: SOUNDS.onSoundManagerReady,
             ontimeout: function() {}
         })
@@ -205,36 +204,14 @@ SOUNDS = {
     onSoundManagerReady: function() {
         soundManager.createSound({
             id: "ambientloop",
-            url: "swf/relaxing.mp3",
+            url: "sound/relaxing.mp3",
             autoLoad: !0,
             multiShot: !0,
             onload: function() {
-                SOUNDS.playLoop("ambientloop", 44500),
+                SOUNDS.playLoop("ambientloop", 95000),
                 this.setVolume(25)
             }
-        }),
-        // soundManager.createSound({
-        //     id: "hover",
-        //     url: "audio/hover_ui.mp3",
-        //     autoLoad: !0,
-        //     onload: function() {}
-        // }),
-        soundManager.createSound({
-            id: "softhover",
-            url: "swf/relaxing.mp3",
-            autoLoad: !0,
-            onload: function() {
-                this.setVolume(50)
-            }
         })
-        // soundManager.createSound({
-        //     id: "smashpiano",
-        //     url: "audio/smash.mp3",
-        //     autoLoad: !0,
-        //     onload: function() {
-        //         this.setVolume(30)
-        //     }
-        // })
     },
     play: function(t) {
         soundManager.play(t)
@@ -253,42 +230,6 @@ SOUNDS = {
     setVolume: function(t, a) {
         var e = soundManager.getSoundById(soundID);
         e.setVolume(a)
-    },
-    fadeIn: function(t) {
-        if ("out" != SOUNDS.fading) {
-            var a = soundManager.getSoundById(t);
-            if (a) {
-                var e = a.volume;
-                if (e >= 100)
-                    return SOUNDS.fading = "",
-                    !1;
-                SOUNDS.fading = "in",
-                a.setVolume(Math.min(100, e + 10)),
-                setTimeout(function() {
-                    SOUNDS.fadeIn(t)
-                }, 50)
-            }
-        }
-    },
-    fadeOut: function(t) {
-        if ("in" != SOUNDS.fading) {
-            var a = soundManager.getSoundById(t);
-            if (a) {
-                var e = a.volume;
-                if (40 >= e)
-                    return SOUNDS.fading = "",
-                    !1;
-                SOUNDS.fading = "out",
-                a.setVolume(Math.max(0, e - 10)),
-                setTimeout(function() {
-                    SOUNDS.fadeOut(t)
-                }, 50)
-            }
-        }
-    },
-    toggleMute: function(t) {
-        t.preventDefault(),
-        SOUNDS.btn.hasClass("muted") ? SOUNDS.unmute() : SOUNDS.mute()
     },
     mute: function(t) {
         soundManager.mute(t),

@@ -31,7 +31,7 @@ function previousAnimalProcess() {
         // turnoffslideshow(),
         prevAnimal = animalList.indexOf($("#animalchanger").attr("class")),
         newAnimal = prevAnimal - 1,
-        -1 == newAnimal && (newAnimal = 0),
+        -1 == newAnimal && (newAnimal = 1),
         nextorprevanimal()
     // animationstatequestion()
 }

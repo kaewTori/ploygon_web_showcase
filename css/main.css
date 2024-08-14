@@ -416,7 +416,7 @@ ul li {
 }
 .stage .aboutme {
   position: absolute;
-  bottom: 15%;
+  top: 90%;
   right: 15px;
 }
 .stage .aboutme a {
@@ -552,9 +552,6 @@ ul li {
     font-weight: 600;
     font-size: 3rem;
     line-height: 1;
-  }
-  .stage .aboutme {
-    display: none;
   }
 }
 .penguin {

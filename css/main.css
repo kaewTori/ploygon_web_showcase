@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap");
 body {
-  background-color: #191919;
   color: #C1E9E8;
   margin: 0;
   padding: 0;
@@ -41,7 +40,7 @@ ul li {
   position: absolute;
   display: grid;
   place-items: center;
-  background-color: #1a1a1d;
+  background-color: #191919;
   text-align: center;
   z-index: 9999;
 }
@@ -364,6 +363,10 @@ ul li {
 }
 
 .penguin {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
   background-color: #45779A;
 }
 .penguin .menu-nav a {
@@ -494,6 +497,10 @@ ul li {
 }
 
 .vaquita {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
   background-color: #053065;
 }
 .vaquita .menu-nav a {

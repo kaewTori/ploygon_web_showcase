@@ -7,7 +7,6 @@ $head_font: "Amatic SC", sans-serif;
 $main_font: "Baloo 2", sans-serif;
 
 body {
-    background-color: #191919;
     color: #C1E9E8;
     margin: 0;
     padding: 0;
@@ -48,7 +47,7 @@ ul {
     position: absolute;
     display: grid;
     place-items: center;
-    background-color: #1a1a1d;
+    background-color: #191919;
     text-align: center;
     z-index: 9999;
 

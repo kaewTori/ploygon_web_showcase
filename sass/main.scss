@@ -37,7 +37,7 @@ ul {
 
     @for $i from 1 through 30 {
         &:nth-child(#{$i}) .shard {
-            @include transition(1s);
+            @include transition(0.75s);
         }
     }
 }
@@ -117,7 +117,6 @@ ul {
     width: 100vw;
     height: 100vh;
     position: absolute;
-    right: auto;
 
     .select-animal {
         position: absolute;

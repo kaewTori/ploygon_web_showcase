@@ -130,7 +130,10 @@ $(document).ready(function () {
         startexhibition(),
             prevAnimal = 2,
             SOUNDS.init(),
-            nextorprevanimal()
+            setTimeout(function () {
+                nextorprevanimal()
+            }, 350)
+            
     }),
         $(".thobbing").on("click", function () {
             overlayContent = ".overlay .detail",

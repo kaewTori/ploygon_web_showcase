@@ -126,8 +126,8 @@ finishedAnimals = 2;
 $(document).ready(function () {
     sizeshards(),
     updateText("NO TALES IN the sea NO SEE"),
-    SOUNDS.init(),
     $(".start-btn").on("click", function () {
+        SOUNDS.init(),
         startexhibition(),
             prevAnimal = 2,
             nextorprevanimal()
@@ -182,7 +182,9 @@ $(document).ready(function () {
 $(window).resize(function () {
     sizeshards()
 }),
-
+document.addEventListener("visibilitychange", function() {
+    document.hidden ? soundManager.setVolume("ambientloop", 10) : soundManager.setVolume("ambientloop", 25)
+}),
 SOUNDS = {
     btn: $("<a>").attr("href", "#").attr("id", "toggle-mute").addClass("toggle-mute").text(""),
     looping: null,

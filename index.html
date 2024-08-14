@@ -7,22 +7,29 @@
     <title>No Tales in the Sea</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href='css/main.css'>
+
+    <!--เรียกใช้งาน jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body id="animalchanger" class="vaquita">
 
+    <!--โค้ดส่วนของหน้าแรกก่อนเข้าเว็บ-->
     <div class="start-screen">
         <div class="start-screen-content">
+            <!--ชื่อโปรเจคและคำอธิบายคร่าวๆ-->
             <div class="header-project">NO TALES IN the sea NO SEE</div>
             <p class="descri">
                 a short description for the project
             </p>
+            <!--ปุ่มเข้าเว็บ-->
             <a class="start-btn" href="#">EXPLORE THE EXHIBITION</a>
         </div>
     </div>
 
+    <!--โค้ดในส่วนของการแสดงรูปสัตว์น้ำ-->
     <div class="exhibizone">
+        <!--เป็นการ spam div ตามจำนวนชิ้นส่วนที่นำมาประกอบเป็นสัตว์น้ำ-->
         <div class="stg-exhibi">
             <div class="shard-wrap">
                 <div class="shard"></div>
@@ -123,7 +130,9 @@
         </div>
     </div>
 
+    <!--โค้ดในส่วนของเมนูในหน้าหลัก-->
     <div class="stage">
+        <!--โค้ดในส่วนของปุ่มเมนูต่างๆ ควบคุมเพลง/เล่นสไลด์/ดูสัตว์แบบทั้งหมด-->
         <ul class="menu-nav">
             <li class="all-animal">
                 <a href="#">All Animal
@@ -142,7 +151,7 @@
                 <div class="popout">Get that racket off</div>
             </li>
         </ul>
-
+        <!--โค้ดในส่วนของปุ่มเมนูเลือกสัตว์น้ำและเข้าไปดูรายละเอียด-->
         <ul class="select-animal">
             <li class="next">
                 <a href="#">next
@@ -158,7 +167,7 @@
                 </a>
             </li>
         </ul>
-
+        <!--โค้ดในส่วนของชื่อสัตว์ที่แสดงกลางหน้าจอ-->
         <div class="animalinfo-wapper">
             <ul class="animalinfo">
                 <li>
@@ -170,7 +179,7 @@
                 </li>
             </ul>
         </div>
-
+        <!--โค้ดในส่วนของเมนูที่เกี่ยวกับผู้จัดทำ-->
         <footer>
             <ul>
                 <li class="aboutme">
@@ -178,15 +187,15 @@
                 </li>
             </ul>
         </footer>
-
     </div>
 
+    <!--โค้ดในส่วนหน้าจอหลังจากที่เรากดปุ่มไปแยกตามหัวข้อ-->
     <div class="overlay">
-
+        <!--ปุ่มปิดหน้าจอ-->
         <a class="nav-btn close" href="#">
             X
         </a>
-
+        <!--โค้ดในส่วนหน้าจอแสดงสัตว์ทั้งหมด-->
         <div class="all-animal-stg">
             <ul class="menu-animal-nav">
                 <li>
@@ -242,20 +251,24 @@
             <h1>AnimalName</h1>
             <p>this is discript</p>
         </div>
-
+        <!--โค้ดในส่วนหน้าจอแสดงข้อมูลสัตว์รายตัว-->
         <div class="detail">
 
             <h2>Greeting every nyan~</h2>
             <p>!!!THIS IS OVERLAY!!! yeah you can do it you very the best</p>
         </div>
+        <!--โค้ดในส่วนหน้าจอแสดงข้อมูลเกี่ยวกับผู้จัดทำ-->
         <div class="author">
             <h2>If you want to check my work pls click here.</h2>
             <a class="to_tweeter" href="https://twitter.com/RenaRaziel_Chan" target="_blank">click me!</a>
         </div>
     </div>
+    
 </body>
 
+<!--เรียกใช้งานโค้ดการทำงานของ logic website ทั้งหมด-->
 <script src="js/var.js"></script>
+<!--เรียกใช้งานโค้ดในการเก็บตัวแปรไว้ใช้คู่กันกับบรรทัดข้างบน-->
 <script src="js/main.js"></script>
 
 </html>

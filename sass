@@ -1,0 +1,5 @@
+#!/bin/sh
+
+SCRIPTPATH=${0%/*}
+arguments=$@
+"$SCRIPTPATH/src/dart.exe" "$SCRIPTPATH/src/sass.snapshot" $arguments

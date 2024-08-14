@@ -12,8 +12,6 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    height: 100%;
-    width: 100%;
     font-family: $main_font;
 }
 
@@ -45,24 +43,14 @@ ul {
 }
 
 .start-screen {
-    margin: 0;
-    padding: 0;
+    height: 100vh;
+    width: 100vw;
     position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
+    display: grid;
+    place-items: center;
     background-color: #1a1a1d;
-
-    &::after {
-        @include transition(10s);
-    }
-
-    .start-screen-content {
-        width: 100%;
-        position: absolute;
-        text-align: center;
-        top: 50%;
-    }
+    text-align: center;
+    z-index: 9999;
 
     .header-project {
         font-family: $head_font;
@@ -89,9 +77,8 @@ ul {
 }
 
 .exhibizone {
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,8 +110,8 @@ ul {
 
 
 .stage {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     position: absolute;
     right: auto;
 
@@ -136,7 +123,6 @@ ul {
 
         a {
             border-width: 2px;
-            border-color: #27AFBB;
             border-style: dashed;
             border-radius: 100px;
             padding: 10px;
@@ -203,7 +189,6 @@ ul {
 
         a {
             border-width: 2px;
-            border-color: #27AFBB;
             border-style: dashed;
             border-radius: 100px;
             padding: 10px;
@@ -256,19 +241,13 @@ ul {
     }
 
     .animalinfo-wapper {
-        width: 100%;
-        height: 90%;
+        width: 100vw;
+        height: 100vh;
         position: absolute;
         display: flex;
-        align-items: flex-end;
         justify-content: center;
+        align-items: flex-end;
         z-index: -1;
-
-
-        .animalinfo {
-            position: absolute;
-            margin-top: 10px;
-        }
 
         li {
             display: inline-block;

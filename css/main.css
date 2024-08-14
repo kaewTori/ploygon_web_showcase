@@ -6,8 +6,6 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  height: 100%;
-  width: 100%;
   font-family: "Baloo 2", sans-serif;
 }
 
@@ -38,24 +36,14 @@ ul li {
 }
 
 .start-screen {
-  margin: 0;
-  padding: 0;
+  height: 100vh;
+  width: 100vw;
   position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
+  display: grid;
+  place-items: center;
   background-color: #1a1a1d;
-}
-.start-screen::after {
-  -webkit-transition: 10s;
-  -moz-transition: 10s;
-  transition: 10s;
-}
-.start-screen .start-screen-content {
-  width: 100%;
-  position: absolute;
   text-align: center;
-  top: 50%;
+  z-index: 9999;
 }
 .start-screen .header-project {
   font-family: "Amatic SC", sans-serif;
@@ -80,9 +68,8 @@ ul li {
 }
 
 .exhibizone {
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -113,8 +100,8 @@ ul li {
 }
 
 .stage {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: absolute;
   right: auto;
 }
@@ -126,7 +113,6 @@ ul li {
 }
 .stage .select-animal a {
   border-width: 2px;
-  border-color: #27AFBB;
   border-style: dashed;
   border-radius: 100px;
   padding: 10px;
@@ -205,7 +191,6 @@ ul li {
 }
 .stage .menu-nav a {
   border-width: 2px;
-  border-color: #27AFBB;
   border-style: dashed;
   border-radius: 100px;
   padding: 10px;
@@ -268,17 +253,13 @@ ul li {
   transform: translateY(5px);
 }
 .stage .animalinfo-wapper {
-  width: 100%;
-  height: 90%;
+  width: 100vw;
+  height: 100vh;
   position: absolute;
   display: flex;
-  align-items: flex-end;
   justify-content: center;
+  align-items: flex-end;
   z-index: -1;
-}
-.stage .animalinfo-wapper .animalinfo {
-  position: absolute;
-  margin-top: 10px;
 }
 .stage .animalinfo-wapper li {
   display: inline-block;
@@ -305,9 +286,14 @@ ul li {
   -moz-transition: 0.6s ease-in;
   transition: 0.6s ease-in;
 }
-.overlay a {
-  position: relative;
+.overlay .nav-btn.close {
   top: 90%;
+  border-color: #B4BCB3;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.overlay a {
   border-width: 2px;
   border-color: #27AFBB;
   border-style: dashed;
@@ -349,7 +335,6 @@ ul li {
 }
 
 .all-animal-stg h1 {
-  margin-top: 15%;
   font-size: 60px;
 }
 
@@ -375,6 +360,12 @@ ul li {
 
 .penguin {
   background-color: #45779A;
+}
+.penguin .menu-nav a {
+  border-color: #053065;
+}
+.penguin .select-animal a {
+  border-color: #053065;
 }
 
 .shard-wrap:nth-child(1) .shard {
@@ -500,6 +491,12 @@ ul li {
 
 .vaquita {
   background-color: #053065;
+}
+.vaquita .menu-nav a {
+  border-color: #AAD7DD;
+}
+.vaquita .select-animal a {
+  border-color: #AAD7DD;
 }
 
 .shard-wrap:nth-child(1) .shard {

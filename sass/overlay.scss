@@ -9,9 +9,15 @@
     @include transform(translateY(100%));
     @include transition(.6s ease-in);
 
-    a {
-        position: relative;
+    .nav-btn.close{
         top: 90%;
+        border-color: #B4BCB3;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a {
         border-width: 2px;
         border-color: #27AFBB;
         border-style: dashed;
@@ -53,7 +59,6 @@
 
 .all-animal-stg {
     h1 {
-        margin-top: 15%;
         font-size: 60px;
     }
 }

@@ -1,6 +1,16 @@
 .vaquita {
     background-color: #053065;
+
+    .menu-nav a {
+        border-color: #AAD7DD;
+    }
+
+    .select-animal a {
+        border-color: #AAD7DD;
+    }
+
 }
+
 .shard-wrap {
     &:nth-child(1) {
         .shard {
@@ -8,108 +18,126 @@
             background-color: #334543;
         }
     }
+
     &:nth-child(2) {
         .shard {
             -webkit-clip-path: polygon(9.28% 61.08%, 13.25% 58.96%, 11.7% 62.35%);
             background-color: #111619;
         }
     }
+
     &:nth-child(3) {
         .shard {
             -webkit-clip-path: polygon(9.389% 59.352%, 14.368% 45.048%, 17.882% 45.693%);
             background-color: #3c4650;
         }
     }
+
     &:nth-child(4) {
         .shard {
             -webkit-clip-path: polygon(9.389% 59.352%, 17.882% 45.693%, 14.684% 54.94%);
             background-color: #0f1622;
         }
     }
+
     &:nth-child(5) {
         .shard {
             -webkit-clip-path: polygon(9.389% 59.352%, 14.684% 54.94%, 13.25% 58.958%);
             background-color: #d9eadf;
         }
     }
+
     &:nth-child(6) {
         .shard {
             -webkit-clip-path: polygon(11.705% 62.346%, 13.25% 58.958%, 32.112% 61.716%);
             background-color: #d9ebeb;
         }
     }
+
     &:nth-child(7) {
         .shard {
             -webkit-clip-path: polygon(13.25% 58.958%, 14.684% 54.94%, 17.827% 55.964%);
             background-color: #333c40;
         }
     }
+
     &:nth-child(8) {
         .shard {
             -webkit-clip-path: polygon(13.25% 58.958%, 17.827% 55.964%, 15.676% 59.431%);
             background-color: #1c2529;
         }
     }
+
     &:nth-child(9) {
         .shard {
             -webkit-clip-path: polygon(14.684% 54.94%, 17.882% 45.693%, 17.827% 55.964%);
             background-color: #62827f;
         }
     }
+
     &:nth-child(10) {
         .shard {
             -webkit-clip-path: polygon(15.676% 59.431%, 17.827% 55.964%, 32.112% 61.716%);
             background-color: #bdd0d0;
         }
     }
+
     &:nth-child(11) {
         .shard {
             -webkit-clip-path: polygon(14.368% 45.048%, 41.129% 30.988%, 17.882% 45.693%);
             background-color: #273537;
         }
     }
+
     &:nth-child(12) {
         .shard {
             -webkit-clip-path: polygon(17.882% 45.693%, 41.047% 30.988%, 58.171% 35.479%);
             background-color: #384e4d;
         }
     }
+
     &:nth-child(13) {
         .shard {
             -webkit-clip-path: polygon(17.882% 45.693%, 37.186% 39.103%, 17.827% 55.964%);
             background-color: #486461;
         }
     }
+
     &:nth-child(14) {
         .shard {
             -webkit-clip-path: polygon(17.827% 55.964%, 37.131% 39.103%, 33.711% 48.13%);
             background-color: #62827f;
         }
     }
+
     &:nth-child(15) {
         .shard {
             -webkit-clip-path: polygon(17.827% 55.964%, 33.766% 48.13%, 32.112% 61.716%);
             background-color: #aac7c6;
         }
     }
+
     &:nth-child(16) {
         .shard {
             -webkit-clip-path: polygon(25.99% 61.716%, 32.64% 61.368%, 36.91% 70.146%);
             background-color: #0d1417;
         }
     }
+
     &:nth-child(17) {
         .shard {
             -webkit-clip-path: polygon(33.711% 48.13%, 55.276% 61.952%, 32.195% 61.597%);
             background-color: #d9ebeb;
         }
     }
+
     &:nth-child(18) {
         .shard {
             -webkit-clip-path: polygon(27.107% 55.964%, 39.318% 59.352%, 40.467% 66.772%);
             background-color: #334543;
         }
     }
+
     &:nth-child(19) {
         .shard {
             -webkit-clip-path: polygon(27.107% 55.964%, 40.467% 66.772%, 45.128% 74.085%);
@@ -123,36 +151,42 @@
             background-color: #739998;
         }
     }
+
     &:nth-child(21) {
         .shard {
             -webkit-clip-path: polygon(36.414% 33.588%, 47.582% 21.06%, 47.044% 34.533%);
             background-color: #2d3b3b;
         }
     }
+
     &:nth-child(22) {
         .shard {
             -webkit-clip-path: polygon(33.711% 48.13%, 59.688% 51.237%, 55.276% 61.952%);
             background-color: #d8e2de;
         }
     }
+
     &:nth-child(23) {
         .shard {
             -webkit-clip-path: polygon(37.076% 39.121%, 58.171% 35.479%, 55.3% 40.679%);
             background-color: #415555;
         }
     }
+
     &:nth-child(24) {
         .shard {
             -webkit-clip-path: polygon(37.076% 39.121%, 55.3% 40.442%, 59.688% 51.237%);
             background-color: #486461;
         }
     }
+
     &:nth-child(25) {
         .shard {
             -webkit-clip-path: polygon(55.3% 40.442%, 58.171% 35.479%, 59.688% 51.237%);
             background-color: #384e4d;
         }
     }
+
     &:nth-child(26) {
         .shard {
             -webkit-clip-path: polygon(58.171% 35.479%, 75.108% 48.262%, 59.688% 51.237%);
@@ -166,18 +200,21 @@
             background-color: #c0dbd3;
         }
     }
+
     &:nth-child(28) {
         .shard {
             -webkit-clip-path: polygon(58.171% 35.479%, 82.907% 41.309%, 75.108% 48.262%);
             background-color: #2d3b3b;
         }
     }
+
     &:nth-child(29) {
         .shard {
             -webkit-clip-path: polygon(78.275% 41.979%, 86.099% 38.183%, 96.64% 38.788%);
             background-color: #365255;
         }
     }
+
     &:nth-child(30) {
         .shard {
             -webkit-clip-path: polygon(78.275% 41.979%, 96.64% 38.788%, 88.644% 43.784%);

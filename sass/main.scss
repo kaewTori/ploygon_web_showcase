@@ -5,6 +5,8 @@
 $smootheaseout: 0.62, 0.02, 0.34, 1;
 $head_font: "Amatic SC", sans-serif;
 $main_font: "Baloo 2", sans-serif;
+$smallscreensize: 700px;
+$mdscreensize: 1000px;
 
 body {
     color: #C1E9E8;
@@ -86,7 +88,6 @@ ul {
 
 .stg-exhibi {
     position: absolute;
-    @include transition(0.33s cubic-bezier(0.7, 0.3, 0, 1));
 }
 
 .exhibizone {
@@ -115,17 +116,18 @@ ul {
     }
 }
 
-
 .stage {
     width: 100vw;
     height: 100vh;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .select-animal {
-        position: absolute;
-        height: 100%;
-        left: 90%;
-        right: auto;
+        margin-left: auto;
+        margin-right: 30px;
+        text-align: right;
 
         a {
             border-width: 2px;
@@ -170,22 +172,19 @@ ul {
         }
 
         .thobbing {
-            margin: 40px 0 40px 0;
+            margin: 50px 0 50px 0;
         }
 
         li {
             position: relative;
-            top: 50%;
-            word-break: break-all;
+
         }
 
     }
 
     .menu-nav {
-        position: absolute;
-        height: 100%;
-        right: 90%;
-        text-align: right;
+        margin-left: 30px;
+        text-align: left;
 
         .popout {
             right: auto;
@@ -207,13 +206,11 @@ ul {
         }
 
         .autoplay {
-            margin: 40px 0 40px 0;
+            margin: 50px 0 50px 0;
         }
 
         li {
             position: relative;
-            top: 50%;
-            word-break: break-all;
 
             .popout {
                 position: absolute;
@@ -263,11 +260,31 @@ ul {
             font-weight: 600;
             font-size: 5rem;
         }
+    }
+
+    .aboutme {
+        position: absolute;
+        top: 90%;
+        right: 15px;
+        a {
+            border-width: 2px;
+            border-color: #27AFBB;
+            border-style: dashed;
+            border-radius: 100px;
+            padding: 10px;
+
+            &:hover {
+                border-width: 5px;
+                @include transition(0.5s)
+            }
+
+        }
 
     }
 }
 
 @import "overlay.scss";
+@import "mobile.scss";
 
 @import "animal/pinguin.scss";
 @import "animal/startAnimal.scss";

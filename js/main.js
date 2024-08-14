@@ -51,7 +51,7 @@ function nextorprevanimal() {
 
         setTimeout(function () {
             $(".animalinfo h2").text(animalNames[newAnimal]),
-                $(".animalinfo li:nth-child(1) span").text(newAnimal + 1),
+                $(".animalinfo li:nth-child(1) span").text((newAnimal + 1) + " " ),
                 $(".popout").removeClass("text-change"),
                 $(".animalinfo").removeClass("text-change"),
 
@@ -149,7 +149,7 @@ $(document).ready(function () {
                     $(".overlay div").removeClass("active")
                 }, 500)
         }),
-        $("footer .aboutme a").on("click", function () {
+        $(".aboutme a").on("click", function () {
             overlayContent = ".overlay .author",
                 overlayprocess()
         }),

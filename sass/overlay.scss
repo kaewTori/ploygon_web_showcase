@@ -62,25 +62,3 @@
         font-size: 60px;
     }
 }
-
-.aboutme {
-    position: absolute;
-    bottom: 10%;
-    left: 90%;
-
-    a {
-        border-width: 2px;
-        border-color: #27AFBB;
-        border-style: dashed;
-        border-radius: 100px;
-        padding: 10px;
-        margin-right: 15px;
-
-        &:hover {
-            border-width: 5px;
-            @include transition(0.5s)
-        }
-
-    }
-
-}

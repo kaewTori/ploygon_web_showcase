@@ -528,6 +528,9 @@ ul li {
   .popout {
     display: none;
   }
+  .stage {
+    position: fixed;
+  }
   .stage .menu-nav {
     width: 100vw;
     height: 100vh;

@@ -548,7 +548,7 @@ ul li {
   }
   .stage .animalinfo-wapper {
     width: 100vw;
-    height: 100%;
+    height: 100svh;
     position: absolute;
     display: flex;
     justify-content: flex-start;

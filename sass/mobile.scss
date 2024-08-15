@@ -14,8 +14,8 @@
         display: none;
     }
 
-    .stage{
-        
+    .stage {
+
         .menu-nav {
             width: 100vw;
             height: 100vh;
@@ -41,17 +41,18 @@
             display: flex;
             justify-content: flex-start;
             align-items: flex-end;
-            z-index: -1;
             margin-left: 20px;
-    
+
             h2 {
                 width: 50%;
                 font-weight: 600;
                 font-size: 3rem;
                 line-height: 1;
             }
-    
+        }
+
+        .aboutme {
+            z-index: 9998;
         }
     }
-
-}
+    }

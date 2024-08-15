@@ -8,6 +8,7 @@
     text-align: center;
     @include transform(translateY(100%));
     @include transition(.6s ease-in);
+    z-index: 9999;
 
     .nav-btn.close{
         top: 90%;

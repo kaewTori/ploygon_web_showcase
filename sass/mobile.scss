@@ -6,7 +6,7 @@
 }
 
 @media only screen and (max-width: $smallscreensize) {
-    
+
     .exhibizone {
         @include transform(scale(0.75));
     }
@@ -37,8 +37,8 @@
         }
 
         .animalinfo-wapper {
-            width: 100%;
-            height: 100%;
+            width: 100vw;
+            height: 85vh;
             position: absolute;
             display: flex;
             justify-content: flex-start;
@@ -46,7 +46,7 @@
             margin-left: 20px;
 
             h2 {
-                width: 50%;
+                width: 50vw;
                 font-weight: 600;
                 font-size: 3rem;
                 line-height: 1;

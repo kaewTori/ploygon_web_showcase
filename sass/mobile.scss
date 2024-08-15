@@ -38,7 +38,7 @@
 
         .animalinfo-wapper {
             width: 100vw;
-            height: 85vh;
+            height: 100%;
             position: absolute;
             display: flex;
             justify-content: flex-start;
@@ -54,7 +54,7 @@
         }
 
         .aboutme {
-            z-index: 9998;
+            display: none;
         }
     }
     }

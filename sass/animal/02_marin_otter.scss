@@ -5,10 +5,19 @@
     z-index: -1;
     background-color: #6a2b2b;
 
+    .animalinfo-wapper {
+        li {
+            color: #c3845a;
+        }
+        h2{
+            color: #CFA589;
+        }
+    }
+
     .shard-wrap {
         &:nth-child(1) {
             .shard {
-                -webkit-clip-path: polygon(35.25% 99.2%, 33% 31%, 42.44% 51.54%);
+                -webkit-clip-path: polygon(35.25% 90.2%, 33% 31%, 42.44% 51.54%);
                 background-color: #784843;
             }
         }

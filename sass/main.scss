@@ -255,6 +255,7 @@ ul {
         align-items: flex-end;
         z-index: 0;
         @include transition(0.5s);
+        @include transform(translateY(-15px));
 
         li {
             display: inline-block;
@@ -292,11 +293,11 @@ ul {
 @import "mobile.scss";
 @import "effect.scss";
 
-@import "animal/startAnimal.scss";
-@import "animal/vaquita.scss";
-@import "animal/hawaii_seal.scss";
-@import "animal/marin_otter.scss";
-@import "animal/jp_shark.scss";
+@import "animal/00_start_animal.scss";
+@import "animal/01_vaquita.scss";
+@import "animal/02_marin_otter.scss";
+@import "animal/03_hawaii_seal.scss";
+@import "animal/04_jp_shark.scss";
 @import "animal/oren_stork.scss";
 @import "animal/white_shark.scss";
 @import "animal/smol_saw.scss";

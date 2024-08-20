@@ -54,7 +54,7 @@ function nextorprevanimal() {
 
         setTimeout(function () {
             $(".animalinfo h2").text(animalNames[newAnimal]),
-                $(".animalinfo li:nth-child(1) span").text((newAnimal + 1) + " "),
+                $(".animalinfo li:nth-child(1) span").text((newAnimal + 1)),
                 $(".popout").removeClass("text-change"),
                 $(".animalinfo").removeClass("text-change"),
 

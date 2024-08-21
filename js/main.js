@@ -126,7 +126,7 @@ slideshowvar = 0;
 finishedAnimals = 21;
 $(document).ready(function () {
     sizeshards(),
-        updateText("NO TALES IN the sea NO SEE"),
+        updateText("No Tales in the Sea"),
         $(".start-btn").on("click", function () {
             startexhibition(),
                 prevAnimal = 2,
@@ -141,8 +141,8 @@ $(document).ready(function () {
                 overlayprocess()
         }),
         $(".all-animal").on("click", function () {
-            overlayContent = ".overlay .all-animal-stg",
-                overlayprocess()
+            overlayContent = ".overlay .all-animal-stg"
+                // overlayprocess()
         }),
         $(".overlay .close").on("click", function () {
             $(".overlay").toggleClass("active"),

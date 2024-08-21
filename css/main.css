@@ -1941,93 +1941,87 @@ ul li {
   height: 100%;
   position: absolute;
   z-index: -1;
-  background-color: #4a7eb2;
-}
-.india_dolphin .menu-nav a {
-  border-color: #053065;
-}
-.india_dolphin .select-animal a {
-  border-color: #053065;
+  background-color: #141414;
 }
 .india_dolphin .shard-wrap:nth-child(1) .shard {
-  -webkit-clip-path: polygon(1.85% 63.94%, 3.04% 51.76%, 12.06% 40%);
-  background-color: #000;
+  -webkit-clip-path: polygon(12.762% 61.464%, 17.986% 76.893%, 21.367% 69.321%);
+  background-color: #181818;
 }
 .india_dolphin .shard-wrap:nth-child(2) .shard {
-  -webkit-clip-path: polygon(1.85% 63.94%, 9.88% 64.85%, 12.06% 40%);
-  background-color: #a5a5af;
+  -webkit-clip-path: polygon(78.188% 35.179%, 83.275% 54.179%, 85.792% 43.179%);
+  background-color: #181818;
 }
 .india_dolphin .shard-wrap:nth-child(3) .shard {
-  -webkit-clip-path: polygon(6.95% 55.03%, 11.11% 51.37%, 10.45% 58.53%);
-  background-color: #37383a;
+  -webkit-clip-path: polygon(83.584% 85.607%, 82.494% 97.893%, 89.503% 96.607%);
+  background-color: #181818;
 }
 .india_dolphin .shard-wrap:nth-child(4) .shard {
-  -webkit-clip-path: polygon(1.85% 63.94%, 4.1% 64.15%, 5.99% 58.03%);
-  background-color: #141414;
+  -webkit-clip-path: polygon(69.013% 68.464%, 64.753% 77.036%, 70.342% 74.179%);
+  background-color: #181818;
 }
 .india_dolphin .shard-wrap:nth-child(5) .shard {
-  -webkit-clip-path: polygon(9.88% 64.85%, 11.11% 51.37%, 20.04% 63.94%);
-  background-color: #29292e;
+  -webkit-clip-path: polygon(18.5% 44.286%, 15.2% 42.286%, 15.9% 44.857%);
+  background-color: #181818;
 }
 .india_dolphin .shard-wrap:nth-child(6) .shard {
-  -webkit-clip-path: polygon(12.06% 40%, 11.11% 51.37%, 20.04% 63.94%);
-  background-color: #464649;
+  -webkit-clip-path: polygon(28.027% 30.75%, 20.63% 44.75%, 30.912% 46.321%);
+  background-color: #181818;
 }
 .india_dolphin .shard-wrap:nth-child(7) .shard {
-  -webkit-clip-path: polygon(12.06% 40%, 30.59% 62.6%, 20.04% 63.94%);
-  background-color: #1e1d21;
+  -webkit-clip-path: polygon(30.5% 13.321%, 26.8% 10.321%, 31% 8.464%);
+  background-color: #181818;
 }
 .india_dolphin .shard-wrap:nth-child(8) .shard {
-  -webkit-clip-path: polygon(37.51% 71.68%, 30.59% 62.6%, 20.04% 63.94%);
-  background-color: #575265;
+  -webkit-clip-path: polygon(60.5% 58.036%, 62.6% 64.179%, 62.6% 58.036%);
+  background-color: #181818;
 }
 .india_dolphin .shard-wrap:nth-child(9) .shard {
-  -webkit-clip-path: polygon(12.06% 40%, 30.59% 62.6%, 38.3% 25.21%);
-  background-color: #d8d8dd;
+  -webkit-clip-path: polygon(13.4% 93.75%, 8.2% 93.464%, 12.7% 97.036%);
+  background-color: #181818;
 }
 .india_dolphin .shard-wrap:nth-child(10) .shard {
-  -webkit-clip-path: polygon(12.06% 40%, 26.57% 28.73%, 38.3% 25.21%);
-  background-color: #ababb5;
+  -webkit-clip-path: polygon(25% 92%, 25.5% 92.5%, 26% 92%);
+  background-color: #181818;
 }
 .india_dolphin .shard-wrap:nth-child(11) .shard {
-  -webkit-clip-path: polygon(45.61% 63.94%, 30.59% 62.6%, 38.3% 25.21%);
-  background-color: #cccecd;
+  -webkit-clip-path: polygon(6.5% 17.893%, 6.9% 10.893%, 2.8% 19.464%);
+  background-color: #181818;
 }
 .india_dolphin .shard-wrap:nth-child(12) .shard {
-  -webkit-clip-path: polygon(38.3% 25.21%, 52.49% 3.41%, 45.48% 25.21%);
-  background-color: #1c1c1e;
+  -webkit-clip-path: polygon(32.1% 84%, 34.1% 86.429%, 35.5% 81.714%);
+  background-color: #181818;
 }
 .india_dolphin .shard-wrap:nth-child(13) .shard {
-  -webkit-clip-path: polygon(45.48% 25.21%, 52.49% 3.41%, 52.88% 25.21%);
-  background-color: #faf9fa;
+  -webkit-clip-path: polygon(32.3% 34.607%, 31.3% 39.607%, 33.3% 36.036%);
+  background-color: #181818;
 }
 .india_dolphin .shard-wrap:nth-child(14) .shard {
-  -webkit-clip-path: polygon(38.3% 25.21%, 45.61% 63.94%, 52.88% 24.88%);
-  background-color: #b580a7;
+  -webkit-clip-path: polygon(14.008% 88.179%, 18.023% 93.464%, 16.653% 89.321%);
+  background-color: #181818;
 }
 .india_dolphin .shard-wrap:nth-child(15) .shard {
-  -webkit-clip-path: polygon(52.88% 24.88%, 45.61% 63.94%, 68.86% 62.69%);
-  background-color: #32323c;
+  -webkit-clip-path: polygon(84.234% 7.893%, 90.231% 6.607%, 87.93% 5.75%);
+  background-color: #181818;
 }
 .india_dolphin .shard-wrap:nth-child(16) .shard {
-  -webkit-clip-path: polygon(52.88% 24.88%, 68.86% 62.69%, 73.37% 40%);
-  background-color: #141414;
+  -webkit-clip-path: polygon(59.9% 94.714%, 60.4% 99.9%, 63.6% 98.714%);
+  background-color: #181818;
 }
 .india_dolphin .shard-wrap:nth-child(17) .shard {
-  -webkit-clip-path: polygon(73.37% 40%, 68.86% 62.69%, 83.09% 53.38%);
-  background-color: #3c363e;
+  -webkit-clip-path: polygon(8.75% 52.607%, 6.123% 59.036%, 11.425% 57.321%);
+  background-color: #181818;
 }
 .india_dolphin .shard-wrap:nth-child(18) .shard {
-  -webkit-clip-path: polygon(83.09% 53.38%, 68.86% 62.69%, 85.45% 66.52%);
-  background-color: #000;
+  -webkit-clip-path: polygon(70% 92%, 71% 94%, 72% 93%);
+  background-color: #181818;
 }
 .india_dolphin .shard-wrap:nth-child(19) .shard {
-  -webkit-clip-path: polygon(85.45% 66.52%, 87.34% 80.67%, 95.31% 85.07%);
-  background-color: #a7a6a1;
+  -webkit-clip-path: polygon(73.5% 18.857%, 76.3% 16.857%, 74.4% 14.429%);
+  background-color: #181818;
 }
 .india_dolphin .shard-wrap:nth-child(20) .shard {
-  -webkit-clip-path: polygon(85.45% 66.52%, 96.53% 71.6%, 96.01% 82.83%);
-  background-color: #726672;
+  -webkit-clip-path: polygon(80% 92%, 81% 94%, 82% 93%);
+  background-color: #181818;
 }
 
 .tri_alba {
@@ -2211,93 +2205,87 @@ ul li {
   height: 100%;
   position: absolute;
   z-index: -1;
-  background-color: #45779A;
-}
-.penguin .menu-nav a {
-  border-color: #053065;
-}
-.penguin .select-animal a {
-  border-color: #053065;
+  background-color: #141414;
 }
 .penguin .shard-wrap:nth-child(1) .shard {
-  -webkit-clip-path: polygon(38.65% 66%, 40.75% 84.429%, 47.85% 70%);
-  background-color: #000;
+  -webkit-clip-path: polygon(12.762% 61.464%, 17.986% 76.893%, 21.367% 69.321%);
+  background-color: #181818;
 }
 .penguin .shard-wrap:nth-child(2) .shard {
-  -webkit-clip-path: polygon(38.65% 66.143%, 47.85% 70%, 54.65% 46.286%);
-  background-color: #141414;
+  -webkit-clip-path: polygon(78.188% 35.179%, 83.275% 54.179%, 85.792% 43.179%);
+  background-color: #181818;
 }
 .penguin .shard-wrap:nth-child(3) .shard {
-  -webkit-clip-path: polygon(38.15% 57.857%, 33.65% 84.571%, 52.75% 51%);
-  background-color: #2d2d31;
+  -webkit-clip-path: polygon(83.584% 85.607%, 82.494% 97.893%, 89.503% 96.607%);
+  background-color: #181818;
 }
 .penguin .shard-wrap:nth-child(4) .shard {
-  -webkit-clip-path: polygon(44.65% 39.571%, 36.85% 59.429%, 52.85% 50.857%);
-  background-color: #37383a;
+  -webkit-clip-path: polygon(69.013% 68.464%, 64.753% 77.036%, 70.342% 74.179%);
+  background-color: #181818;
 }
 .penguin .shard-wrap:nth-child(5) .shard {
-  -webkit-clip-path: polygon(45.85% 41.4%, 52.75% 50.857%, 55.2% 38.286%);
-  background-color: #29292e;
+  -webkit-clip-path: polygon(18.5% 44.286%, 15.2% 42.286%, 15.9% 44.857%);
+  background-color: #181818;
 }
 .penguin .shard-wrap:nth-child(6) .shard {
-  -webkit-clip-path: polygon(47.55% 27.143%, 41.25% 45.714%, 55.05% 38.429%);
-  background-color: #464649;
+  -webkit-clip-path: polygon(28.027% 30.75%, 20.63% 44.75%, 30.912% 46.321%);
+  background-color: #181818;
 }
 .penguin .shard-wrap:nth-child(7) .shard {
-  -webkit-clip-path: polygon(40.75% 84.571%, 52.35% 85%, 49.05% 89.857%);
-  background-color: #1e1d21;
+  -webkit-clip-path: polygon(30.5% 13.321%, 26.8% 10.321%, 31% 8.464%);
+  background-color: #181818;
 }
 .penguin .shard-wrap:nth-child(8) .shard {
-  -webkit-clip-path: polygon(46.95% 81.714%, 58.95% 81.143%, 55.75% 85.571%);
-  background-color: #1e1d21;
+  -webkit-clip-path: polygon(60.5% 58.036%, 62.6% 64.179%, 62.6% 58.036%);
+  background-color: #181818;
 }
 .penguin .shard-wrap:nth-child(9) .shard {
-  -webkit-clip-path: polygon(47.55% 27.143%, 61.15% 21.714%, 55.05% 38.429%);
-  background-color: #d8d8dd;
+  -webkit-clip-path: polygon(13.4% 93.75%, 8.2% 93.464%, 12.7% 97.036%);
+  background-color: #181818;
 }
 .penguin .shard-wrap:nth-child(10) .shard {
-  -webkit-clip-path: polygon(47.55% 27.143%, 48.25% 13.143%, 50.55% 25.857%);
-  background-color: #ababb5;
+  -webkit-clip-path: polygon(25% 92%, 25.5% 92.5%, 26% 92%);
+  background-color: #181818;
 }
 .penguin .shard-wrap:nth-child(11) .shard {
-  -webkit-clip-path: polygon(48.25% 13.143%, 53.85% 7.857%, 49.05% 17.714%);
-  background-color: #cccecd;
+  -webkit-clip-path: polygon(6.5% 17.893%, 6.9% 10.893%, 2.8% 19.464%);
+  background-color: #181818;
 }
 .penguin .shard-wrap:nth-child(12) .shard {
-  -webkit-clip-path: polygon(49.05% 17.714%, 52.15% 11.286%, 50.55% 25.857%);
-  background-color: #1c1c1e;
+  -webkit-clip-path: polygon(32.1% 84%, 34.1% 86.429%, 35.5% 81.714%);
+  background-color: #181818;
 }
 .penguin .shard-wrap:nth-child(13) .shard {
-  -webkit-clip-path: polygon(52.15% 11.286%, 53.65% 7.714%, 59.65% 10.571%);
-  background-color: #faf9fa;
+  -webkit-clip-path: polygon(32.3% 34.607%, 31.3% 39.607%, 33.3% 36.036%);
+  background-color: #181818;
 }
 .penguin .shard-wrap:nth-child(14) .shard {
-  -webkit-clip-path: polygon(52.1% 11.4%, 59.8% 10.5%, 57.65% 15.7%);
-  background-color: #b580a7;
+  -webkit-clip-path: polygon(14.008% 88.179%, 18.023% 93.464%, 16.653% 89.321%);
+  background-color: #181818;
 }
 .penguin .shard-wrap:nth-child(15) .shard {
-  -webkit-clip-path: polygon(52.05% 11.286%, 60.55% 18%, 50.45% 25.857%);
-  background-color: #32323c;
+  -webkit-clip-path: polygon(84.234% 7.893%, 90.231% 6.607%, 87.93% 5.75%);
+  background-color: #181818;
 }
 .penguin .shard-wrap:nth-child(16) .shard {
-  -webkit-clip-path: polygon(50.45% 25.857%, 60.45% 17.857%, 61.15% 21.714%);
-  background-color: #141414;
+  -webkit-clip-path: polygon(59.9% 94.714%, 60.4% 99.9%, 63.6% 98.714%);
+  background-color: #181818;
 }
 .penguin .shard-wrap:nth-child(17) .shard {
-  -webkit-clip-path: polygon(57.65% 15.714%, 59.75% 10.571%, 66.75% 14.571%);
-  background-color: #3c363e;
+  -webkit-clip-path: polygon(8.75% 52.607%, 6.123% 59.036%, 11.425% 57.321%);
+  background-color: #181818;
 }
 .penguin .shard-wrap:nth-child(18) .shard {
-  -webkit-clip-path: polygon(57.5% 15.6%, 66.75% 14.571%, 60.45% 18%);
-  background-color: #000;
+  -webkit-clip-path: polygon(70% 92%, 71% 94%, 72% 93%);
+  background-color: #181818;
 }
 .penguin .shard-wrap:nth-child(19) .shard {
-  -webkit-clip-path: polygon(55.25% 41%, 57.05% 74.429%, 47.95% 69.857%);
-  background-color: #a7a6a1;
+  -webkit-clip-path: polygon(73.5% 18.857%, 76.3% 16.857%, 74.4% 14.429%);
+  background-color: #181818;
 }
 .penguin .shard-wrap:nth-child(20) .shard {
-  -webkit-clip-path: polygon(61.45% 15.143%, 62.95% 12.429%, 62.65% 15%);
-  background-color: #726672;
+  -webkit-clip-path: polygon(80% 92%, 81% 94%, 82% 93%);
+  background-color: #181818;
 }
 
 .sei_whale {

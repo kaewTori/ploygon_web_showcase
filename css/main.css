@@ -1146,87 +1146,90 @@ ul li {
   height: 100%;
   position: absolute;
   z-index: -1;
-  background-color: #141414;
+  background-color: #da8787;
+}
+.oren_stork .animalinfo-wapper {
+  color: #652626;
 }
 .oren_stork .shard-wrap:nth-child(1) .shard {
-  -webkit-clip-path: polygon(12.762% 61.464%, 17.986% 76.893%, 21.367% 69.321%);
-  background-color: #181818;
+  -webkit-clip-path: polygon(73.88% 26.3%, 64.48% 8.84%, 62.81% 12.54%);
+  background-color: #1D1617;
 }
 .oren_stork .shard-wrap:nth-child(2) .shard {
-  -webkit-clip-path: polygon(78.188% 35.179%, 83.275% 54.179%, 85.792% 43.179%);
-  background-color: #181818;
+  -webkit-clip-path: polygon(64.48% 8.84%, 60.2% 2.22%, 62.72% 3.39%);
+  background-color: #DBD4C6;
 }
 .oren_stork .shard-wrap:nth-child(3) .shard {
-  -webkit-clip-path: polygon(83.584% 85.607%, 82.494% 97.893%, 89.503% 96.607%);
-  background-color: #181818;
+  -webkit-clip-path: polygon(60.2% 2.22%, 57.72% 3.89%, 56.88% 9.49%);
+  background-color: #D1CCAF;
 }
 .oren_stork .shard-wrap:nth-child(4) .shard {
-  -webkit-clip-path: polygon(69.013% 68.464%, 64.753% 77.036%, 70.342% 74.179%);
-  background-color: #181818;
+  -webkit-clip-path: polygon(60.2% 2.22%, 56.88% 9.49%, 64.48% 8.84%);
+  background-color: #E0D9C5;
 }
 .oren_stork .shard-wrap:nth-child(5) .shard {
-  -webkit-clip-path: polygon(18.5% 44.286%, 15.2% 42.286%, 15.9% 44.857%);
-  background-color: #181818;
+  -webkit-clip-path: polygon(56.88% 9.49%, 64.48% 8.84%, 62.81% 12.54%);
+  background-color: #D5C8AA;
 }
 .oren_stork .shard-wrap:nth-child(6) .shard {
-  -webkit-clip-path: polygon(28.027% 30.75%, 20.63% 44.75%, 30.912% 46.321%);
-  background-color: #181818;
+  -webkit-clip-path: polygon(60.67% 5.57%, 61.64% 5.57%, 62.6% 8%);
+  background-color: #6D2F37;
 }
 .oren_stork .shard-wrap:nth-child(7) .shard {
-  -webkit-clip-path: polygon(30.5% 13.321%, 26.8% 10.321%, 31% 8.464%);
-  background-color: #181818;
+  -webkit-clip-path: polygon(56.88% 9.49%, 61.39% 11.82%, 63.02% 36.67%);
+  background-color: #DFD6C5;
 }
 .oren_stork .shard-wrap:nth-child(8) .shard {
-  -webkit-clip-path: polygon(60.5% 58.036%, 62.6% 64.179%, 62.6% 58.036%);
-  background-color: #181818;
+  -webkit-clip-path: polygon(58.46% 16.26%, 56.19% 33.15%, 63.02% 36.67%);
+  background-color: #E8DDC7;
 }
 .oren_stork .shard-wrap:nth-child(9) .shard {
-  -webkit-clip-path: polygon(13.4% 93.75%, 8.2% 93.464%, 12.7% 97.036%);
-  background-color: #181818;
+  -webkit-clip-path: polygon(56.19% 33.15%, 63.02% 36.67%, 63.98% 43.46%);
+  background-color: #C6BFA2;
 }
 .oren_stork .shard-wrap:nth-child(10) .shard {
-  -webkit-clip-path: polygon(25% 92%, 25.5% 92.5%, 26% 92%);
-  background-color: #181818;
+  -webkit-clip-path: polygon(56.19% 33.15%, 63.98% 43.46%, 62.31% 53.93%);
+  background-color: #DED9C3;
 }
 .oren_stork .shard-wrap:nth-child(11) .shard {
-  -webkit-clip-path: polygon(6.5% 17.893%, 6.9% 10.893%, 2.8% 19.464%);
-  background-color: #181818;
+  -webkit-clip-path: polygon(56.19% 33.15%, 62.31% 53.93%, 41.06% 49.06%);
+  background-color: #E8E5D6;
 }
 .oren_stork .shard-wrap:nth-child(12) .shard {
-  -webkit-clip-path: polygon(32.1% 84%, 34.1% 86.429%, 35.5% 81.714%);
-  background-color: #181818;
+  -webkit-clip-path: polygon(60.81% 53.63%, 42.56% 49.34%, 39.86% 59.97%);
+  background-color: #E0D7BE;
 }
 .oren_stork .shard-wrap:nth-child(13) .shard {
-  -webkit-clip-path: polygon(32.3% 34.607%, 31.3% 39.607%, 33.3% 36.036%);
-  background-color: #181818;
+  -webkit-clip-path: polygon(60.81% 53.63%, 45.6% 58.32%, 48.88% 71.63%);
+  background-color: #B6AB8D;
 }
 .oren_stork .shard-wrap:nth-child(14) .shard {
-  -webkit-clip-path: polygon(14.008% 88.179%, 18.023% 93.464%, 16.653% 89.321%);
-  background-color: #181818;
+  -webkit-clip-path: polygon(51.97% 67.24%, 50% 70.11%, 48.76% 96.3%);
+  background-color: #6A191F;
 }
 .oren_stork .shard-wrap:nth-child(15) .shard {
-  -webkit-clip-path: polygon(84.234% 7.893%, 90.231% 6.607%, 87.93% 5.75%);
-  background-color: #181818;
+  -webkit-clip-path: polygon(47.8% 67.58%, 48.88% 71.63%, 45.93% 97.63%);
+  background-color: #882929;
 }
 .oren_stork .shard-wrap:nth-child(16) .shard {
-  -webkit-clip-path: polygon(59.9% 94.714%, 60.4% 99.9%, 63.6% 98.714%);
-  background-color: #181818;
+  -webkit-clip-path: polygon(47.03% 65.07%, 32.19% 74.3%, 35.3% 76.92%);
+  background-color: #776F58;
 }
 .oren_stork .shard-wrap:nth-child(17) .shard {
-  -webkit-clip-path: polygon(8.75% 52.607%, 6.123% 59.036%, 11.425% 57.321%);
-  background-color: #181818;
+  -webkit-clip-path: polygon(47.03% 65.07%, 45.6% 58.02%, 27.36% 77.1%);
+  background-color: #2D241E;
 }
 .oren_stork .shard-wrap:nth-child(18) .shard {
-  -webkit-clip-path: polygon(70% 92%, 71% 94%, 72% 93%);
-  background-color: #181818;
+  -webkit-clip-path: polygon(45.6% 58.02%, 39.86% 59.97%, 26% 78.46%);
+  background-color: #0B0B0D;
 }
 .oren_stork .shard-wrap:nth-child(19) .shard {
-  -webkit-clip-path: polygon(73.5% 18.857%, 76.3% 16.857%, 74.4% 14.429%);
-  background-color: #181818;
+  -webkit-clip-path: polygon(39.86% 59.97%, 32.76% 61.56%, 26% 78.46%);
+  background-color: #0E0E0E;
 }
 .oren_stork .shard-wrap:nth-child(20) .shard {
-  -webkit-clip-path: polygon(80% 92%, 81% 94%, 82% 93%);
-  background-color: #181818;
+  -webkit-clip-path: polygon(32.76% 61.56%, 39.86% 59.97%, 42.56% 49.54%);
+  background-color: #1C1C1A;
 }
 
 .white_shark {

@@ -1,0 +1,153 @@
+.oren_stork {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background-color: #da8787;
+
+    .animalinfo-wapper {
+        color : #652626;
+    }
+
+    .shard-wrap {
+        &:nth-child(1) {
+            .shard {
+                -webkit-clip-path: polygon(73.88% 26.3%, 64.48% 8.84%, 62.81% 12.54%);
+                background-color: #1D1617;
+            }
+        }
+
+        &:nth-child(2) {
+            .shard {
+                -webkit-clip-path: polygon(64.48% 8.84%, 60.2% 2.22%, 62.72% 3.39%);
+                background-color: #DBD4C6;
+            }
+        }
+
+        &:nth-child(3) {
+            .shard {
+                -webkit-clip-path: polygon(60.2% 2.22%, 57.72% 3.89%, 56.88% 9.49%);
+                background-color: #D1CCAF;
+            }
+        }
+
+        &:nth-child(4) {
+            .shard {
+                -webkit-clip-path: polygon(60.2% 2.22%, 56.88% 9.49%, 64.48% 8.84%);
+                background-color: #E0D9C5;
+            }
+        }
+
+        &:nth-child(5) {
+            .shard {
+                -webkit-clip-path: polygon(56.88% 9.49%, 64.48% 8.84%, 62.81% 12.54%);
+                background-color: #D5C8AA;
+            }
+        }
+
+        &:nth-child(6) {
+            .shard {
+                -webkit-clip-path: polygon(60.67% 5.57%, 61.64% 5.57%, 62.6% 8%);
+                background-color: #6D2F37;
+            }
+        }
+
+        &:nth-child(7) {
+            .shard {
+                -webkit-clip-path: polygon(56.88% 9.49%, 61.39% 11.82%, 63.02% 36.67%);
+                background-color: #DFD6C5;
+            }
+        }
+
+        &:nth-child(8) {
+            .shard {
+                -webkit-clip-path: polygon(58.46% 16.26%, 56.19% 33.15%, 63.02% 36.67%);
+                background-color: #E8DDC7;
+            }
+        }
+
+        &:nth-child(9) {
+            .shard {
+                -webkit-clip-path: polygon(56.19% 33.15%, 63.02% 36.67%, 63.98% 43.46%);
+                background-color: #C6BFA2;
+            }
+        }
+
+        &:nth-child(10) {
+            .shard {
+                -webkit-clip-path: polygon(56.19% 33.15%, 63.98% 43.46%, 62.31% 53.93%);
+                background-color: #DED9C3;
+            }
+        }
+
+        &:nth-child(11) {
+            .shard {
+                -webkit-clip-path: polygon(56.19% 33.15%, 62.31% 53.93%, 41.06% 49.06%);
+                background-color: #E8E5D6;
+            }
+        }
+
+        &:nth-child(12) {
+            .shard {
+                -webkit-clip-path: polygon(60.81% 53.63%, 42.56% 49.34%, 39.86% 59.97%);
+                background-color: #E0D7BE;
+            }
+        }
+
+        &:nth-child(13) {
+            .shard {
+                -webkit-clip-path: polygon(60.81% 53.63%, 45.6% 58.32%, 48.88% 71.63%);
+                background-color: #B6AB8D;
+            }
+        }
+
+        &:nth-child(14) {
+            .shard {
+                -webkit-clip-path: polygon(51.97% 67.24%, 50% 70.11%, 48.76% 96.3%);
+                background-color: #6A191F;
+            }
+        }
+
+        &:nth-child(15) {
+            .shard {
+                -webkit-clip-path: polygon(47.80% 67.58%, 48.88% 71.63%, 45.93% 97.63%);
+                background-color: #882929;
+            }
+        }
+
+        &:nth-child(16) {
+            .shard {
+                -webkit-clip-path: polygon(47.03% 65.07%, 32.19% 74.3%, 35.3% 76.92%);
+                background-color: #776F58;
+            }
+        }
+
+        &:nth-child(17) {
+            .shard {
+                -webkit-clip-path: polygon(47.03% 65.07%, 45.6% 58.02%, 27.36% 77.1%);
+                background-color: #2D241E;
+            }
+        }
+
+        &:nth-child(18) {
+            .shard {
+                -webkit-clip-path: polygon(45.6% 58.02%, 39.86% 59.97%, 26% 78.46%);
+                background-color: #0B0B0D;
+            }
+        }
+
+        &:nth-child(19) {
+            .shard {
+                -webkit-clip-path: polygon(39.86% 59.97%, 32.76% 61.56%, 26% 78.46%);
+                background-color: #0E0E0E;
+            }
+        }
+
+        &:nth-child(20) {
+            .shard {
+                -webkit-clip-path: polygon(32.76% 61.56%, 39.86% 59.97%, 42.56% 49.54%);
+                background-color: #1C1C1A;
+            }
+        }
+    }
+}

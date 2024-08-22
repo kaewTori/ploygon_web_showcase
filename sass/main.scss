@@ -37,7 +37,7 @@ ul {
     height: 100%;
     position: absolute;
 
-    @for $i from 1 through 30 {
+    @for $i from 1 through 20 {
         &:nth-child(#{$i}) .shard {
             $td: (
                 $i * 0.05s
@@ -288,6 +288,8 @@ ul {
 
     }
 }
+
+@import "animal/animation/state_two.scss";
 
 @import "overlay.scss";
 @import "mobile.scss";

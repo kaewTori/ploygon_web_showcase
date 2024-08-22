@@ -121,6 +121,34 @@ function randomAnimal() {
         nextorprevanimal()
 }
 
+function animalStates(t) {
+    setInterval(function() {
+        t.removeClass("state-four"),
+        setTimeout(function() {
+            t.addClass("state-two")
+        }, 1e3),
+        setTimeout(function() {
+            t.removeClass("state-two"),
+            t.addClass("state-three")
+        }, 2e3),
+        setTimeout(function() {
+            t.removeClass("state-three"),
+            t.addClass("state-four")
+        }, 3e3)
+    }, 4e3)
+}
+
+function animalStatesShimmer(t) {
+    setInterval(function() {
+        setTimeout(function() {
+            t.addClass("shimmer")
+        }, 4e3),
+        setTimeout(function() {
+            t.removeClass("shimmer")
+        }, 6e3)
+    }, 7e3)
+}
+
 newAnimal = 0;
 slideshowvar = 0;
 finishedAnimals = 21;
@@ -134,7 +162,6 @@ $(document).ready(function () {
                 setTimeout(function () {
                     nextorprevanimal()
                 }, 350)
-
         }),
         $(".thobbing").on("click", function () {
             overlayContent = ".overlay .detail",
@@ -180,6 +207,12 @@ $(document).ready(function () {
                         $(".menu-nav li:nth-child(3) a").text("music Off")
                     }, 150)
             )
+        }),
+        $("body").each(function() {
+            animalStates($(this))
+        }),
+        $("body").each(function() {
+            animalStatesShimmer($(this))
         }),
         sizeshards()
 })

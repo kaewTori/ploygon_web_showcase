@@ -137,3 +137,36 @@
         opacity: 0;
     }
 }
+
+.shimmer {
+    .exhibizone {
+        .stg-exhibi {
+            .shard-wrap {
+                z-index: 99999999999;
+                @for $i from 1 through 20 {
+                    &:nth-child(#{$i}) .shard {
+                        $ad: (
+                            $i * 0.05s+0.02s
+                        );
+                    @include animation(shimmer 0.3s $ad);
+                }
+            }
+        }
+    }
+}
+}
+
+
+@include keyframes(shimmer) {
+    0% {
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    35% {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    100% {
+        background-color: rgba(255, 255, 255, 0);
+    }
+}

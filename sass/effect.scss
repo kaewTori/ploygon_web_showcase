@@ -142,7 +142,6 @@
     .exhibizone {
         .stg-exhibi {
             .shard-wrap {
-                z-index: 99999999999;
                 @for $i from 1 through 20 {
                     &:nth-child(#{$i}) .shard {
                         $ad: (

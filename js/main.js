@@ -169,7 +169,7 @@ $(document).ready(function () {
         }),
         $(".all-animal").on("click", function () {
             overlayContent = ".overlay .all-animal-stg"
-                // overlayprocess()
+                overlayprocess()
         }),
         $(".overlay .close").on("click", function () {
             $(".overlay").toggleClass("active"),

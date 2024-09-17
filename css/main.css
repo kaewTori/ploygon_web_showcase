@@ -640,9 +640,6 @@ ul li {
     opacity: 0;
   }
 }
-.shimmer .exhibizone .stg-exhibi .shard-wrap {
-  z-index: 99999999999;
-}
 .shimmer .exhibizone .stg-exhibi .shard-wrap:nth-child(1) .shard {
   -webkit-animation: shimmer 0.3s 0.07s;
   -moz-animation: shimmer 0.3s 0.07s;

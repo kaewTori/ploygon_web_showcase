@@ -867,7 +867,7 @@ ul li {
   border-color: #AAD7DD;
 }
 .vaquita .shard-wrap:nth-child(1) .shard {
-  -webkit-clip-path: polygon(41.08% 30.57%, 49.89% 18.25%, 54.48% 12.78%);
+  -webkit-clip-path: polygon(41.08% 30.57%, 47.89% 18.25%, 54.48% 12.78%);
   background-color: #5F6D67;
 }
 .vaquita .shard-wrap:nth-child(2) .shard {

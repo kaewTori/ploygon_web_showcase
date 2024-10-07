@@ -1,156 +1,148 @@
-.india_dolphin {
+.man_ray {
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: -1;
     background-color: #141414;
 
-    // .menu-nav a {
-    //     border-color: #053065;
-    // }
-
-    // .select-animal a {
-    //     border-color: #053065;
-    // }
-
     .shard-wrap {
         &:nth-child(1) {
             .shard {
                 -webkit-clip-path: polygon(12.762% 61.464%, 17.986% 76.893%, 21.367% 69.321%);
-                background-color: #181818;
+                background-color: #0E1211;
             }
         }
 
         &:nth-child(2) {
             .shard {
                 -webkit-clip-path: polygon(78.188% 35.179%, 83.275% 54.179%, 85.792% 43.179%);
-                background-color: #181818;
+                background-color: #202020;
             }
         }
 
         &:nth-child(3) {
             .shard {
                 -webkit-clip-path: polygon(83.584% 85.607%, 82.494% 97.893%, 89.503% 96.607%);
-                background-color: #181818;
+                background-color: #191919;
             }
         }
 
         &:nth-child(4) {
             .shard {
                 -webkit-clip-path: polygon(69.013% 68.464%, 64.753% 77.036%, 70.342% 74.179%);
-                background-color: #181818;
+                background-color: #707978;
             }
         }
 
         &:nth-child(5) {
             .shard {
                 -webkit-clip-path: polygon(18.5% 44.286%, 15.2% 42.286%, 15.9% 44.857%);
-                background-color: #181818;
+                background-color: #87908D;
             }
         }
 
         &:nth-child(6) {
             .shard {
                 -webkit-clip-path: polygon(28.027% 30.75%, 20.63% 44.75%, 30.912% 46.321%);
-                background-color: #181818;
+                background-color: #0F1110;
             }
         }
 
         &:nth-child(7) {
             .shard {
                 -webkit-clip-path: polygon(30.5% 13.321%, 26.8% 10.321%, 31% 8.464%);
-                background-color: #181818;
+                background-color: #111113;
             }
         }
 
         &:nth-child(8) {
             .shard {
                 -webkit-clip-path: polygon(60.5% 58.036%, 62.6% 64.179%, 62.6% 58.036%);
-                background-color: #181818;
+                background-color: #171717;
             }
         }
 
         &:nth-child(9) {
             .shard {
                 -webkit-clip-path: polygon(13.4% 93.75%, 8.2% 93.464%, 12.7% 97.036%);
-                background-color: #181818;
+                background-color: #181E21;
             }
         }
 
         &:nth-child(10) {
             .shard {
                 -webkit-clip-path: polygon(25% 92%, 25.5% 92.5%, 26% 92%);
-                background-color: #181818;
+                background-color: #0E0E0E;
             }
         }
 
         &:nth-child(11) {
             .shard {
                 -webkit-clip-path: polygon(6.5% 17.893%, 6.9% 10.893%, 2.8% 19.464%);
-                background-color: #181818;
+                background-color: #121C28;
             }
         }
 
         &:nth-child(12) {
             .shard {
                 -webkit-clip-path: polygon(32.1% 84%, 34.1% 86.429%, 35.5% 81.714%);
-                background-color: #181818;
+                background-color: #090909;
             }
         }
 
         &:nth-child(13) {
             .shard {
                 -webkit-clip-path: polygon(32.3% 34.607%, 31.3% 39.607%, 33.3% 36.036%);
-                background-color: #181818;
+                background-color: #1A2024;
             }
         }
 
         &:nth-child(14) {
             .shard {
                 -webkit-clip-path: polygon(14.008% 88.179%, 18.023% 93.464%, 16.653% 89.321%);
-                background-color: #181818;
+                background-color: #0C1019;
             }
         }
 
         &:nth-child(15) {
             .shard {
                 -webkit-clip-path: polygon(84.234% 7.893%, 90.231% 6.607%, 87.93% 5.75%);
-                background-color: #181818;
+                background-color: #D8E1E0;
             }
         }
 
         &:nth-child(16) {
             .shard {
                 -webkit-clip-path: polygon(59.9% 94.714%, 60.4% 99.9%, 63.6% 98.714%);
-                background-color: #181818;
+                background-color: #CFD8D7;
             }
         }
 
         &:nth-child(17) {
             .shard {
                 -webkit-clip-path: polygon(8.75% 52.607%, 6.123% 59.036%, 11.425% 57.321%);
-                background-color: #181818;
+                background-color: #C7D3D1;
             }
         }
 
         &:nth-child(18) {
             .shard {
                 -webkit-clip-path: polygon(70% 92%, 71% 94%, 72% 93%);
-                background-color: #181818;
+                background-color: #A7B7B6;
             }
         }
 
         &:nth-child(19) {
             .shard {
                 -webkit-clip-path: polygon(73.5% 18.857%, 76.3% 16.857%, 74.4% 14.429%);
-                background-color: #181818;
+                background-color: #A2ADAF;
             }
         }
 
         &:nth-child(20) {
             .shard {
                 -webkit-clip-path: polygon(80% 92%, 81% 94%, 82% 93%);
-                background-color: #181818;
+                background-color: #101010;
             }
         }
     }

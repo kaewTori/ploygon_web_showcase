@@ -254,8 +254,6 @@ ul {
         justify-content: center;
         align-items: flex-end;
         z-index: 0;
-        @include transition(0.5s);
-        @include transform(translateY(-15px));
 
         li {
             display: inline-block;
@@ -302,17 +300,17 @@ ul {
 @import "animal/04_jp_shark.scss";
 @import "animal/05_oren_stork.scss";
 @import "animal/06_white_shark.scss";
-@import "animal/smol_saw.scss";
-@import "animal/eu_eel.scss";
-@import "animal/blue_tuna.scss";
-@import "animal/man_ray.scss";
-@import "animal/gharial.scss";
-@import "animal/hawk_turtle.scss";
-@import "animal/pela_shark.scss";
-@import "animal/india_dolphin.scss";
-@import "animal/tri_alba.scss";
-@import "animal/icefish.scss";
-@import "animal/pinguin.scss";
-@import "animal/sei_whale.scss";
-@import "animal/n_right_whale.scss";
-@import "animal/blue_whale.scss";
+@import "animal/07_smol_saw.scss";
+@import "animal/08_eu_eel.scss";
+@import "animal/09_blue_tuna.scss";
+@import "animal/10_man_ray.scss";
+@import "animal/11_gharial.scss";
+@import "animal/12_hawk_turtle.scss";
+@import "animal/13_pela_shark.scss";
+@import "animal/14_india_dolphin.scss";
+@import "animal/15_tri_alba.scss";
+@import "animal/16_icefish.scss";
+@import "animal/17_pinguin.scss";
+@import "animal/18_sei_whale.scss";
+@import "animal/19_n_right_whale.scss";
+@import "animal/20_blue_whale.scss";

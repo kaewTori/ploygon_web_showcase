@@ -357,6 +357,7 @@ ul li {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  margin-top: 5%;
   z-index: 0;
 }
 .stage .animalinfo-wapper li {
@@ -1226,6 +1227,14 @@ ul li {
 }
 .oren_stork .animalinfo-wapper {
   color: #652626;
+}
+.oren_stork .menu-nav a {
+  border-color: #652626;
+  color: #292929;
+}
+.oren_stork .select-animal a {
+  border-color: #652626;
+  color: #292929;
 }
 .oren_stork .shard-wrap:nth-child(1) .shard {
   -webkit-clip-path: polygon(73.88% 26.3%, 64.48% 8.84%, 62.81% 12.54%);

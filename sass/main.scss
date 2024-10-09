@@ -96,6 +96,7 @@ ul {
     display: flex;
     align-items: center;
     position: absolute;
+    margin-top: -1.25%;
     @include transform(scale(0.5));
 }
 

@@ -2202,86 +2202,86 @@ ul li {
   height: 100%;
   position: absolute;
   z-index: -1;
-  background-color: #141414;
+  background-color: #092327;
 }
 .icefish .shard-wrap:nth-child(1) .shard {
-  -webkit-clip-path: polygon(12.762% 61.464%, 17.986% 76.893%, 21.367% 69.321%);
+  -webkit-clip-path: polygon(94.42% 36.5%, 68.06% 33.73%, 59.44% 40.13%);
   background-color: #50514E;
 }
 .icefish .shard-wrap:nth-child(2) .shard {
-  -webkit-clip-path: polygon(78.188% 35.179%, 83.275% 54.179%, 85.792% 43.179%);
+  -webkit-clip-path: polygon(68.06% 33.73%, 57.7% 27.98%, 46.9% 36.9%);
   background-color: #07080E;
 }
 .icefish .shard-wrap:nth-child(3) .shard {
-  -webkit-clip-path: polygon(83.584% 85.607%, 82.494% 97.893%, 89.503% 96.607%);
+  -webkit-clip-path: polygon(68.06% 33.73%, 59.44% 40.13%, 46.9% 36.9%);
   background-color: #45463F;
 }
 .icefish .shard-wrap:nth-child(4) .shard {
-  -webkit-clip-path: polygon(69.013% 68.464%, 64.753% 77.036%, 70.342% 74.179%);
+  -webkit-clip-path: polygon(59.44% 40.13%, 46.9% 36.9%, 12% 55.2%);
   background-color: #43443E;
 }
 .icefish .shard-wrap:nth-child(5) .shard {
-  -webkit-clip-path: polygon(18.5% 44.286%, 15.2% 42.286%, 15.9% 44.857%);
+  -webkit-clip-path: polygon(46.9% 36.9%, 31.26% 38.22%, 16.9% 52.49%);
   background-color: #1B1714;
 }
 .icefish .shard-wrap:nth-child(6) .shard {
-  -webkit-clip-path: polygon(28.027% 30.75%, 20.63% 44.75%, 30.912% 46.321%);
+  -webkit-clip-path: polygon(12% 55.2%, 1.35% 51.89%, 5.56% 73.1%);
   background-color: #151917;
 }
 .icefish .shard-wrap:nth-child(7) .shard {
-  -webkit-clip-path: polygon(30.5% 13.321%, 26.8% 10.321%, 31% 8.464%);
+  -webkit-clip-path: polygon(12% 55.2%, 5.56% 73.1%, 16.16% 59.55%);
   background-color: #3E3B33;
 }
 .icefish .shard-wrap:nth-child(8) .shard {
-  -webkit-clip-path: polygon(60.5% 58.036%, 62.6% 64.179%, 62.6% 58.036%);
+  -webkit-clip-path: polygon(12% 55.2%, 16.16% 59.55%, 61.95% 61.2%);
   background-color: #3F3A32;
 }
 .icefish .shard-wrap:nth-child(9) .shard {
-  -webkit-clip-path: polygon(13.4% 93.75%, 8.2% 93.464%, 12.7% 97.036%);
+  -webkit-clip-path: polygon(16.16% 59.55%, 29.7% 65.36%, 45.66% 60.81%);
   background-color: #79828D;
 }
 .icefish .shard-wrap:nth-child(10) .shard {
-  -webkit-clip-path: polygon(25% 92%, 25.5% 92.5%, 26% 92%);
+  -webkit-clip-path: polygon(12% 55.2%, 59.44% 40.13%, 64.72% 61.76%);
   background-color: #574E44;
 }
 .icefish .shard-wrap:nth-child(11) .shard {
-  -webkit-clip-path: polygon(6.5% 17.893%, 6.9% 10.893%, 2.8% 19.464%);
+  -webkit-clip-path: polygon(39.02% 54.53%, 54.45% 44.83%, 52.92% 60.48%);
   background-color: #191918;
 }
 .icefish .shard-wrap:nth-child(12) .shard {
-  -webkit-clip-path: polygon(32.1% 84%, 34.1% 86.429%, 35.5% 81.714%);
+  -webkit-clip-path: polygon(54.45% 44.83%, 52.92% 60.48%, 60.96% 51.49%);
   background-color: #B0AAA1;
 }
 .icefish .shard-wrap:nth-child(13) .shard {
-  -webkit-clip-path: polygon(32.3% 34.607%, 31.3% 39.607%, 33.3% 36.036%);
+  -webkit-clip-path: polygon(64.72% 61.76%, 59.44% 40.13%, 77.34% 55.79%);
   background-color: #84827A;
 }
 .icefish .shard-wrap:nth-child(14) .shard {
-  -webkit-clip-path: polygon(14.008% 88.179%, 18.023% 93.464%, 16.653% 89.321%);
+  -webkit-clip-path: polygon(59.44% 40.13%, 77.34% 55.79%, 94.42% 36.5%);
   background-color: #71726A;
 }
 .icefish .shard-wrap:nth-child(15) .shard {
-  -webkit-clip-path: polygon(84.234% 7.893%, 90.231% 6.607%, 87.93% 5.75%);
+  -webkit-clip-path: polygon(73.75% 38.42%, 75.2% 35.7%, 75.94% 40.66%);
   background-color: #C8C947;
 }
 .icefish .shard-wrap:nth-child(16) .shard {
-  -webkit-clip-path: polygon(59.9% 94.714%, 60.4% 99.9%, 63.6% 98.714%);
+  -webkit-clip-path: polygon(75.2% 35.7%, 75.94% 40.66%, 77.22% 38.1%);
   background-color: #2C2A23;
 }
 .icefish .shard-wrap:nth-child(17) .shard {
-  -webkit-clip-path: polygon(8.75% 52.607%, 6.123% 59.036%, 11.425% 57.321%);
+  -webkit-clip-path: polygon(77.34% 55.79%, 84.35% 47.86%, 98.38% 53.81%);
   background-color: #67645E;
 }
 .icefish .shard-wrap:nth-child(18) .shard {
-  -webkit-clip-path: polygon(70% 92%, 71% 94%, 72% 93%);
+  -webkit-clip-path: polygon(80.89% 51.82%, 84.35% 47.86%, 94.13% 52.1%);
   background-color: #AFAEAE;
 }
 .icefish .shard-wrap:nth-child(19) .shard {
-  -webkit-clip-path: polygon(73.5% 18.857%, 76.3% 16.857%, 74.4% 14.429%);
+  -webkit-clip-path: polygon(64.72% 61.76%, 59.93% 76.26%, 49.62% 76.13%);
   background-color: #171511;
 }
 .icefish .shard-wrap:nth-child(20) .shard {
-  -webkit-clip-path: polygon(80% 92%, 81% 94%, 82% 93%);
+  -webkit-clip-path: polygon(64.18% 60.6%, 51.3% 76.66%, 42.23% 66.3%);
   background-color: #464845;
 }
 

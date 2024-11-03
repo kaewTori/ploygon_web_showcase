@@ -289,13 +289,12 @@ ul {
     }
 }
 
-
 .wave {
     background: rgb(255 255 255 / 25%);
-    border-radius: 1000% 1000% 0 0;
+    border-radius: 200% 200% 0 0;
     position: fixed;
-    width: 250%;
-    height: 7em;
+    width: 200%;
+    height: 10em;
     animation: wave 10s -3s linear infinite;
     transform: translate3d(0, 0, 0);
     opacity: 0.5;
@@ -305,7 +304,7 @@ ul {
 }
 
 .wave:nth-of-type(2) {
-    bottom: -1.25em;
+    bottom: -1.5em;
     animation: wave 18s linear reverse infinite;
     opacity: 0.5;
 }

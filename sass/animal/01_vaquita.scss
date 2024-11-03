@@ -3,14 +3,18 @@
     height: 100%;
     position: absolute;
     z-index: -1;
-    background-color: #092327;
+    background: linear-gradient(180deg, #071D20 5%, #29616E 100%);
 
     .menu-nav a {
-        border-color: #AAD7DD;
+        border-color: #76B7C8;
     }
 
     .select-animal a {
-        border-color: #AAD7DD;
+        border-color: #76B7C8;
+    }
+
+    .animalinfo-wapper h2 li {
+         color: #76B7C8;
     }
 
     .shard-wrap {

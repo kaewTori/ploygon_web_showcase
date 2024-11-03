@@ -146,7 +146,7 @@ function animalStatesShimmer(t) {
         setTimeout(function() {
             t.removeClass("shimmer")
         }, 6e3)
-    }, 7e3)
+    }, 5e3)
 }
 
 newAnimal = 0;

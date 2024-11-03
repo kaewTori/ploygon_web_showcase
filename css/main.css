@@ -388,10 +388,10 @@ ul li {
 
 .wave {
   background: rgba(255, 255, 255, 0.25);
-  border-radius: 1000% 1000% 0 0;
+  border-radius: 200% 200% 0 0;
   position: fixed;
-  width: 250%;
-  height: 7em;
+  width: 200%;
+  height: 10em;
   animation: wave 10s -3s linear infinite;
   transform: translate3d(0, 0, 0);
   opacity: 0.5;
@@ -401,7 +401,7 @@ ul li {
 }
 
 .wave:nth-of-type(2) {
-  bottom: -1.25em;
+  bottom: -1.5em;
   animation: wave 18s linear reverse infinite;
   opacity: 0.5;
 }
@@ -654,104 +654,104 @@ ul li {
   }
 }
 .shimmer .exhibizone .stg-exhibi .shard-wrap:nth-child(1) .shard {
-  -webkit-animation: shimmer 0.3s 0.27s;
-  -moz-animation: shimmer 0.3s 0.27s;
-  animation: shimmer 0.3s 0.27s;
+  -webkit-animation: shimmer 0.3s 0.37s;
+  -moz-animation: shimmer 0.3s 0.37s;
+  animation: shimmer 0.3s 0.37s;
 }
 .shimmer .exhibizone .stg-exhibi .shard-wrap:nth-child(2) .shard {
-  -webkit-animation: shimmer 0.3s 0.34s;
-  -moz-animation: shimmer 0.3s 0.34s;
-  animation: shimmer 0.3s 0.34s;
+  -webkit-animation: shimmer 0.3s 0.44s;
+  -moz-animation: shimmer 0.3s 0.44s;
+  animation: shimmer 0.3s 0.44s;
 }
 .shimmer .exhibizone .stg-exhibi .shard-wrap:nth-child(3) .shard {
-  -webkit-animation: shimmer 0.3s 0.41s;
-  -moz-animation: shimmer 0.3s 0.41s;
-  animation: shimmer 0.3s 0.41s;
+  -webkit-animation: shimmer 0.3s 0.51s;
+  -moz-animation: shimmer 0.3s 0.51s;
+  animation: shimmer 0.3s 0.51s;
 }
 .shimmer .exhibizone .stg-exhibi .shard-wrap:nth-child(4) .shard {
-  -webkit-animation: shimmer 0.3s 0.48s;
-  -moz-animation: shimmer 0.3s 0.48s;
-  animation: shimmer 0.3s 0.48s;
+  -webkit-animation: shimmer 0.3s 0.58s;
+  -moz-animation: shimmer 0.3s 0.58s;
+  animation: shimmer 0.3s 0.58s;
 }
 .shimmer .exhibizone .stg-exhibi .shard-wrap:nth-child(5) .shard {
-  -webkit-animation: shimmer 0.3s 0.55s;
-  -moz-animation: shimmer 0.3s 0.55s;
-  animation: shimmer 0.3s 0.55s;
+  -webkit-animation: shimmer 0.3s 0.65s;
+  -moz-animation: shimmer 0.3s 0.65s;
+  animation: shimmer 0.3s 0.65s;
 }
 .shimmer .exhibizone .stg-exhibi .shard-wrap:nth-child(6) .shard {
-  -webkit-animation: shimmer 0.3s 0.62s;
-  -moz-animation: shimmer 0.3s 0.62s;
-  animation: shimmer 0.3s 0.62s;
+  -webkit-animation: shimmer 0.3s 0.72s;
+  -moz-animation: shimmer 0.3s 0.72s;
+  animation: shimmer 0.3s 0.72s;
 }
 .shimmer .exhibizone .stg-exhibi .shard-wrap:nth-child(7) .shard {
-  -webkit-animation: shimmer 0.3s 0.69s;
-  -moz-animation: shimmer 0.3s 0.69s;
-  animation: shimmer 0.3s 0.69s;
+  -webkit-animation: shimmer 0.3s 0.79s;
+  -moz-animation: shimmer 0.3s 0.79s;
+  animation: shimmer 0.3s 0.79s;
 }
 .shimmer .exhibizone .stg-exhibi .shard-wrap:nth-child(8) .shard {
-  -webkit-animation: shimmer 0.3s 0.76s;
-  -moz-animation: shimmer 0.3s 0.76s;
-  animation: shimmer 0.3s 0.76s;
+  -webkit-animation: shimmer 0.3s 0.86s;
+  -moz-animation: shimmer 0.3s 0.86s;
+  animation: shimmer 0.3s 0.86s;
 }
 .shimmer .exhibizone .stg-exhibi .shard-wrap:nth-child(9) .shard {
-  -webkit-animation: shimmer 0.3s 0.83s;
-  -moz-animation: shimmer 0.3s 0.83s;
-  animation: shimmer 0.3s 0.83s;
+  -webkit-animation: shimmer 0.3s 0.93s;
+  -moz-animation: shimmer 0.3s 0.93s;
+  animation: shimmer 0.3s 0.93s;
 }
 .shimmer .exhibizone .stg-exhibi .shard-wrap:nth-child(10) .shard {
-  -webkit-animation: shimmer 0.3s 0.9s;
-  -moz-animation: shimmer 0.3s 0.9s;
-  animation: shimmer 0.3s 0.9s;
+  -webkit-animation: shimmer 0.3s 1s;
+  -moz-animation: shimmer 0.3s 1s;
+  animation: shimmer 0.3s 1s;
 }
 .shimmer .exhibizone .stg-exhibi .shard-wrap:nth-child(11) .shard {
-  -webkit-animation: shimmer 0.3s 0.97s;
-  -moz-animation: shimmer 0.3s 0.97s;
-  animation: shimmer 0.3s 0.97s;
+  -webkit-animation: shimmer 0.3s 1.07s;
+  -moz-animation: shimmer 0.3s 1.07s;
+  animation: shimmer 0.3s 1.07s;
 }
 .shimmer .exhibizone .stg-exhibi .shard-wrap:nth-child(12) .shard {
-  -webkit-animation: shimmer 0.3s 1.04s;
-  -moz-animation: shimmer 0.3s 1.04s;
-  animation: shimmer 0.3s 1.04s;
+  -webkit-animation: shimmer 0.3s 1.14s;
+  -moz-animation: shimmer 0.3s 1.14s;
+  animation: shimmer 0.3s 1.14s;
 }
 .shimmer .exhibizone .stg-exhibi .shard-wrap:nth-child(13) .shard {
-  -webkit-animation: shimmer 0.3s 1.11s;
-  -moz-animation: shimmer 0.3s 1.11s;
-  animation: shimmer 0.3s 1.11s;
+  -webkit-animation: shimmer 0.3s 1.21s;
+  -moz-animation: shimmer 0.3s 1.21s;
+  animation: shimmer 0.3s 1.21s;
 }
 .shimmer .exhibizone .stg-exhibi .shard-wrap:nth-child(14) .shard {
-  -webkit-animation: shimmer 0.3s 1.18s;
-  -moz-animation: shimmer 0.3s 1.18s;
-  animation: shimmer 0.3s 1.18s;
+  -webkit-animation: shimmer 0.3s 1.28s;
+  -moz-animation: shimmer 0.3s 1.28s;
+  animation: shimmer 0.3s 1.28s;
 }
 .shimmer .exhibizone .stg-exhibi .shard-wrap:nth-child(15) .shard {
-  -webkit-animation: shimmer 0.3s 1.25s;
-  -moz-animation: shimmer 0.3s 1.25s;
-  animation: shimmer 0.3s 1.25s;
+  -webkit-animation: shimmer 0.3s 1.35s;
+  -moz-animation: shimmer 0.3s 1.35s;
+  animation: shimmer 0.3s 1.35s;
 }
 .shimmer .exhibizone .stg-exhibi .shard-wrap:nth-child(16) .shard {
-  -webkit-animation: shimmer 0.3s 1.32s;
-  -moz-animation: shimmer 0.3s 1.32s;
-  animation: shimmer 0.3s 1.32s;
+  -webkit-animation: shimmer 0.3s 1.42s;
+  -moz-animation: shimmer 0.3s 1.42s;
+  animation: shimmer 0.3s 1.42s;
 }
 .shimmer .exhibizone .stg-exhibi .shard-wrap:nth-child(17) .shard {
-  -webkit-animation: shimmer 0.3s 1.39s;
-  -moz-animation: shimmer 0.3s 1.39s;
-  animation: shimmer 0.3s 1.39s;
+  -webkit-animation: shimmer 0.3s 1.49s;
+  -moz-animation: shimmer 0.3s 1.49s;
+  animation: shimmer 0.3s 1.49s;
 }
 .shimmer .exhibizone .stg-exhibi .shard-wrap:nth-child(18) .shard {
-  -webkit-animation: shimmer 0.3s 1.46s;
-  -moz-animation: shimmer 0.3s 1.46s;
-  animation: shimmer 0.3s 1.46s;
+  -webkit-animation: shimmer 0.3s 1.56s;
+  -moz-animation: shimmer 0.3s 1.56s;
+  animation: shimmer 0.3s 1.56s;
 }
 .shimmer .exhibizone .stg-exhibi .shard-wrap:nth-child(19) .shard {
-  -webkit-animation: shimmer 0.3s 1.53s;
-  -moz-animation: shimmer 0.3s 1.53s;
-  animation: shimmer 0.3s 1.53s;
+  -webkit-animation: shimmer 0.3s 1.63s;
+  -moz-animation: shimmer 0.3s 1.63s;
+  animation: shimmer 0.3s 1.63s;
 }
 .shimmer .exhibizone .stg-exhibi .shard-wrap:nth-child(20) .shard {
-  -webkit-animation: shimmer 0.3s 1.6s;
-  -moz-animation: shimmer 0.3s 1.6s;
-  animation: shimmer 0.3s 1.6s;
+  -webkit-animation: shimmer 0.3s 1.7s;
+  -moz-animation: shimmer 0.3s 1.7s;
+  animation: shimmer 0.3s 1.7s;
 }
 
 @-webkit-keyframes shimmer {
@@ -788,7 +788,7 @@ ul li {
   }
 }
 @keyframes wave {
-  0% {
+  3% {
     transform: translateX(1);
   }
   25% {
@@ -907,13 +907,16 @@ ul li {
   height: 100%;
   position: absolute;
   z-index: -1;
-  background-color: #092327;
+  background: linear-gradient(180deg, #071D20 5%, #29616E 100%);
 }
 .vaquita .menu-nav a {
-  border-color: #AAD7DD;
+  border-color: #76B7C8;
 }
 .vaquita .select-animal a {
-  border-color: #AAD7DD;
+  border-color: #76B7C8;
+}
+.vaquita .animalinfo-wapper h2 li {
+  color: #76B7C8;
 }
 .vaquita .shard-wrap:nth-child(1) .shard {
   -webkit-clip-path: polygon(41.08% 30.57%, 47.89% 18.25%, 54.48% 12.78%);
@@ -2162,10 +2165,16 @@ ul li {
   height: 100%;
   position: absolute;
   z-index: -1;
-  background: linear-gradient(315deg, #08203E 3%, #557C93 98%);
-  animation: gradient 15s ease infinite;
-  background-size: 400% 400%;
-  background-attachment: fixed;
+  background: linear-gradient(180deg, #08203E 0%, #557C93 100%);
+}
+.tri_alba .menu-nav a {
+  border-color: #BFCED6;
+}
+.tri_alba .select-animal a {
+  border-color: #BFCED6;
+}
+.tri_alba .animalinfo-wapper h2 li {
+  color: #BFCED6;
 }
 .tri_alba .shard-wrap:nth-child(1) .shard {
   -webkit-clip-path: polygon(76.15% 1.04%, 72.11% 17.38%, 65.5% 17.2%);

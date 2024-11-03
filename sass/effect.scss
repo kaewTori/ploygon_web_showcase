@@ -155,23 +155,22 @@
 }
 }
 
-
 @include keyframes(shimmer) {
     0% {
-        background-color: rgba(255, 255, 255, 0);
+        background-color: rgba(255, 255, 255, 0.4);
     }
 
     35% {
-        background-color: rgba(255, 255, 255, 0.3);
+        background-color: rgba(255, 255, 255, 0.7);
     }
 
     100% {
-        background-color: rgba(255, 255, 255, 0);
+        background-color: rgba(255, 255, 255, 0.4);
     }
 }
 
 @keyframes wave {
-    2% {
+    0% {
         transform: translateX(1);
     }
 
@@ -189,5 +188,17 @@
 
     100% {
         transform: translateX(1);
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
     }
 }

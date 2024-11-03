@@ -14,6 +14,7 @@ body {
     padding: 0;
     overflow: hidden;
     font-family: $main_font;
+
 }
 
 a {
@@ -293,7 +294,7 @@ ul {
     background: rgb(255 255 255 / 25%);
     border-radius: 1000% 1000% 0 0;
     position: fixed;
-    width: 200%;
+    width: 250%;
     height: 7em;
     animation: wave 10s -3s linear infinite;
     transform: translate3d(0, 0, 0);
@@ -309,11 +310,6 @@ ul {
     opacity: 0.5;
 }
 
-.wave:nth-of-type(3) {
-    bottom: -2.5em;
-    animation: wave 20s -1s reverse infinite;
-    opacity: 0.6;
-}
 
 @import "animal/animation/state_two.scss";
 

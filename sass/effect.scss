@@ -145,7 +145,7 @@
                 @for $i from 1 through 20 {
                     &:nth-child(#{$i}) .shard {
                         $ad: (
-                            $i * 0.07s + 0.3s
+                            $i * 0.07s + 0.2s
                         );
                     @include animation(shimmer 0.3s $ad);
                 }

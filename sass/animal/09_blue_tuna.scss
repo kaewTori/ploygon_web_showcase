@@ -3,7 +3,7 @@
     height: 100%;
     position: absolute;
     z-index: -1;
-    background-color: #4E8098;
+    background: linear-gradient(180deg, #6B8138 0%, #A5B578 100%);
 
     .shard-wrap {
         &:nth-child(1) {

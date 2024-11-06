@@ -6,15 +6,23 @@
     background: linear-gradient(180deg, #FEE69C 0%, #FEF2C7 100%);
 
     .menu-nav a {
-        border-color: #76B7C8;
+        border-color: #010d38;
+        color: #010d38;
+
     }
 
     .select-animal a {
-        border-color: #76B7C8;
+        border-color: #010d38;
+        color: #010d38;
     }
 
-    .animalinfo-wapper h2 li {
-         color: #76B7C8;
+    .animalinfo-wapper {
+        li {
+            color: #010d38;
+        }
+        h2{
+            color: #010d38;
+        }
     }
 
     .shard-wrap {

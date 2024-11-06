@@ -3,16 +3,16 @@
     height: 100%;
     position: absolute;
     z-index: -1;
-    background: linear-gradient(180deg, #F7F057 0%, #FBF795 100%);
+    background: linear-gradient(180deg, #f7c2e6 2%, #9d80cb 100%);
 
-    .animalinfo-wapper {
-        li {
-            color: #c3845a;
-        }
-        h2{
-            color: #CFA589;
-        }
-    }
+    // .animalinfo-wapper {
+    //     li {
+    //         color: #c3845a;
+    //     }
+    //     h2{
+    //         color: #CFA589;
+    //     }
+    // }
 
     .shard-wrap {
         &:nth-child(1) {

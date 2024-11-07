@@ -47,15 +47,15 @@ function previousAnimalProcess() {
 
 function nextorprevanimal() {
     $("#animalchanger").attr("class", animalList[newAnimal]),
-        $(".next .popout").attr("popanimal", animalList[newAnimal]),
-        $(".prev .popout").attr("popanimal", animalList[newAnimal]),
-        $(".popout").addClass("text-change"),
+        $(".next .btn__text").attr("popanimal", animalNames[newAnimal]),
+        $(".prev .btn__text").attr("popanimal", animalNames[newAnimal]),
+        $(".btn__text").addClass("text-change"),
         $(".animalinfo").addClass("text-change"),
 
         setTimeout(function () {
             $(".animalinfo h2").text(animalNames[newAnimal]),
                 $(".animalinfo li:nth-child(1) span").text((newAnimal + 1)),
-                $(".popout").removeClass("text-change"),
+                $(".btn__text").removeClass("text-change"),
                 $(".animalinfo").removeClass("text-change"),
 
                 $(".overlay .detail h2").html(animalScientificName[newAnimal]),
@@ -63,9 +63,9 @@ function nextorprevanimal() {
                 $(".overlay .detail p:nth-child(3)").html(animalDetail2[newAnimal]),
                 $(".overlay .detail p:nth-child(4)").html(animalDetail3[newAnimal]),
 
-                0 == newAnimal ? ($(".prev .popout").text(animalNames[19]), $(".next .popout").text(animalNames[1])) :
-                19 == newAnimal ? ($(".prev .popout").text(animalNames[18]), $(".next .popout").text(animalNames[0])) :
-                ($(".prev .popout").text(animalNames[newAnimal - 1]), $(".next .popout").text(animalNames[newAnimal + 1]))
+                0 == newAnimal ? ($(".prev .btn__text").text(animalNames[19]), $(".next .btn__text").text(animalNames[1])) :
+                19 == newAnimal ? ($(".prev .btn__text").text(animalNames[18]), $(".next .btn__text").text(animalNames[0])) :
+                ($(".prev .btn__text").text(animalNames[newAnimal - 1]), $(".next .btn__text").text(animalNames[newAnimal + 1]))
         }, 150)
 }
 

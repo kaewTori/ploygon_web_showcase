@@ -132,45 +132,45 @@ ul {
         text-align: right;
         z-index: 9998;
 
-        a {
-            border-width: 2px;
-            border-style: dashed;
-            border-radius: 100px;
-            padding: 10px;
+        // a {
+        //     border-width: 2px;
+        //     border-style: dashed;
+        //     border-radius: 100px;
+        //     padding: 10px;
 
-            &:hover {
-                border-width: 5px;
-                @include transition(0.5s)
-            }
+        //     &:hover {
+        //         border-width: 5px;
+        //         @include transition(0.5s)
+        //     }
 
-            .popout {
-                position: absolute;
-                right: 100px;
-                top: 6px;
+        // }
+
+        .popout {
+            position: absolute;
+            right: 100px;
+            top: 6px;
+            opacity: 0;
+            pointer-events: none;
+            @include transform(translateX(8px));
+
+            &.text-change {
                 opacity: 0;
-                pointer-events: none;
-                @include transform(translateX(8px));
+                @include transition(0.15s);
+                @include transform(translateY(5px));
+            }
+        }
+
+        &:hover {
+            .popout {
+                @include transform(translateX(0) !important);
+                opacity: 1;
 
                 &.text-change {
                     opacity: 0;
-                    @include transition(0.15s);
+                    @include transition(0.14s);
                     @include transform(translateY(5px));
                 }
             }
-
-            &:hover {
-                .popout {
-                    @include transform(translateX(0) !important);
-                    opacity: 1;
-
-                    &.text-change {
-                        opacity: 0;
-                        @include transition(0.14s);
-                        @include transform(translateY(5px));
-                    }
-                }
-            }
-
         }
 
         .thobbing {
@@ -193,19 +193,6 @@ ul {
             right: auto;
             left: 80px;
             @include transform(translateX(-8px));
-        }
-
-        a {
-            border-width: 2px;
-            border-style: dashed;
-            border-radius: 100px;
-            padding: 10px;
-
-            &:hover {
-                border-width: 5px;
-                @include transition(0.5s)
-            }
-
         }
 
         .autoplay {
@@ -272,19 +259,19 @@ ul {
         top: 90%;
         right: 15px;
 
-        a {
-            border-width: 2px;
-            border-color: #27AFBB;
-            border-style: dashed;
-            border-radius: 100px;
-            padding: 10px;
+        // a {
+        //     border-width: 2px;
+        //     border-color: #27AFBB;
+        //     border-style: dashed;
+        //     border-radius: 100px;
+        //     padding: 10px;
 
-            &:hover {
-                border-width: 5px;
-                @include transition(0.5s)
-            }
+        //     &:hover {
+        //         border-width: 5px;
+        //         @include transition(0.5s)
+        //     }
 
-        }
+        // }
 
     }
 }
@@ -307,6 +294,73 @@ ul {
     bottom: -1.5em;
     animation: wave 18s linear reverse infinite;
     opacity: 0.5;
+}
+
+.btn {
+    display: inline-block;
+    color: #ffffff;
+    padding: 32px;
+    position: relative;
+    letter-spacing: 1px;
+
+    &__circle,
+    &__text,
+    &__white-circle {
+        position: absolute;
+    }
+
+    &__circle {
+        top: 0;
+        left: 0;
+        height: 100%;
+        border-radius: 100%;
+        width: 100%;
+        box-shadow: 0 0 1px 1px #fff;
+        transition: 0.3s linear;
+    }
+
+    &__white-circle {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        width: 56px;
+        height: 56px;
+        border-radius: 100%;
+        background: #ffffff;
+        display: flex;
+        transition: 0.3s ease-in-out;
+
+        svg {
+            width: 24px;
+            height: 24px;
+            margin: auto;
+        }
+    }
+
+    &__text {
+        top: 50%;
+        right: 50%;
+        transform: translateY(-50%);
+        white-space: nowrap;
+        z-index: 2;
+        padding: 24px 8px;
+        transition: 0.3s linear;
+
+    }
+
+    &:hover {
+        .btn__circle {
+            transform: scale(0);
+        }
+
+        .btn__white-circle {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .btn__text {
+            transform: translate(-40px, -50%);
+        }
+    }
 }
 
 

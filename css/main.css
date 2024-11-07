@@ -215,19 +215,7 @@ ul li {
   text-align: right;
   z-index: 9998;
 }
-.stage .select-animal a {
-  border-width: 2px;
-  border-style: dashed;
-  border-radius: 100px;
-  padding: 10px;
-}
-.stage .select-animal a:hover {
-  border-width: 5px;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  transition: 0.5s;
-}
-.stage .select-animal a .popout {
+.stage .select-animal .popout {
   position: absolute;
   right: 100px;
   top: 6px;
@@ -239,7 +227,7 @@ ul li {
   -o-transform: translateX(8px);
   transform: translateX(8px);
 }
-.stage .select-animal a .popout.text-change {
+.stage .select-animal .popout.text-change {
   opacity: 0;
   -webkit-transition: 0.15s;
   -moz-transition: 0.15s;
@@ -250,7 +238,7 @@ ul li {
   -o-transform: translateY(5px);
   transform: translateY(5px);
 }
-.stage .select-animal a:hover .popout {
+.stage .select-animal:hover .popout {
   -webkit-transform: translateX(0) !important;
   -moz-transform: translateX(0) !important;
   -ms-transform: translateX(0) !important;
@@ -258,7 +246,7 @@ ul li {
   transform: translateX(0) !important;
   opacity: 1;
 }
-.stage .select-animal a:hover .popout.text-change {
+.stage .select-animal:hover .popout.text-change {
   opacity: 0;
   -webkit-transition: 0.14s;
   -moz-transition: 0.14s;
@@ -288,18 +276,6 @@ ul li {
   -ms-transform: translateX(-8px);
   -o-transform: translateX(-8px);
   transform: translateX(-8px);
-}
-.stage .menu-nav a {
-  border-width: 2px;
-  border-style: dashed;
-  border-radius: 100px;
-  padding: 10px;
-}
-.stage .menu-nav a:hover {
-  border-width: 5px;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  transition: 0.5s;
 }
 .stage .menu-nav .autoplay {
   margin: 50px 0 50px 0;
@@ -372,19 +348,6 @@ ul li {
   top: 90%;
   right: 15px;
 }
-.stage .aboutme a {
-  border-width: 2px;
-  border-color: #27AFBB;
-  border-style: dashed;
-  border-radius: 100px;
-  padding: 10px;
-}
-.stage .aboutme a:hover {
-  border-width: 5px;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  transition: 0.5s;
-}
 
 .wave {
   background: rgba(255, 255, 255, 0.25);
@@ -404,6 +367,60 @@ ul li {
   bottom: -1.5em;
   animation: wave 18s linear reverse infinite;
   opacity: 0.5;
+}
+
+.btn {
+  display: inline-block;
+  color: #ffffff;
+  padding: 32px;
+  position: relative;
+  letter-spacing: 1px;
+}
+.btn__circle, .btn__text, .btn__white-circle {
+  position: absolute;
+}
+.btn__circle {
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 100%;
+  width: 100%;
+  box-shadow: 0 0 1px 1px #fff;
+  transition: 0.3s linear;
+}
+.btn__white-circle {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  background: #ffffff;
+  display: flex;
+  transition: 0.3s ease-in-out;
+}
+.btn__white-circle svg {
+  width: 24px;
+  height: 24px;
+  margin: auto;
+}
+.btn__text {
+  top: 50%;
+  right: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  z-index: 2;
+  padding: 24px 8px;
+  transition: 0.3s linear;
+}
+.btn:hover .btn__circle {
+  transform: scale(0);
+}
+.btn:hover .btn__white-circle {
+  transform: translate(-50%, -50%) scale(1);
+}
+.btn:hover .btn__text {
+  transform: translate(-40px, -50%);
 }
 
 .overlay {

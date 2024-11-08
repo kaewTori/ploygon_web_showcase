@@ -178,8 +178,7 @@ $(document).ready(function () {
             $(".overlay").toggleClass("active"),
                 setTimeout(function () {
                     $(".overlay div").removeClass("active")
-                }, 500),
-                $("body.slideshow-on").length ? turnoffslideshow() : startslideshow()
+                }, 500)
 
         }),
         $(".aboutme button").on("click", function () {

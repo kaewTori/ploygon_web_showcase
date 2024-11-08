@@ -14,7 +14,7 @@ function startexhibition() {
 
 function sizeshards() {
     $(".stg-exhibi").each(function () {
-        var t = 0.99* $(window).width(),
+        var t = 0.99 * $(window).width(),
             a = .625 * t,
             n = -0.2 * (a / 2);
         $(this).each(function () {
@@ -64,8 +64,8 @@ function nextorprevanimal() {
                 $(".overlay .detail p:nth-child(4)").html(animalDetail3[newAnimal]),
 
                 0 == newAnimal ? ($(".prev .btn__text").text(animalNames[19]), $(".next .btn__text").text(animalNames[1])) :
-                19 == newAnimal ? ($(".prev .btn__text").text(animalNames[18]), $(".next .btn__text").text(animalNames[0])) :
-                ($(".prev .btn__text").text(animalNames[newAnimal - 1]), $(".next .btn__text").text(animalNames[newAnimal + 1]))
+                    19 == newAnimal ? ($(".prev .btn__text").text(animalNames[18]), $(".next .btn__text").text(animalNames[0])) :
+                        ($(".prev .btn__text").text(animalNames[newAnimal - 1]), $(".next .btn__text").text(animalNames[newAnimal + 1]))
         }, 150)
 }
 
@@ -91,7 +91,7 @@ function startslideshow() {
         setTimeout(function () {
             $(".menu-nav li:nth-child(2) .popout").removeClass("text-change"),
                 $(".menu-nav li:nth-child(2) .btn__textR").text("stop")
-                $(".menu-nav li:nth-child(2) a path").attr("d", pauseSvg)
+            $(".menu-nav li:nth-child(2) a path").attr("d", pauseSvg)
         }, 150),
         slideshowvar += 1,
         slideshowquery()
@@ -124,30 +124,30 @@ function randomAnimal() {
 }
 
 function animalStates(t) {
-    setInterval(function() {
+    setInterval(function () {
         t.removeClass("state-four"),
-        setTimeout(function() {
-            t.addClass("state-two")
-        }, 1e3),
-        setTimeout(function() {
-            t.removeClass("state-two"),
-            t.addClass("state-three")
-        }, 2e3),
-        setTimeout(function() {
-            t.removeClass("state-three"),
-            t.addClass("state-four")
-        }, 3e3)
+            setTimeout(function () {
+                t.addClass("state-two")
+            }, 1e3),
+            setTimeout(function () {
+                t.removeClass("state-two"),
+                    t.addClass("state-three")
+            }, 2e3),
+            setTimeout(function () {
+                t.removeClass("state-three"),
+                    t.addClass("state-four")
+            }, 3e3)
     }, 4e3)
 }
 
 function animalStatesShimmer(t) {
-    setInterval(function() {
-        setTimeout(function() {
+    setInterval(function () {
+        setTimeout(function () {
             t.addClass("shimmer")
         }, 4e3),
-        setTimeout(function() {
-            t.removeClass("shimmer")
-        }, 6e3)
+            setTimeout(function () {
+                t.removeClass("shimmer")
+            }, 6e3)
     }, 5e3)
 }
 
@@ -167,17 +167,20 @@ $(document).ready(function () {
         }),
         $(".thobbing").on("click", function () {
             overlayContent = ".overlay .detail",
-                overlayprocess()
+                overlayprocess(),
+                $("body.slideshow-on").length ? turnoffslideshow() : ""
         }),
         $(".all-animal").on("click", function () {
             overlayContent = ".overlay .all-animal-stg"
-                overlayprocess()
+            overlayprocess()
         }),
         $(".overlay .close").on("click", function () {
             $(".overlay").toggleClass("active"),
                 setTimeout(function () {
                     $(".overlay div").removeClass("active")
-                }, 500)
+                }, 500),
+                $("body.slideshow-on").length ? turnoffslideshow() : startslideshow()
+
         }),
         $(".aboutme button").on("click", function () {
             overlayContent = ".overlay .author",
@@ -199,21 +202,21 @@ $(document).ready(function () {
                 setTimeout(function () {
                     $(".menu-nav li:nth-child(3) .popout").removeClass("text-change"),
                         $(".menu-nav li:nth-child(3) .btn__textR").text("Get that racket off")
-                        $(".menu-nav li:nth-child(3) a path").attr("d", muteSvg)
+                    $(".menu-nav li:nth-child(3) a path").attr("d", muteSvg)
                 }, 150)) : (soundManager.mute(),
                     $(this).addClass("muted"),
                     $(".menu-nav li:nth-child(3) .popout").addClass("text-change"),
                     setTimeout(function () {
                         $(".menu-nav li:nth-child(3) .popout").removeClass("text-change"),
                             $(".menu-nav li:nth-child(3) .btn__textR").text("Beautify with sound")
-                            $(".menu-nav li:nth-child(3) a path").attr("d", musicSvg)
-                        }, 150)
+                        $(".menu-nav li:nth-child(3) a path").attr("d", musicSvg)
+                    }, 150)
             )
         }),
-        $("body").each(function() {
+        $("body").each(function () {
             animalStates($(this))
         }),
-        $("body").each(function() {
+        $("body").each(function () {
             animalStatesShimmer($(this))
         }),
         sizeshards()

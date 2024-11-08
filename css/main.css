@@ -343,10 +343,23 @@ ul li {
   font-weight: 600;
   font-size: 3.5rem;
 }
-.stage .aboutme {
-  position: absolute;
-  top: 90%;
-  right: 15px;
+
+.aboutme {
+  position: fixed;
+  right: 3%;
+  transform: translate(-3%, -3%) scale(1);
+}
+.aboutme .aboutme-btn {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  width: 50px;
+  height: 50px;
+  transition: 0.5s;
+}
+.aboutme .aboutme-btn:hover {
+  transition: 0.5s;
+  transform: translateY(-10px);
 }
 
 .wave {
@@ -376,7 +389,7 @@ ul li {
   position: relative;
   letter-spacing: 1px;
 }
-.btn__circle, .btn__text, .btn__white-circle {
+.btn__circle, .btn__text, .btn__textR, .btn__white-circle {
   position: absolute;
 }
 .btn__circle {
@@ -410,6 +423,14 @@ ul li {
   transform: translateY(-50%);
   white-space: nowrap;
   z-index: 2;
+  padding: 24px 15px;
+  transition: 0.3s linear;
+}
+.btn__textR {
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  z-index: 2;
   padding: 24px 8px;
   transition: 0.3s linear;
 }
@@ -422,9 +443,13 @@ ul li {
 .btn:hover .btn__text {
   transform: translate(-40px, -50%);
 }
+.btn:hover .btn__textR {
+  transform: translate(40px, -50%);
+  content: "Start";
+}
 
-button,
-button::after {
+.detail-btn,
+.detail-btn::after {
   font-size: 20px;
   border: none;
   border-radius: 5px;
@@ -437,9 +462,10 @@ button::after {
   border-radius: 100%;
   background-color: #FCFCFC;
   mask-image: url("../asset/grit.png");
+  transition: 0.5s;
 }
 
-button::after {
+.detail-btn::after {
   --move1: inset(50% 50% 50% 50%);
   --move2: inset(31% 0 40% 0);
   --move3: inset(39% 0 15% 0);
@@ -456,18 +482,7 @@ button::after {
   display: block;
 }
 
-button:hover::after {
-  color: #FCFCFC;
-  animation: glitch_4011 1s;
-  text-shadow: 10 10px 10px black;
-  animation-timing-function: steps(2, end);
-  text-shadow: -3px -3px 0px red, 3px 3px 0px #E94BE8;
-  background-color: transparent;
-  border: 3px solid red;
-  width: 50px;
-}
-
-button:hover {
+.detail-btn:hover {
   color: #FCFCFC;
   cursor: pointer;
   background-color: transparent;
@@ -885,52 +900,6 @@ button:hover {
   }
   100% {
     background-position: 0% 0%;
-  }
-}
-@keyframes glitch_4011 {
-  0% {
-    clip-path: var(--move1);
-    transform: translate(0px, -10px);
-  }
-  10% {
-    clip-path: var(--move2);
-    transform: translate(-10px, 10px);
-  }
-  20% {
-    clip-path: var(--move3);
-    transform: translate(10px, 0px);
-  }
-  30% {
-    clip-path: var(--move4);
-    transform: translate(-10px, 10px);
-  }
-  40% {
-    clip-path: var(--move5);
-    transform: translate(10px, -10px);
-  }
-  50% {
-    clip-path: var(--move6);
-    transform: translate(-10px, 10px);
-  }
-  60% {
-    clip-path: var(--move1);
-    transform: translate(10px, -10px);
-  }
-  70% {
-    clip-path: var(--move3);
-    transform: translate(-10px, 10px);
-  }
-  80% {
-    clip-path: var(--move2);
-    transform: translate(10px, -10px);
-  }
-  90% {
-    clip-path: var(--move4);
-    transform: translate(-10px, 10px);
-  }
-  100% {
-    clip-path: var(--move1);
-    transform: translate(0);
   }
 }
 .start_seq {

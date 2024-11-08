@@ -90,7 +90,8 @@ function startslideshow() {
         $(".menu-nav li:nth-child(2) .popout").addClass("text-change"),
         setTimeout(function () {
             $(".menu-nav li:nth-child(2) .popout").removeClass("text-change"),
-                $(".menu-nav li:nth-child(2) .popout").text("stop")
+                $(".menu-nav li:nth-child(2) .btn__textR").text("stop")
+                $(".menu-nav li:nth-child(2) a path").attr("d", pauseSvg)
         }, 150),
         slideshowvar += 1,
         slideshowquery()
@@ -102,7 +103,8 @@ function turnoffslideshow() {
         $(".menu-nav li:nth-child(2) .popout").addClass("text-change"),
         setTimeout(function () {
             $(".menu-nav li:nth-child(2) .popout").removeClass("text-change"),
-                $(".menu-nav li:nth-child(2) .popout").text("Cycle Through")
+                $(".menu-nav li:nth-child(2) .btn__textR").text("Cycle Through"),
+                $(".menu-nav li:nth-child(2) a path").attr("d", playButtonSvg)
         }, 150),
         $(".slideshow-on").removeClass("slideshow-on")
 }
@@ -177,7 +179,7 @@ $(document).ready(function () {
                     $(".overlay div").removeClass("active")
                 }, 500)
         }),
-        $(".aboutme a").on("click", function () {
+        $(".aboutme button").on("click", function () {
             overlayContent = ".overlay .author",
                 overlayprocess()
         }),
@@ -196,16 +198,16 @@ $(document).ready(function () {
                 $(".menu-nav li:nth-child(3) .popout").addClass("text-change"),
                 setTimeout(function () {
                     $(".menu-nav li:nth-child(3) .popout").removeClass("text-change"),
-                        $(".menu-nav li:nth-child(3) .popout").text("Get that racket off"),
-                        $(".menu-nav li:nth-child(3) a").text("music On")
+                        $(".menu-nav li:nth-child(3) .btn__textR").text("Get that racket off")
+                        $(".menu-nav li:nth-child(3) a path").attr("d", muteSvg)
                 }, 150)) : (soundManager.mute(),
                     $(this).addClass("muted"),
                     $(".menu-nav li:nth-child(3) .popout").addClass("text-change"),
                     setTimeout(function () {
                         $(".menu-nav li:nth-child(3) .popout").removeClass("text-change"),
-                            $(".menu-nav li:nth-child(3) .popout").text("Beautify with sound")
-                        $(".menu-nav li:nth-child(3) a").text("music Off")
-                    }, 150)
+                            $(".menu-nav li:nth-child(3) .btn__textR").text("Beautify with sound")
+                            $(".menu-nav li:nth-child(3) a path").attr("d", musicSvg)
+                        }, 150)
             )
         }),
         $("body").each(function() {

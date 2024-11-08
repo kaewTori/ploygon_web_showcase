@@ -132,19 +132,6 @@ ul {
         text-align: right;
         z-index: 9998;
 
-        // a {
-        //     border-width: 2px;
-        //     border-style: dashed;
-        //     border-radius: 100px;
-        //     padding: 10px;
-
-        //     &:hover {
-        //         border-width: 5px;
-        //         @include transition(0.5s)
-        //     }
-
-        // }
-
         .popout {
             position: absolute;
             right: 100px;
@@ -253,27 +240,28 @@ ul {
             font-size: 3.5rem;
         }
     }
+}
 
-    .aboutme {
-        position: absolute;
-        top: 90%;
-        right: 15px;
+.aboutme {
+    position: fixed;
+    right: 3%;
+    transform: translate(-3%, -3%) scale(1);
 
-        // a {
-        //     border-width: 2px;
-        //     border-color: #27AFBB;
-        //     border-style: dashed;
-        //     border-radius: 100px;
-        //     padding: 10px;
 
-        //     &:hover {
-        //         border-width: 5px;
-        //         @include transition(0.5s)
-        //     }
-
-        // }
-
+    .aboutme-btn {
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        width: 50px;
+        height: 50px;
+        transition: 0.5s;
     }
+
+    .aboutme-btn:hover {
+        transition: 0.5s;
+        transform: translateY(-10px);
+    }
+
 }
 
 .wave {
@@ -305,6 +293,7 @@ ul {
 
     &__circle,
     &__text,
+    &__textR,
     &__white-circle {
         position: absolute;
     }
@@ -343,10 +332,19 @@ ul {
         transform: translateY(-50%);
         white-space: nowrap;
         z-index: 2;
-        padding: 24px 8px;
+        padding: 24px 15px;
         transition: 0.3s linear;
 
     }
+
+    &__textR {
+        top: 50%;
+        transform: translateY(-50%);
+        white-space: nowrap;
+        z-index: 2;
+        padding: 24px 8px;
+        transition: 0.3s linear;
+      }
 
     &:hover {
         .btn__circle {
@@ -360,11 +358,16 @@ ul {
         .btn__text {
             transform: translate(-40px, -50%);
         }
+
+        .btn__textR {
+            transform: translate(40px, -50%);
+            content: "Start";
+        }
     }
 }
 
-button,
-button::after {
+.detail-btn,
+.detail-btn::after {
     font-size: 20px;
     border: none;
     border-radius: 5px;
@@ -377,10 +380,11 @@ button::after {
     border-radius: 100%;
     background-color: #FCFCFC;
     mask-image: url("../asset/grit.png");
+    transition: 0.5s;
     
 }
 
-button::after {
+.detail-btn::after {
     --move1: inset(50% 50% 50% 50%);
     --move2: inset(31% 0 40% 0);
     --move3: inset(39% 0 15% 0);
@@ -398,19 +402,8 @@ button::after {
 
 }
 
-button:hover::after {
-    color: #FCFCFC;
-    animation: glitch_4011 1s;
-    text-shadow: 10 10px 10px black;
-    animation-timing-function: steps(2, end);
-    text-shadow: -3px -3px 0px red, 3px 3px 0px #E94BE8;
-    background-color: transparent;
-    border: 3px solid red;
-    width: 50px;
 
-}
-
-button:hover {
+.detail-btn:hover {
     color: #FCFCFC;
     cursor: pointer;
     background-color: transparent;

@@ -174,22 +174,13 @@ function turnOnAnimalNav() {
 }
 function turnoffanimalnav() {
     "" != prevAnimal && $("#animalchanger").attr("class", prevAnimal),
-    $("body").removeClass("all-animals"),
-    $("body").addClass("slow-polygons"),
-    animationstatequestion(),
+    $(".all-animals").addClass("inactive"),
     $(".hover-detector").removeClass("active"),
     $(".hover-detector div").removeClass("active-animal"),
     $(".animal-nav-content").removeClass("active"),
     setTimeout(function() {
-        $(".animal-nav-content").addClass("inactive"),
-        $(".hover-detector").addClass("inactive")
-    }, 500),
-    setTimeout(function() {
-        $(".shadow").removeClass("inactive")
-    }, 1e3),
-    setTimeout(function() {
-        $("body").removeClass("slow-polygons")
-    }, 1500)
+        $(".animal-nav-content").addClass("inactive")
+    }, 500)
 }
 
 newAnimal = 0;

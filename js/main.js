@@ -151,6 +151,47 @@ function animalStatesShimmer(t) {
     }, 5e3)
 }
 
+function turnOnAnimalNav() {
+    prevAnimal = $("#animalchanger").attr("class"),
+    $(".all-animals-off-btn .popout span").text(animalNames[newAnimal]),
+    $("#animalchanger").removeClass(),
+    $(".all-animals").removeClass("inactive"),
+    $("body").removeClass("animal-animations-on"),
+    $(".shadow").addClass("inactive"),
+    $(".hover-detector").removeClass("inactive"),
+    $(".animal-nav-content").removeClass("inactive"),
+    $("body").addClass("earlyburst"),
+    setTimeout(function() {
+        $("body").removeClass("earlyburst")
+    }, 500),
+    setTimeout(function() {
+        $(".hover-detector div:nth-child(" + (newAnimal + 1) + ")").addClass("active-animal")
+    }, 700),
+    setTimeout(function() {
+        $(".hover-detector").addClass("active"),
+        $(".animal-nav-content").addClass("active")
+    }, 5)
+}
+function turnoffanimalnav() {
+    "" != prevAnimal && $("#animalchanger").attr("class", prevAnimal),
+    $("body").removeClass("all-animals"),
+    $("body").addClass("slow-polygons"),
+    animationstatequestion(),
+    $(".hover-detector").removeClass("active"),
+    $(".hover-detector div").removeClass("active-animal"),
+    $(".animal-nav-content").removeClass("active"),
+    setTimeout(function() {
+        $(".animal-nav-content").addClass("inactive"),
+        $(".hover-detector").addClass("inactive")
+    }, 500),
+    setTimeout(function() {
+        $(".shadow").removeClass("inactive")
+    }, 1e3),
+    setTimeout(function() {
+        $("body").removeClass("slow-polygons")
+    }, 1500)
+}
+
 newAnimal = 0;
 slideshowvar = 0;
 finishedAnimals = 21;
@@ -168,11 +209,11 @@ $(document).ready(function () {
         $(".thobbing").on("click", function () {
             overlayContent = ".overlay .detail",
                 overlayprocess(),
-                $("body.slideshow-on").length ? turnoffslideshow() : ""
+                turnoffslideshow()
         }),
         $(".all-animal").on("click", function () {
-            overlayContent = ".overlay .all-animal-stg"
-            overlayprocess()
+            turnOnAnimalNav(),
+            turnoffslideshow()
         }),
         $(".overlay .close").on("click", function () {
             $(".overlay").toggleClass("active"),
@@ -211,6 +252,42 @@ $(document).ready(function () {
                         $(".menu-nav li:nth-child(3) a path").attr("d", musicSvg)
                     }, 150)
             )
+        }),
+        $(".all-animals-off-btn").on("click", function() {
+            turnoffanimalnav()
+        }),
+        $(".hover-detector div").on("mouseover", function() {
+            $(".shard-wrap .shard").not(this).removeClass("active"),
+            $(".level-one").addClass("shadow-active");
+            var t = $(this).index() + 1;
+            $(".shard-wrap:nth-child(" + t + ") .shard").addClass("active"),
+            $(".animal-nav-content ul li:nth-child(" + t + ")").addClass("active"),
+            $(".animal-nav-content .title-content").addClass("inactive");
+            var a = $(this).attr("data-animalClick");
+            $(".animal-nav-content").attr("animal", a),
+            $(".animal-nav-content div").each(function() {
+                $(this).hasClass(a) ? $(this).addClass("active") : $(this).removeClass("active")
+            })
+        }),
+        $(".hover-detector").on("mouseout", function() {
+            $(".animal-nav-content ul li").removeClass("active"),
+            $(".animal-nav-content .title-content").removeClass("inactive")
+
+        }),
+        $(".hover-detector div").on("click", function() {
+            $(".hover-detector div").removeClass("active-animal"),
+            prevAnimal = "",
+            newAnimal = animalList.indexOf($(this).attr("data-animalClick")),
+            nextorprevanimal(),
+            $(".animal-nav-content div").each(function() {
+                $(this).removeClass("active")
+            }),
+            turnoffanimalnav()
+        }),
+        $(".animal-nav-content ul li").on("click", function() {
+            newAnimal = $(this).index(),
+            turnoffanimalnav(),
+            nextorprevanimal()        
         }),
         $("body").each(function () {
             animalStates($(this))

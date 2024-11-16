@@ -127,9 +127,21 @@
             <!--โค้ดในส่วนของปุ่มเมนูต่างๆ ควบคุมเพลง/เล่นสไลด์/ดูสัตว์แบบทั้งหมด-->
             <ul class="menu-nav">
                 <li class="all-animal">
-                    <!-- <a href="#">All Animal
-                        <div class="popout">All Pieces</div>
-                    </a> -->
+                    <a href="javascript:;" class="btn">
+                        <span class="btn__circle"></span>
+                        <span class="btn__white-circle">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M21 9.75H19.5V18.3107L18.3107 19.5H5.68934L4.5 18.3107L4.5 9.75H3V4.5H21V9.75ZM6 9.75L18 9.75V17.6893L17.6893 18H6.31066L6 17.6893L6 9.75ZM19.5 6V8.25L4.5 8.25L4.5 6L19.5 6ZM9.75 13.5H15V12H9.75V13.5Z"
+                                        fill="#080341"></path>
+                                </g>
+                            </svg>
+                        </span>
+                        <span class="btn__textR">All Pieces</span>
+                    </a>
                 </li>
                 <li class="autoplay">
                     <a href="javascript:;" class="btn">
@@ -227,6 +239,149 @@
             </div>
         </div>
 
+        <div class="all-animals inactive">
+            <a href="#" class="nav-btn all-animals-off-btn close">
+                <div class="icon"></div>
+                <div class="popout">Back to <span>animal name</span></div>
+            </a>
+            <div class="hover-detector inactive">
+                <div data-animalClick="vaquita"></div>
+                <div data-animalClick="marin_otter"></div>
+                <div data-animalClick="hawaii_seal"></div>
+                <div data-animalClick="jp_shark"></div>
+                <div data-animalClick="oren_stork"></div>
+                <div data-animalClick="white_shark"></div>
+                <div data-animalClick="smol_saw"></div>
+                <div data-animalClick="eu_eel"></div>
+                <div data-animalClick="blue_tuna"></div>
+                <div data-animalClick="man_ray"></div>
+                <div data-animalClick="gharial"></div>
+                <div data-animalClick="hawk_turtle"></div>
+                <div data-animalClick="pela_shark"></div>
+                <div data-animalClick="india_dolphin"></div>
+                <div data-animalClick="tri_alba"></div>
+                <div data-animalClick="icefish"></div>
+                <div data-animalClick="penguin"></div>
+                <div data-animalClick="sei_whale"></div>
+                <div data-animalClick="n_right_whale"></div>
+                <div data-animalClick="blue_whale"></div>
+            </div>
+
+            <div class="animal-nav-content inactive" animal="">
+                <div class="title-content">
+                    <h1>In Pieces</h1>
+                    <h2>
+                        20 Species
+                        <span>20 Pieces</span>
+                    </h2>
+                    <h4>1 Fragmented Survival</h4>
+                    <p>Select a piece from the ring</p>
+                </div>
+                <ul>
+                    <li>
+                        <h4>Piece 1</h4>
+                        <h2>Vaquita</h2>
+                        <span><i>Porpoise</i> Critically Endangered</span>
+                    </li>
+                    <li>
+                        <h4>Piece 2</h4>
+                        <h2>Marine Otter</h2>
+                        <span><i>Otter</i> Critically Endangered</span>
+                    </li>
+                    <li>
+                        <h4>Piece 3</h4>
+                        <h2>Hawaiian Monk Seal</h2>
+                        <span><i>Seal</i> Endangered</span>
+                    </li>
+                    <li>
+                        <h4>Piece 4</h4>
+                        <h2>Japanese Angel Shark</h2>
+                        <span><i>Shark</i> Endangered</span>
+                    </li>
+                    <li>
+                        <h4>Piece 5</h4>
+                        <h2>Oriental Stork</h2>
+                        <span><i>Stork</i> Critically Endangered</span>
+                    </li>
+                    <li>
+                        <h4>Piece 6</h4>
+                        <h2>Oceanic White Tip Shark</h2>
+                        <span><i>Shark</i> Critically Endangered</span>
+                    </li>
+                    <li>
+                        <h4>Piece 7</h4>
+                        <h2>Smalltooth Sawfish</h2>
+                        <span><i>Sawfish</i> Extinct in the Wild</span>
+                    </li>
+                    <li>
+                        <h4>Piece 8</h4>
+                        <h2>European Eel</h2>
+                        <span><i>Eel</i> Critically Endangered</span>
+                    </li>
+                    <li>
+                        <h4>Piece 9</h4>
+                        <h2>Atlantic Bluefin Tuna</h2>
+                        <span><i>Fish</i> Endangered</span>
+                    </li>
+                    <li>
+                        <h4>Piece 10</h4>
+                        <h2>Oceanic Manta Ray</h2>
+                        <span><i>Ray</i> Vulnerable</span>
+                    </li>
+                    <li>
+                        <h4>Piece 11</h4>
+                        <h2>Gharial</h2>
+                        <span><i>Gharial</i> Critically Endangered</span>
+                    </li>
+                    <li>
+                        <h4>Piece 12</h4>
+                        <h2>Hawksbill Turtle</h2>
+                        <span><i>Turtle</i> Critically Endangered</span>
+                    </li>
+                    <li>
+                        <h4>Piece 13</h4>
+                        <h2>Pelagic Thresher Shark</h2>
+                        <span><i>Shark</i> Critically Endangered</span>
+                    </li>
+                    <li>
+                        <h4>Piece 14</h4>
+                        <h2>Indian Ocean Humpback Dolphin</h2>
+                        <span><i>Dolphin</i> Endangered </span>
+                    </li>
+                    <li>
+                        <h4>Piece 15</h4>
+                        <h2>Tristan Albatross</h2>
+                        <span><i>Albatross</i> Critically Endangered</span>
+                    </li>
+                    <li>
+                        <h4>Piece 16</h4>
+                        <h2>South Georgia Icefish</h2>
+                        <span><i>Fish</i> Vulnerable</span>
+                    </li>
+                    <li>
+                        <h4>Piece 17</h4>
+                        <h2>Erect-crested Penguin</h2>
+                        <span><i>Penguin</i> Near Threatened </span>
+                    </li>
+                    <li>
+                        <h4>Piece 18</h4>
+                        <h2>Sei Whale</h2>
+                        <span><i>Whale</i> Critically Endangered</span>
+                    </li>
+                    <li>
+                        <h4>Piece 19</h4>
+                        <h2>North Atlantic Right Whale</h2>
+                        <span><i>Whale</i> Endangered</span>
+                    </li>
+                    <li>
+                        <h4>Piece 20</h4>
+                        <h2>Blue Whale</h2>
+                        <span><i>Whale</i> Vulnerable</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
         <!--โค้ดในส่วนของเมนูที่เกี่ยวกับผู้จัดทำ-->
         <div class="aboutme">
             <button class="aboutme-btn">
@@ -245,78 +400,6 @@
             <a class="nav-btn close" href="#">
                 X
             </a>
-            <!--โค้ดในส่วนหน้าจอแสดงสัตว์ทั้งหมด-->
-            <div class="all-animal-stg">
-                <ul class="menu-animal-nav">
-                    <li>
-                        <a href="#">1</a>
-                    </li>
-                    <li>
-                        <a href="#">2</a>
-                    </li>
-                    <li>
-                        <a href="#">3</a>
-                    </li>
-                    <li>
-                        <a href="#">4</a>
-                    </li>
-                    <li>
-                        <a href="#">5</a>
-                    </li>
-                </ul>
-                <ul class="menu-animal-nav">
-                    <li>
-                        <a href="#">1</a>
-                    </li>
-                    <li>
-                        <a href="#">2</a>
-                    </li>
-                    <li>
-                        <a href="#">3</a>
-                    </li>
-                    <li>
-                        <a href="#">4</a>
-                    </li>
-                    <li>
-                        <a href="#">5</a>
-                    </li>
-                </ul>
-                <ul class="menu-animal-nav">
-                    <li>
-                        <a href="#">1</a>
-                    </li>
-                    <li>
-                        <a href="#">2</a>
-                    </li>
-                    <li>
-                        <a href="#">3</a>
-                    </li>
-                    <li>
-                        <a href="#">4</a>
-                    </li>
-                    <li>
-                        <a href="#">5</a>
-                    </li>
-                </ul>
-                <ul class="menu-animal-nav">
-                    <li>
-                        <a href="#">1</a>
-                    </li>
-                    <li>
-                        <a href="#">2</a>
-                    </li>
-                    <li>
-                        <a href="#">3</a>
-                    </li>
-                    <li>
-                        <a href="#">4</a>
-                    </li>
-                    <li>
-                        <a href="#">5</a>
-                    </li>
-                </ul>
-                <h1>AnimalName</h1>
-            </div>
             <!--โค้ดในส่วนหน้าจอแสดงข้อมูลสัตว์รายตัว-->
             <div class="detail">
                 <h2></h2>

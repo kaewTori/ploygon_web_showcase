@@ -385,9 +385,11 @@ ul li {
 .btn {
   display: inline-block;
   color: #ffffff;
-  padding: 32px;
+  padding: 27px;
   position: relative;
   letter-spacing: 1px;
+  margin-top: -15px;
+  margin-bottom: -15px;
 }
 .btn__circle, .btn__text, .btn__textR, .btn__white-circle {
   position: absolute;
@@ -491,6 +493,877 @@ ul li {
   background-color: rgba(25, 25, 25, 0.7);
   transform: scale(1.2);
   transition: 0.5s;
+}
+
+.all-animals {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999;
+  transform: translate(-50%, -50%);
+  background: #191919;
+}
+.all-animals.inactive {
+  display: none;
+}
+.all-animals .animal-nav-content {
+  display: block;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+}
+.all-animals .animal-nav-content.inactive {
+  display: none;
+}
+.all-animals .animal-nav-content.active {
+  opacity: 1;
+}
+.all-animals .animal-nav-content.active .title-content h1,
+.all-animals .animal-nav-content.active .title-content h2,
+.all-animals .animal-nav-content.active .title-content h4,
+.all-animals .animal-nav-content.active .title-content p {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+.all-animals .animal-nav-content ul li h4 {
+  font-size: 1.7em;
+  letter-spacing: 0.16em;
+  margin-bottom: 0.5em;
+}
+.all-animals .animal-nav-content ul li h2 {
+  margin-bottom: 0.2em;
+}
+.all-animals .animal-nav-content ul li span {
+  color: #706e6e;
+  letter-spacing: 0.2em;
+}
+.all-animals .animal-nav-content ul li span i {
+  color: #bbb;
+}
+.all-animals .animal-nav-content ul li:nth-child(1) h4 {
+  color: linear-gradient(180deg, #95F9C3 0%, #0B3866 100%);
+}
+.all-animals .animal-nav-content .title-content {
+  margin-top: -166px;
+  z-index: 3;
+  position: relative;
+  -webkit-transition: 0.5s 0.3s;
+  -moz-transition: 0.5s 0.3s;
+  transition: 0.5s 0.3s;
+}
+.all-animals .animal-nav-content .title-content h1,
+.all-animals .animal-nav-content .title-content h2,
+.all-animals .animal-nav-content .title-content h4,
+.all-animals .animal-nav-content .title-content p {
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: 0.45s 0.7s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -moz-transition: 0.45s 0.7s cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition: 0.45s 0.7s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -webkit-transform: translateY(-2px);
+  -moz-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  -o-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+.all-animals .animal-nav-content .title-content h1 {
+  -webkit-transition-delay: 0.85s;
+  -moz-transition-delay: 0.85s;
+  transition-delay: 0.85s;
+  -webkit-transform: translateY(5px);
+  -moz-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  -o-transform: translateY(5px);
+  transform: translateY(5px);
+}
+.all-animals .animal-nav-content .title-content h2 {
+  font-size: 6em;
+  line-height: 0.9em;
+  margin: 6px 0 15px;
+  -webkit-transform: translateY(5px);
+  -moz-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  -o-transform: translateY(5px);
+  transform: translateY(5px);
+}
+.all-animals .animal-nav-content .title-content h2 span {
+  display: block;
+}
+.all-animals .animal-nav-content .title-content h4 {
+  color: #656b72;
+  font-size: 1.7em;
+  margin-bottom: 25px;
+  letter-spacing: 0.2em;
+  -webkit-transition: 1.2s 1.2s;
+  -moz-transition: 1.2s 1.2s;
+  transition: 1.2s 1.2s;
+}
+.all-animals .animal-nav-content .title-content p {
+  font-size: 1.15em;
+  letter-spacing: 0.2em;
+  -webkit-transition: 1.7s 1.6s;
+  -moz-transition: 1.7s 1.6s;
+  transition: 1.7s 1.6s;
+  line-height: 1.3em;
+  padding: 0 40px;
+}
+.all-animals .animal-nav-content .title-content p a {
+  letter-spacing: 0.2em;
+  display: inline-block;
+  color: red;
+}
+.all-animals .animal-nav-content .title-content.inactive {
+  opacity: 0;
+  -webkit-transition: 0.2s 0.06s;
+  -moz-transition: 0.2s 0.06s;
+  transition: 0.2s 0.06s;
+}
+.all-animals .hover-detector {
+  z-index: 999999;
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  top: 50%;
+  left: 50%;
+  margin-top: -20px;
+  display: block;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+.all-animals .hover-detector.active {
+  opacity: 1;
+}
+.all-animals .hover-detector.active div {
+  opacity: 1;
+}
+.all-animals .hover-detector.active div:nth-child(1) {
+  -webkit-transition: 0.39s 0.03s;
+  -moz-transition: 0.39s 0.03s;
+  transition: 0.39s 0.03s;
+}
+.all-animals .hover-detector.active div:nth-child(2) {
+  -webkit-transition: 0.44s 0.06s;
+  -moz-transition: 0.44s 0.06s;
+  transition: 0.44s 0.06s;
+}
+.all-animals .hover-detector.active div:nth-child(3) {
+  -webkit-transition: 0.49s 0.09s;
+  -moz-transition: 0.49s 0.09s;
+  transition: 0.49s 0.09s;
+}
+.all-animals .hover-detector.active div:nth-child(4) {
+  -webkit-transition: 0.54s 0.12s;
+  -moz-transition: 0.54s 0.12s;
+  transition: 0.54s 0.12s;
+}
+.all-animals .hover-detector.active div:nth-child(5) {
+  -webkit-transition: 0.59s 0.15s;
+  -moz-transition: 0.59s 0.15s;
+  transition: 0.59s 0.15s;
+}
+.all-animals .hover-detector.active div:nth-child(6) {
+  -webkit-transition: 0.64s 0.18s;
+  -moz-transition: 0.64s 0.18s;
+  transition: 0.64s 0.18s;
+}
+.all-animals .hover-detector.active div:nth-child(7) {
+  -webkit-transition: 0.69s 0.21s;
+  -moz-transition: 0.69s 0.21s;
+  transition: 0.69s 0.21s;
+}
+.all-animals .hover-detector.active div:nth-child(8) {
+  -webkit-transition: 0.74s 0.24s;
+  -moz-transition: 0.74s 0.24s;
+  transition: 0.74s 0.24s;
+}
+.all-animals .hover-detector.active div:nth-child(9) {
+  -webkit-transition: 0.79s 0.27s;
+  -moz-transition: 0.79s 0.27s;
+  transition: 0.79s 0.27s;
+}
+.all-animals .hover-detector.active div:nth-child(10) {
+  -webkit-transition: 0.84s 0.3s;
+  -moz-transition: 0.84s 0.3s;
+  transition: 0.84s 0.3s;
+}
+.all-animals .hover-detector.active div:nth-child(11) {
+  -webkit-transition: 0.89s 0.33s;
+  -moz-transition: 0.89s 0.33s;
+  transition: 0.89s 0.33s;
+}
+.all-animals .hover-detector.active div:nth-child(12) {
+  -webkit-transition: 0.94s 0.36s;
+  -moz-transition: 0.94s 0.36s;
+  transition: 0.94s 0.36s;
+}
+.all-animals .hover-detector.active div:nth-child(13) {
+  -webkit-transition: 0.99s 0.39s;
+  -moz-transition: 0.99s 0.39s;
+  transition: 0.99s 0.39s;
+}
+.all-animals .hover-detector.active div:nth-child(14) {
+  -webkit-transition: 1.04s 0.42s;
+  -moz-transition: 1.04s 0.42s;
+  transition: 1.04s 0.42s;
+}
+.all-animals .hover-detector.active div:nth-child(15) {
+  -webkit-transition: 1.09s 0.45s;
+  -moz-transition: 1.09s 0.45s;
+  transition: 1.09s 0.45s;
+}
+.all-animals .hover-detector.active div:nth-child(16) {
+  -webkit-transition: 1.14s 0.48s;
+  -moz-transition: 1.14s 0.48s;
+  transition: 1.14s 0.48s;
+}
+.all-animals .hover-detector.active div:nth-child(17) {
+  -webkit-transition: 1.19s 0.51s;
+  -moz-transition: 1.19s 0.51s;
+  transition: 1.19s 0.51s;
+}
+.all-animals .hover-detector.active div:nth-child(18) {
+  -webkit-transition: 1.24s 0.54s;
+  -moz-transition: 1.24s 0.54s;
+  transition: 1.24s 0.54s;
+}
+.all-animals .hover-detector.active div:nth-child(19) {
+  -webkit-transition: 1.29s 0.57s;
+  -moz-transition: 1.29s 0.57s;
+  transition: 1.29s 0.57s;
+}
+.all-animals .hover-detector.active div:nth-child(20) {
+  -webkit-transition: 1.34s 0.6s;
+  -moz-transition: 1.34s 0.6s;
+  transition: 1.34s 0.6s;
+}
+.all-animals .hover-detector.active div:nth-child(21) {
+  -webkit-transition: 1.39s 0.63s;
+  -moz-transition: 1.39s 0.63s;
+  transition: 1.39s 0.63s;
+}
+.all-animals .hover-detector.active div:nth-child(22) {
+  -webkit-transition: 1.44s 0.66s;
+  -moz-transition: 1.44s 0.66s;
+  transition: 1.44s 0.66s;
+}
+.all-animals .hover-detector.active div:nth-child(23) {
+  -webkit-transition: 1.49s 0.69s;
+  -moz-transition: 1.49s 0.69s;
+  transition: 1.49s 0.69s;
+}
+.all-animals .hover-detector.active div:nth-child(24) {
+  -webkit-transition: 1.54s 0.72s;
+  -moz-transition: 1.54s 0.72s;
+  transition: 1.54s 0.72s;
+}
+.all-animals .hover-detector.active div:nth-child(25) {
+  -webkit-transition: 1.59s 0.75s;
+  -moz-transition: 1.59s 0.75s;
+  transition: 1.59s 0.75s;
+}
+.all-animals .hover-detector.active div:nth-child(26) {
+  -webkit-transition: 1.64s 0.78s;
+  -moz-transition: 1.64s 0.78s;
+  transition: 1.64s 0.78s;
+}
+.all-animals .hover-detector.active div:nth-child(27) {
+  -webkit-transition: 1.69s 0.81s;
+  -moz-transition: 1.69s 0.81s;
+  transition: 1.69s 0.81s;
+}
+.all-animals .hover-detector.active div:nth-child(28) {
+  -webkit-transition: 1.74s 0.84s;
+  -moz-transition: 1.74s 0.84s;
+  transition: 1.74s 0.84s;
+}
+.all-animals .hover-detector.active div:nth-child(29) {
+  -webkit-transition: 1.79s 0.87s;
+  -moz-transition: 1.79s 0.87s;
+  transition: 1.79s 0.87s;
+}
+.all-animals .hover-detector.active div:nth-child(30) {
+  -webkit-transition: 1.84s 0.9s;
+  -moz-transition: 1.84s 0.9s;
+  transition: 1.84s 0.9s;
+}
+.all-animals .hover-detector.active div::after {
+  opacity: 0;
+}
+.all-animals .hover-detector.active div:nth-child(1) {
+  -webkit-transform: rotate(5deg) translateY(-230px);
+  -moz-transform: rotate(5deg) translateY(-230px);
+  -ms-transform: rotate(5deg) translateY(-230px);
+  -o-transform: rotate(5deg) translateY(-230px);
+  transform: rotate(5deg) translateY(-230px);
+}
+.all-animals .hover-detector.active div:nth-child(2) {
+  -webkit-transform: rotate(17deg) translateY(-230px);
+  -moz-transform: rotate(17deg) translateY(-230px);
+  -ms-transform: rotate(17deg) translateY(-230px);
+  -o-transform: rotate(17deg) translateY(-230px);
+  transform: rotate(17deg) translateY(-230px);
+}
+.all-animals .hover-detector.active div:nth-child(3) {
+  -webkit-transform: rotate(29deg) translateY(-230px);
+  -moz-transform: rotate(29deg) translateY(-230px);
+  -ms-transform: rotate(29deg) translateY(-230px);
+  -o-transform: rotate(29deg) translateY(-230px);
+  transform: rotate(29deg) translateY(-230px);
+}
+.all-animals .hover-detector.active div:nth-child(4) {
+  -webkit-transform: rotate(41deg) translateY(-230px);
+  -moz-transform: rotate(41deg) translateY(-230px);
+  -ms-transform: rotate(41deg) translateY(-230px);
+  -o-transform: rotate(41deg) translateY(-230px);
+  transform: rotate(41deg) translateY(-230px);
+}
+.all-animals .hover-detector.active div:nth-child(5) {
+  -webkit-transform: rotate(53deg) translateY(-230px);
+  -moz-transform: rotate(53deg) translateY(-230px);
+  -ms-transform: rotate(53deg) translateY(-230px);
+  -o-transform: rotate(53deg) translateY(-230px);
+  transform: rotate(53deg) translateY(-230px);
+}
+.all-animals .hover-detector.active div:nth-child(6) {
+  -webkit-transform: rotate(65deg) translateY(-230px);
+  -moz-transform: rotate(65deg) translateY(-230px);
+  -ms-transform: rotate(65deg) translateY(-230px);
+  -o-transform: rotate(65deg) translateY(-230px);
+  transform: rotate(65deg) translateY(-230px);
+}
+.all-animals .hover-detector.active div:nth-child(7) {
+  -webkit-transform: rotate(77deg) translateY(-230px);
+  -moz-transform: rotate(77deg) translateY(-230px);
+  -ms-transform: rotate(77deg) translateY(-230px);
+  -o-transform: rotate(77deg) translateY(-230px);
+  transform: rotate(77deg) translateY(-230px);
+}
+.all-animals .hover-detector.active div:nth-child(8) {
+  -webkit-transform: rotate(89deg) translateY(-230px);
+  -moz-transform: rotate(89deg) translateY(-230px);
+  -ms-transform: rotate(89deg) translateY(-230px);
+  -o-transform: rotate(89deg) translateY(-230px);
+  transform: rotate(89deg) translateY(-230px);
+}
+.all-animals .hover-detector.active div:nth-child(9) {
+  -webkit-transform: rotate(101deg) translateY(-230px);
+  -moz-transform: rotate(101deg) translateY(-230px);
+  -ms-transform: rotate(101deg) translateY(-230px);
+  -o-transform: rotate(101deg) translateY(-230px);
+  transform: rotate(101deg) translateY(-230px);
+}
+.all-animals .hover-detector.active div:nth-child(10) {
+  -webkit-transform: rotate(113deg) translateY(-230px);
+  -moz-transform: rotate(113deg) translateY(-230px);
+  -ms-transform: rotate(113deg) translateY(-230px);
+  -o-transform: rotate(113deg) translateY(-230px);
+  transform: rotate(113deg) translateY(-230px);
+}
+.all-animals .hover-detector.active div:nth-child(11) {
+  -webkit-transform: rotate(125deg) translateY(-230px);
+  -moz-transform: rotate(125deg) translateY(-230px);
+  -ms-transform: rotate(125deg) translateY(-230px);
+  -o-transform: rotate(125deg) translateY(-230px);
+  transform: rotate(125deg) translateY(-230px);
+}
+.all-animals .hover-detector.active div:nth-child(12) {
+  -webkit-transform: rotate(137deg) translateY(-230px);
+  -moz-transform: rotate(137deg) translateY(-230px);
+  -ms-transform: rotate(137deg) translateY(-230px);
+  -o-transform: rotate(137deg) translateY(-230px);
+  transform: rotate(137deg) translateY(-230px);
+}
+.all-animals .hover-detector.active div:nth-child(13) {
+  -webkit-transform: rotate(149deg) translateY(-230px);
+  -moz-transform: rotate(149deg) translateY(-230px);
+  -ms-transform: rotate(149deg) translateY(-230px);
+  -o-transform: rotate(149deg) translateY(-230px);
+  transform: rotate(149deg) translateY(-230px);
+}
+.all-animals .hover-detector.active div:nth-child(14) {
+  -webkit-transform: rotate(161deg) translateY(-230px);
+  -moz-transform: rotate(161deg) translateY(-230px);
+  -ms-transform: rotate(161deg) translateY(-230px);
+  -o-transform: rotate(161deg) translateY(-230px);
+  transform: rotate(161deg) translateY(-230px);
+}
+.all-animals .hover-detector.active div:nth-child(15) {
+  -webkit-transform: rotate(173deg) translateY(-230px);
+  -moz-transform: rotate(173deg) translateY(-230px);
+  -ms-transform: rotate(173deg) translateY(-230px);
+  -o-transform: rotate(173deg) translateY(-230px);
+  transform: rotate(173deg) translateY(-230px);
+}
+.all-animals .hover-detector.active div:nth-child(16) {
+  -webkit-transform: rotate(185deg) translateY(-230px);
+  -moz-transform: rotate(185deg) translateY(-230px);
+  -ms-transform: rotate(185deg) translateY(-230px);
+  -o-transform: rotate(185deg) translateY(-230px);
+  transform: rotate(185deg) translateY(-230px);
+}
+.all-animals .hover-detector.active div:nth-child(17) {
+  -webkit-transform: rotate(197deg) translateY(-230px);
+  -moz-transform: rotate(197deg) translateY(-230px);
+  -ms-transform: rotate(197deg) translateY(-230px);
+  -o-transform: rotate(197deg) translateY(-230px);
+  transform: rotate(197deg) translateY(-230px);
+}
+.all-animals .hover-detector.active div:nth-child(18) {
+  -webkit-transform: rotate(209deg) translateY(-230px);
+  -moz-transform: rotate(209deg) translateY(-230px);
+  -ms-transform: rotate(209deg) translateY(-230px);
+  -o-transform: rotate(209deg) translateY(-230px);
+  transform: rotate(209deg) translateY(-230px);
+}
+.all-animals .hover-detector.active div:nth-child(19) {
+  -webkit-transform: rotate(221deg) translateY(-230px);
+  -moz-transform: rotate(221deg) translateY(-230px);
+  -ms-transform: rotate(221deg) translateY(-230px);
+  -o-transform: rotate(221deg) translateY(-230px);
+  transform: rotate(221deg) translateY(-230px);
+}
+.all-animals .hover-detector.active div:nth-child(20) {
+  -webkit-transform: rotate(233deg) translateY(-230px);
+  -moz-transform: rotate(233deg) translateY(-230px);
+  -ms-transform: rotate(233deg) translateY(-230px);
+  -o-transform: rotate(233deg) translateY(-230px);
+  transform: rotate(233deg) translateY(-230px);
+}
+.all-animals .hover-detector.active div:nth-child(21) {
+  -webkit-transform: rotate(245deg) translateY(-230px);
+  -moz-transform: rotate(245deg) translateY(-230px);
+  -ms-transform: rotate(245deg) translateY(-230px);
+  -o-transform: rotate(245deg) translateY(-230px);
+  transform: rotate(245deg) translateY(-230px);
+}
+.all-animals .hover-detector.active div:nth-child(22) {
+  -webkit-transform: rotate(257deg) translateY(-230px);
+  -moz-transform: rotate(257deg) translateY(-230px);
+  -ms-transform: rotate(257deg) translateY(-230px);
+  -o-transform: rotate(257deg) translateY(-230px);
+  transform: rotate(257deg) translateY(-230px);
+}
+.all-animals .hover-detector.active div:nth-child(23) {
+  -webkit-transform: rotate(269deg) translateY(-230px);
+  -moz-transform: rotate(269deg) translateY(-230px);
+  -ms-transform: rotate(269deg) translateY(-230px);
+  -o-transform: rotate(269deg) translateY(-230px);
+  transform: rotate(269deg) translateY(-230px);
+}
+.all-animals .hover-detector.active div:nth-child(24) {
+  -webkit-transform: rotate(281deg) translateY(-230px);
+  -moz-transform: rotate(281deg) translateY(-230px);
+  -ms-transform: rotate(281deg) translateY(-230px);
+  -o-transform: rotate(281deg) translateY(-230px);
+  transform: rotate(281deg) translateY(-230px);
+}
+.all-animals .hover-detector.active div:nth-child(25) {
+  -webkit-transform: rotate(293deg) translateY(-230px);
+  -moz-transform: rotate(293deg) translateY(-230px);
+  -ms-transform: rotate(293deg) translateY(-230px);
+  -o-transform: rotate(293deg) translateY(-230px);
+  transform: rotate(293deg) translateY(-230px);
+}
+.all-animals .hover-detector.active div:nth-child(26) {
+  -webkit-transform: rotate(305deg) translateY(-230px);
+  -moz-transform: rotate(305deg) translateY(-230px);
+  -ms-transform: rotate(305deg) translateY(-230px);
+  -o-transform: rotate(305deg) translateY(-230px);
+  transform: rotate(305deg) translateY(-230px);
+}
+.all-animals .hover-detector.active div:nth-child(27) {
+  -webkit-transform: rotate(317deg) translateY(-230px);
+  -moz-transform: rotate(317deg) translateY(-230px);
+  -ms-transform: rotate(317deg) translateY(-230px);
+  -o-transform: rotate(317deg) translateY(-230px);
+  transform: rotate(317deg) translateY(-230px);
+}
+.all-animals .hover-detector.active div:nth-child(28) {
+  -webkit-transform: rotate(329deg) translateY(-230px);
+  -moz-transform: rotate(329deg) translateY(-230px);
+  -ms-transform: rotate(329deg) translateY(-230px);
+  -o-transform: rotate(329deg) translateY(-230px);
+  transform: rotate(329deg) translateY(-230px);
+}
+.all-animals .hover-detector.active div:nth-child(29) {
+  -webkit-transform: rotate(341deg) translateY(-230px);
+  -moz-transform: rotate(341deg) translateY(-230px);
+  -ms-transform: rotate(341deg) translateY(-230px);
+  -o-transform: rotate(341deg) translateY(-230px);
+  transform: rotate(341deg) translateY(-230px);
+}
+.all-animals .hover-detector.active div:nth-child(30) {
+  -webkit-transform: rotate(353deg) translateY(-230px);
+  -moz-transform: rotate(353deg) translateY(-230px);
+  -ms-transform: rotate(353deg) translateY(-230px);
+  -o-transform: rotate(353deg) translateY(-230px);
+  transform: rotate(353deg) translateY(-230px);
+}
+.all-animals .hover-detector.inactive {
+  display: none;
+}
+.all-animals .hover-detector div {
+  width: 56px;
+  height: 56px;
+  opacity: 0;
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0);
+  top: 50%;
+  left: 50%;
+  border-radius: 100px;
+  margin-top: -28px;
+  margin-left: -28px;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+.all-animals .hover-detector div:nth-child(1) {
+  -webkit-transform: rotate(4.7deg) translateY(-200px);
+  -moz-transform: rotate(4.7deg) translateY(-200px);
+  -ms-transform: rotate(4.7deg) translateY(-200px);
+  -o-transform: rotate(4.7deg) translateY(-200px);
+  transform: rotate(4.7deg) translateY(-200px);
+}
+.all-animals .hover-detector div:nth-child(2) {
+  -webkit-transform: rotate(16.4deg) translateY(-200px);
+  -moz-transform: rotate(16.4deg) translateY(-200px);
+  -ms-transform: rotate(16.4deg) translateY(-200px);
+  -o-transform: rotate(16.4deg) translateY(-200px);
+  transform: rotate(16.4deg) translateY(-200px);
+}
+.all-animals .hover-detector div:nth-child(3) {
+  -webkit-transform: rotate(28.1deg) translateY(-200px);
+  -moz-transform: rotate(28.1deg) translateY(-200px);
+  -ms-transform: rotate(28.1deg) translateY(-200px);
+  -o-transform: rotate(28.1deg) translateY(-200px);
+  transform: rotate(28.1deg) translateY(-200px);
+}
+.all-animals .hover-detector div:nth-child(4) {
+  -webkit-transform: rotate(39.8deg) translateY(-200px);
+  -moz-transform: rotate(39.8deg) translateY(-200px);
+  -ms-transform: rotate(39.8deg) translateY(-200px);
+  -o-transform: rotate(39.8deg) translateY(-200px);
+  transform: rotate(39.8deg) translateY(-200px);
+}
+.all-animals .hover-detector div:nth-child(5) {
+  -webkit-transform: rotate(51.5deg) translateY(-200px);
+  -moz-transform: rotate(51.5deg) translateY(-200px);
+  -ms-transform: rotate(51.5deg) translateY(-200px);
+  -o-transform: rotate(51.5deg) translateY(-200px);
+  transform: rotate(51.5deg) translateY(-200px);
+}
+.all-animals .hover-detector div:nth-child(6) {
+  -webkit-transform: rotate(63.2deg) translateY(-200px);
+  -moz-transform: rotate(63.2deg) translateY(-200px);
+  -ms-transform: rotate(63.2deg) translateY(-200px);
+  -o-transform: rotate(63.2deg) translateY(-200px);
+  transform: rotate(63.2deg) translateY(-200px);
+}
+.all-animals .hover-detector div:nth-child(7) {
+  -webkit-transform: rotate(74.9deg) translateY(-200px);
+  -moz-transform: rotate(74.9deg) translateY(-200px);
+  -ms-transform: rotate(74.9deg) translateY(-200px);
+  -o-transform: rotate(74.9deg) translateY(-200px);
+  transform: rotate(74.9deg) translateY(-200px);
+}
+.all-animals .hover-detector div:nth-child(8) {
+  -webkit-transform: rotate(86.6deg) translateY(-200px);
+  -moz-transform: rotate(86.6deg) translateY(-200px);
+  -ms-transform: rotate(86.6deg) translateY(-200px);
+  -o-transform: rotate(86.6deg) translateY(-200px);
+  transform: rotate(86.6deg) translateY(-200px);
+}
+.all-animals .hover-detector div:nth-child(9) {
+  -webkit-transform: rotate(98.3deg) translateY(-200px);
+  -moz-transform: rotate(98.3deg) translateY(-200px);
+  -ms-transform: rotate(98.3deg) translateY(-200px);
+  -o-transform: rotate(98.3deg) translateY(-200px);
+  transform: rotate(98.3deg) translateY(-200px);
+}
+.all-animals .hover-detector div:nth-child(10) {
+  -webkit-transform: rotate(110deg) translateY(-200px);
+  -moz-transform: rotate(110deg) translateY(-200px);
+  -ms-transform: rotate(110deg) translateY(-200px);
+  -o-transform: rotate(110deg) translateY(-200px);
+  transform: rotate(110deg) translateY(-200px);
+}
+.all-animals .hover-detector div:nth-child(11) {
+  -webkit-transform: rotate(121.7deg) translateY(-200px);
+  -moz-transform: rotate(121.7deg) translateY(-200px);
+  -ms-transform: rotate(121.7deg) translateY(-200px);
+  -o-transform: rotate(121.7deg) translateY(-200px);
+  transform: rotate(121.7deg) translateY(-200px);
+}
+.all-animals .hover-detector div:nth-child(12) {
+  -webkit-transform: rotate(133.4deg) translateY(-200px);
+  -moz-transform: rotate(133.4deg) translateY(-200px);
+  -ms-transform: rotate(133.4deg) translateY(-200px);
+  -o-transform: rotate(133.4deg) translateY(-200px);
+  transform: rotate(133.4deg) translateY(-200px);
+}
+.all-animals .hover-detector div:nth-child(13) {
+  -webkit-transform: rotate(145.1deg) translateY(-200px);
+  -moz-transform: rotate(145.1deg) translateY(-200px);
+  -ms-transform: rotate(145.1deg) translateY(-200px);
+  -o-transform: rotate(145.1deg) translateY(-200px);
+  transform: rotate(145.1deg) translateY(-200px);
+}
+.all-animals .hover-detector div:nth-child(14) {
+  -webkit-transform: rotate(156.8deg) translateY(-200px);
+  -moz-transform: rotate(156.8deg) translateY(-200px);
+  -ms-transform: rotate(156.8deg) translateY(-200px);
+  -o-transform: rotate(156.8deg) translateY(-200px);
+  transform: rotate(156.8deg) translateY(-200px);
+}
+.all-animals .hover-detector div:nth-child(15) {
+  -webkit-transform: rotate(168.5deg) translateY(-200px);
+  -moz-transform: rotate(168.5deg) translateY(-200px);
+  -ms-transform: rotate(168.5deg) translateY(-200px);
+  -o-transform: rotate(168.5deg) translateY(-200px);
+  transform: rotate(168.5deg) translateY(-200px);
+}
+.all-animals .hover-detector div:nth-child(16) {
+  -webkit-transform: rotate(180.2deg) translateY(-200px);
+  -moz-transform: rotate(180.2deg) translateY(-200px);
+  -ms-transform: rotate(180.2deg) translateY(-200px);
+  -o-transform: rotate(180.2deg) translateY(-200px);
+  transform: rotate(180.2deg) translateY(-200px);
+}
+.all-animals .hover-detector div:nth-child(17) {
+  -webkit-transform: rotate(191.9deg) translateY(-200px);
+  -moz-transform: rotate(191.9deg) translateY(-200px);
+  -ms-transform: rotate(191.9deg) translateY(-200px);
+  -o-transform: rotate(191.9deg) translateY(-200px);
+  transform: rotate(191.9deg) translateY(-200px);
+}
+.all-animals .hover-detector div:nth-child(18) {
+  -webkit-transform: rotate(203.6deg) translateY(-200px);
+  -moz-transform: rotate(203.6deg) translateY(-200px);
+  -ms-transform: rotate(203.6deg) translateY(-200px);
+  -o-transform: rotate(203.6deg) translateY(-200px);
+  transform: rotate(203.6deg) translateY(-200px);
+}
+.all-animals .hover-detector div:nth-child(19) {
+  -webkit-transform: rotate(215.3deg) translateY(-200px);
+  -moz-transform: rotate(215.3deg) translateY(-200px);
+  -ms-transform: rotate(215.3deg) translateY(-200px);
+  -o-transform: rotate(215.3deg) translateY(-200px);
+  transform: rotate(215.3deg) translateY(-200px);
+}
+.all-animals .hover-detector div:nth-child(20) {
+  -webkit-transform: rotate(227deg) translateY(-200px);
+  -moz-transform: rotate(227deg) translateY(-200px);
+  -ms-transform: rotate(227deg) translateY(-200px);
+  -o-transform: rotate(227deg) translateY(-200px);
+  transform: rotate(227deg) translateY(-200px);
+}
+.all-animals .hover-detector div:nth-child(21) {
+  -webkit-transform: rotate(238.7deg) translateY(-200px);
+  -moz-transform: rotate(238.7deg) translateY(-200px);
+  -ms-transform: rotate(238.7deg) translateY(-200px);
+  -o-transform: rotate(238.7deg) translateY(-200px);
+  transform: rotate(238.7deg) translateY(-200px);
+}
+.all-animals .hover-detector div:nth-child(22) {
+  -webkit-transform: rotate(250.4deg) translateY(-200px);
+  -moz-transform: rotate(250.4deg) translateY(-200px);
+  -ms-transform: rotate(250.4deg) translateY(-200px);
+  -o-transform: rotate(250.4deg) translateY(-200px);
+  transform: rotate(250.4deg) translateY(-200px);
+}
+.all-animals .hover-detector div:nth-child(23) {
+  -webkit-transform: rotate(262.1deg) translateY(-200px);
+  -moz-transform: rotate(262.1deg) translateY(-200px);
+  -ms-transform: rotate(262.1deg) translateY(-200px);
+  -o-transform: rotate(262.1deg) translateY(-200px);
+  transform: rotate(262.1deg) translateY(-200px);
+}
+.all-animals .hover-detector div:nth-child(24) {
+  -webkit-transform: rotate(273.8deg) translateY(-200px);
+  -moz-transform: rotate(273.8deg) translateY(-200px);
+  -ms-transform: rotate(273.8deg) translateY(-200px);
+  -o-transform: rotate(273.8deg) translateY(-200px);
+  transform: rotate(273.8deg) translateY(-200px);
+}
+.all-animals .hover-detector div:nth-child(25) {
+  -webkit-transform: rotate(285.5deg) translateY(-200px);
+  -moz-transform: rotate(285.5deg) translateY(-200px);
+  -ms-transform: rotate(285.5deg) translateY(-200px);
+  -o-transform: rotate(285.5deg) translateY(-200px);
+  transform: rotate(285.5deg) translateY(-200px);
+}
+.all-animals .hover-detector div:nth-child(26) {
+  -webkit-transform: rotate(297.2deg) translateY(-200px);
+  -moz-transform: rotate(297.2deg) translateY(-200px);
+  -ms-transform: rotate(297.2deg) translateY(-200px);
+  -o-transform: rotate(297.2deg) translateY(-200px);
+  transform: rotate(297.2deg) translateY(-200px);
+}
+.all-animals .hover-detector div:nth-child(27) {
+  -webkit-transform: rotate(308.9deg) translateY(-200px);
+  -moz-transform: rotate(308.9deg) translateY(-200px);
+  -ms-transform: rotate(308.9deg) translateY(-200px);
+  -o-transform: rotate(308.9deg) translateY(-200px);
+  transform: rotate(308.9deg) translateY(-200px);
+}
+.all-animals .hover-detector div:nth-child(28) {
+  -webkit-transform: rotate(320.6deg) translateY(-200px);
+  -moz-transform: rotate(320.6deg) translateY(-200px);
+  -ms-transform: rotate(320.6deg) translateY(-200px);
+  -o-transform: rotate(320.6deg) translateY(-200px);
+  transform: rotate(320.6deg) translateY(-200px);
+}
+.all-animals .hover-detector div:nth-child(29) {
+  -webkit-transform: rotate(332.3deg) translateY(-200px);
+  -moz-transform: rotate(332.3deg) translateY(-200px);
+  -ms-transform: rotate(332.3deg) translateY(-200px);
+  -o-transform: rotate(332.3deg) translateY(-200px);
+  transform: rotate(332.3deg) translateY(-200px);
+}
+.all-animals .hover-detector div:nth-child(30) {
+  -webkit-transform: rotate(344deg) translateY(-200px);
+  -moz-transform: rotate(344deg) translateY(-200px);
+  -ms-transform: rotate(344deg) translateY(-200px);
+  -o-transform: rotate(344deg) translateY(-200px);
+  transform: rotate(344deg) translateY(-200px);
+}
+.all-animals .hover-detector div:before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  -webkit-transition: all 0.2s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -moz-transition: all 0.2s cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition: all 0.2s cubic-bezier(0.62, 0.02, 0.34, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 40px;
+  -webkit-transform: scale(0.065);
+  -moz-transform: scale(0.065);
+  -ms-transform: scale(0.065);
+  -o-transform: scale(0.065);
+  transform: scale(0.065);
+}
+.all-animals .hover-detector div:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 40px;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+}
+.all-animals .hover-detector div:hover {
+  cursor: pointer;
+}
+.all-animals .hover-detector div.active-animal:after, .all-animals .hover-detector div:hover:after {
+  -webkit-transition: all 0.19s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -moz-transition: all 0.19s cubic-bezier(0.62, 0.02, 0.34, 1);
+  transition: all 0.19s cubic-bezier(0.62, 0.02, 0.34, 1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+.all-animals .hover-detector div.active-animal:before, .all-animals .hover-detector div:hover:before {
+  -webkit-transform: scale(0.1);
+  -moz-transform: scale(0.1);
+  -ms-transform: scale(0.1);
+  -o-transform: scale(0.1);
+  transform: scale(0.1);
+}
+.all-animals .hover-detector.inactive {
+  pointer-events: none;
+}
+.all-animals .hover-detector {
+  display: block;
+  -webkit-transition: 200s cubic-bezier(0.11, 0.01, 0.45, 0.74);
+  -moz-transition: 200s cubic-bezier(0.11, 0.01, 0.45, 0.74);
+  transition: 200s cubic-bezier(0.11, 0.01, 0.45, 0.74);
+}
+.all-animals .hover-detector.active {
+  -webkit-transform: rotate(1000deg);
+  -moz-transform: rotate(1000deg);
+  -ms-transform: rotate(1000deg);
+  -o-transform: rotate(1000deg);
+  transform: rotate(1000deg);
+}
+.all-animals .animal-nav-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 9999999;
+  transform: translate(-50%, -50%);
+}
+.all-animals .animal-nav-content ul {
+  z-index: 1;
+  pointer-events: none;
+  position: relative;
+}
+.all-animals .animal-nav-content ul li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.all-animals .animal-nav-content ul li > * {
+  opacity: 0;
+  -webkit-transform: translateY(6px);
+  -moz-transform: translateY(6px);
+  -ms-transform: translateY(6px);
+  -o-transform: translateY(6px);
+  transform: translateY(6px);
+  -webkit-transition: 0.13s;
+  -moz-transition: 0.13s;
+  transition: 0.13s;
+}
+.all-animals .animal-nav-content ul li.active > * {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: 0.34s 0.1s;
+  -moz-transition: 0.34s 0.1s;
+  transition: 0.34s 0.1s;
+}
+.all-animals .animal-nav-content ul li.active > *:nth-child(2) {
+  -webkit-transition-delay: 0.25s;
+  -moz-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+.all-animals .animal-nav-content ul li.active > *:nth-child(3) {
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  transition-delay: 0.4s;
 }
 
 .overlay {

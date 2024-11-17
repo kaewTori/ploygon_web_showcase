@@ -213,7 +213,7 @@ $(document).ready(function () {
                 }, 500)
 
         }),
-        $(".aboutme button").on("click", function () {
+        $(".aboutme-btn a").on("click", function () {
             overlayContent = ".overlay .author",
                 overlayprocess()
         }),

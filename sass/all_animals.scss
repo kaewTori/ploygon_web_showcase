@@ -253,7 +253,7 @@
             @for $i from 1 through 30 {
 				&:nth-child(#{$i}) {
 					$r: ($i * 17.7deg - 7deg);
-					@include transform(rotate($r) translateY(-300px));
+					@include transform(rotate($r) translateY(-270px));
 				}
 			}
         }
@@ -269,7 +269,7 @@
                 $r: (
                     $i * 18deg - 7deg
                 );
-            @include transform(rotate($r) translateY(-300px));
+            @include transform(rotate($r) translateY(-270px));
         }
     }
 }

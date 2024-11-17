@@ -243,26 +243,11 @@ ul {
     }
 }
 
-.aboutme {
+.aboutme-btn {
     position: fixed;
-    right: 3%;
-    transform: translate(-3%, -3%) scale(1);
-
-
-    .aboutme-btn {
-        background-color: transparent;
-        cursor: pointer;
-        border: none;
-        width: 50px;
-        height: 50px;
-        transition: 0.5s;
-    }
-
-    .aboutme-btn:hover {
-        transition: 0.5s;
-        transform: translateY(-10px);
-    }
-
+    right: 2%;
+    bottom: 6%;
+    transform: translate(-2%, -6%);
 }
 
 .wave {
@@ -288,7 +273,7 @@ ul {
 .btn {
     display: inline-block;
     color: #ffffff;
-    padding: 27px;
+    padding: 32px;
     position: relative;
     letter-spacing: 1px;
     margin-top: -15px;
@@ -300,6 +285,11 @@ ul {
     &__white-circle {
         position: absolute;
     }
+
+    &__text,&__textR {
+        opacity: 0;
+    }
+
 
     &__circle {
         top: 0;
@@ -314,17 +304,18 @@ ul {
     &__white-circle {
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%) scale(0);
-        width: 56px;
-        height: 56px;
+        width: 60px;
+        height: 60px;
         border-radius: 100%;
         background: #ffffff;
         display: flex;
         transition: 0.3s ease-in-out;
+        transform: translate(-50%, -50%);
+
 
         svg {
-            width: 24px;
-            height: 24px;
+            width: 35px;
+            height: 35px;
             margin: auto;
         }
     }
@@ -351,20 +342,24 @@ ul {
 
     &:hover {
         .btn__circle {
-            transform: scale(0);
+            transform: scale(1.1);
+
         }
 
         .btn__white-circle {
-            transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%,-50%) scale(1.1);
         }
 
         .btn__text {
+            opacity: 1;
+            transition: 0.3s linear;
             transform: translate(-40px, -50%);
         }
 
         .btn__textR {
+            opacity: 1;
+            transition: 0.3s linear;
             transform: translate(40px, -50%);
-            content: "Start";
         }
     }
 }

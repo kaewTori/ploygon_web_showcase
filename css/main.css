@@ -334,10 +334,14 @@ ul li {
   justify-content: center;
   align-items: flex-end;
   z-index: 0;
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 .stage .animalinfo-wapper li {
   display: inline-block;
+}
+.stage .animalinfo-wapper li:nth-child(1) span {
+  font-size: 3.5rem;
+  font-weight: 600;
 }
 .stage .animalinfo-wapper h2 {
   font-weight: 600;
@@ -5401,11 +5405,11 @@ ul li {
   top: 50%;
   left: 2%;
   transform: translate(-2%, -50%);
-  padding: 25px;
+  padding: 30px;
 }
 .all-animals .all-animals-off-btn .btn__white-circle {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
 }
 .all-animals .all-animals-off-btn .btn__white-circle svg {
   width: 18px;

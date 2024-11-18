@@ -227,11 +227,22 @@ ul {
         justify-content: center;
         align-items: flex-end;
         z-index: 0;
-        margin-top: 4rem;
+        margin-top: 3rem;
 
 
         li {
             display: inline-block;
+            &:nth-child(1){
+                span {
+                    font-size: 3.5rem;
+                    font-weight: 600;
+
+                }
+            }
+
+            // &:nth-child(2){
+            //     width: 80%;
+            // }
         }
 
         h2 {

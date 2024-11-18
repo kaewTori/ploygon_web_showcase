@@ -597,6 +597,7 @@ ul li {
 .all-animals .animal-nav-content ul li h2 {
   margin-bottom: 0.2em;
   font-size: 2.5em;
+  line-height: 1.1;
 }
 .all-animals .animal-nav-content ul li span {
   color: #706e6e;

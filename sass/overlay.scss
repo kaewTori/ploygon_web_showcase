@@ -10,24 +10,17 @@
     @include transition(.6s ease-in);
     z-index: 9999;
 
-    .nav-btn.close{
-        top: 90%;
-        border-color: #B4BCB3;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-    }
+    .nav-btn {
+        position: fixed;
+        bottom: 7%;
+        left: 50%;
+        transform: translate(-50%, -7%);
 
-    a {
-        border-width: 2px;
-        border-color: #27AFBB;
-        border-style: dashed;
-        border-radius: 100px;
-        padding: 10px;
 
         &:hover {
-            border-width: 5px;
-            @include transition(0.5s)
+            @include transform(scale(1.1));
+            transform: translate(-50%, -7%);
+
         }
     }
 
@@ -50,16 +43,4 @@
     width: 20px;
     background: transparent;
     border-radius: 20px;
-}
-
-.menu-animal-nav{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 50px;
-}
-
-.all-animal-stg {
-    h1 {
-        font-size: 60px;
-    }
 }

@@ -1,3 +1,24 @@
+$vaquita_bg: #95F9C3;
+$marin_bg: #f7c2e6;
+$hawaii_bg: #83d0cb;
+$jp_shark_bg: #f292ed;
+$stork_bg: #696eff;
+$wh_shark_bg: #439cfb;
+$smol_saw_bg: #6ff7e8;
+$eu_eel_bg: #45cde9;
+$tuna_bg: #9bb2e5;
+$ray_bg: #e4a7c5;
+$gharial_bg: #9bafd9;
+$turtle_bg: #d8ded6;
+$pela_shark_bg: #96d4ca;
+$dolphin_bg: #6274e7;
+$alba_bg: #7ef29d;
+$icefish_bg: #deb8f5;
+$penguin_bg: #6ff7e8;
+$sei_whale_bg: #f292ed;
+$n_right_whale_bg: #abbdff;
+$blue_whale_bg: #c7b3cc;
+
 .all-animals {
     position: absolute;
     top: 50%;
@@ -40,13 +61,15 @@
         ul {
             li {
                 h4 {
-                    font-size: 1.7em;
+                    font-size: 1.4em;
                     letter-spacing: 0.16em;
                     margin-bottom: 0.5em;
                 }
 
                 h2 {
                     margin-bottom: 0.2em;
+                    font-size: 2.5em;
+
                 }
 
                 span {
@@ -70,96 +93,113 @@
                     }
                 }
 
-                // &:nth-child(3) {
-                // 	h4 {
-                // 		color: $tamarin-bg;
-                // 	}
-                // }
-                // &:nth-child(4) {
-                // 	h4 {
-                // 		color: $frog-bg;
-                // 	}
-                // }
-                // &:nth-child(5) {
-                // 	h4 {
-                // 		color: $owl-bg;
-                // 	}
-                // }
-                // &:nth-child(6) {
-                // 	h4 {
-                // 		color: $turtle-bg;
-                // 	}
-                // }
-                // &:nth-child(7) {
-                // 	h4 {
-                // 		color: $oryx-bg;
-                // 	}
-                // }
-                // &:nth-child(8) {
-                // 	h4 {
-                // 		color: $iguana-bg;
-                // 	}
-                // }
-                // &:nth-child(9) {
-                // 	h4 {
-                // 		color: $seahorse-bg;
-                // 	}
-                // }
-                // &:nth-child(10) {
-                // 	h4 {
-                // 		color: $armadillo-bg;
-                // 	}
-                // }
-                // &:nth-child(11) {
-                // 	h4 {
-                // 		color: $sloth-bg;
-                // 	}
-                // }
-                // &:nth-child(12) {
-                // 	h4 {
-                // 		color: $kakapo-bg;
-                // 	}
-                // }
-                // &:nth-child(13) {
-                // 	h4 {
-                // 		color: $echidna-bg;
-                // 	}
-                // }
-                // &:nth-child(14) {
-                // 	h4 {
-                // 		color: $penguin-bg;
-                // 	}
-                // }
-                // &:nth-child(15) {
-                // 	h4 {
-                // 		color: $damselfly-bg;
-                // 	}
-                // }
-                // &:nth-child(16) {
-                // 	h4 {
-                // 		color: $bear-bg;
-                // 	}
-                // }
-                // &:nth-child(17) {
-                // 	h4 {
-                // 		color: $parrotfish-bg;
-                // 	}
-                // }
-                // &:nth-child(18) {
-                // 	h4 {
-                // 		color: $camel-bg;
-                // 	}
-                // }
-                // &:nth-child(19) {
-                // 	h4 {
-                // 		color: $butterfly-bg;
-                // 	}
-                // }
-                // &:nth-child(20) {
-                // 	h4 {
-                // 		color: $ostrich-bg;
-                // 	}
-                // }
+                &:nth-child(3) {
+                    h4 {
+                        color: $hawaii_bg;
+                    }
+                }
+
+                &:nth-child(4) {
+                    h4 {
+                        color: $jp_shark_bg;
+                    }
+                }
+
+                &:nth-child(5) {
+                    h4 {
+                        color: $stork_bg;
+                    }
+                }
+
+                &:nth-child(6) {
+                    h4 {
+                        color: $wh_shark_bg;
+                    }
+                }
+
+                &:nth-child(7) {
+                    h4 {
+                        color: $smol_saw_bg;
+                    }
+                }
+
+                &:nth-child(8) {
+                    h4 {
+                        color: $eu_eel_bg;
+                    }
+                }
+
+                &:nth-child(9) {
+                    h4 {
+                        color: $tuna_bg;
+                    }
+                }
+
+                &:nth-child(10) {
+                    h4 {
+                        color: $ray_bg;
+                    }
+                }
+
+                &:nth-child(11) {
+                    h4 {
+                        color: $gharial_bg;
+                    }
+                }
+
+                &:nth-child(12) {
+                    h4 {
+                        color: $turtle_bg;
+                    }
+                }
+
+                &:nth-child(13) {
+                    h4 {
+                        color: $pela_shark_bg;
+                    }
+                }
+
+                &:nth-child(14) {
+                    h4 {
+                        color: $dolphin_bg;
+                    }
+                }
+
+                &:nth-child(15) {
+                    h4 {
+                        color: $alba_bg;
+                    }
+                }
+
+                &:nth-child(16) {
+                    h4 {
+                        color: $icefish_bg;
+                    }
+                }
+
+                &:nth-child(17) {
+                    h4 {
+                        color: $penguin_bg;
+                    }
+                }
+
+                &:nth-child(18) {
+                    h4 {
+                        color: $sei_whale_bg;
+                    }
+                }
+
+                &:nth-child(19) {
+                    h4 {
+                        color: $n_right_whale_bg;
+                    }
+                }
+
+                &:nth-child(20) {
+                    h4 {
+                        color: $blue_whale_bg;
+                    }
+                }
             }
         }
 
@@ -209,11 +249,6 @@
                 line-height: 1.3em;
                 padding: 0 40px;
 
-                a {
-                    letter-spacing: 0.2em;
-                    display: inline-block;
-                    color: red;
-                }
             }
 
             &.inactive {
@@ -250,28 +285,31 @@
                     );
                 @include transition($ts $td);
             }
+
             @for $i from 1 through 30 {
-				&:nth-child(#{$i}) {
-					$r: ($i * 17.7deg - 7deg);
-					@include transform(rotate($r) translateY(-270px));
-				}
-			}
-        }
-
-        &::after {
-            opacity: 0;
+                &:nth-child(#{$i}) {
+                    $r: (
+                        $i * 17.7deg - 7deg
+                    );
+                @include transform(rotate($r) translateY(-270px));
+            }
         }
     }
 
-    div {
-        @for $i from 1 through 20 {
-            &:nth-child(#{$i}) {
-                $r: (
-                    $i * 18deg - 7deg
-                );
-            @include transform(rotate($r) translateY(-270px));
-        }
+    &::after {
+        opacity: 0;
     }
+}
+
+div {
+    @for $i from 1 through 20 {
+        &:nth-child(#{$i}) {
+            $r: (
+                $i * 18deg - 7deg
+            );
+        @include transform(rotate($r) translateY(-270px));
+    }
+}
 }
 }
 
@@ -342,106 +380,121 @@ div {
             border-color: $vaquita_bg;
         }
     }
-    
+
     &:nth-child(2) {
         &::after {
             border-color: $marin_bg;
         }
     }
+
+    &:nth-child(3) {
+        &::after {
+            border-color: $hawaii_bg;
+        }
+    }
+
+    &:nth-child(4) {
+        &::after {
+            border-color: $jp_shark_bg;
+        }
+    }
+
+    &:nth-child(5) {
+        &::after {
+            border-color: $stork_bg;
+        }
+    }
+
+    &:nth-child(6) {
+        &::after {
+            border-color: $wh_shark_bg;
+        }
+    }
+
+    &:nth-child(7) {
+        &::after {
+            border-color: $smol_saw_bg;
+        }
+    }
+
+    &:nth-child(8) {
+        &::after {
+            border-color: $eu_eel_bg;
+        }
+    }
+
+    &:nth-child(9) {
+        &::after {
+            border-color: $tuna_bg;
+        }
+    }
+
+    &:nth-child(10) {
+        &::after {
+            border-color: $ray_bg;
+        }
+    }
+
+    &:nth-child(11) {
+        &::after {
+            border-color: $gharial_bg;
+        }
+    }
+
+    &:nth-child(12) {
+        &::after {
+            border-color: $turtle_bg;
+        }
+    }
+
+    &:nth-child(13) {
+        &::after {
+            border-color: $pela_shark_bg;
+        }
+    }
+
+    &:nth-child(14) {
+        &::after {
+            border-color: $dolphin_bg;
+        }
+    }
+
+    &:nth-child(15) {
+        &::after {
+            border-color: $alba_bg;
+        }
+    }
+
+    &:nth-child(16) {
+        &::after {
+            border-color: $icefish_bg;
+        }
+    }
+
+    &:nth-child(17) {
+        &::after {
+            border-color: $penguin_bg;
+        }
+    }
+
+    &:nth-child(18) {
+        &::after {
+            border-color: $sei_whale_bg;
+        }
+    }
+
+    &:nth-child(19) {
+        &::after {
+            border-color: $n_right_whale_bg;
+        }
+    }
+
+    &:nth-child(20) {
+        &::after {
+            border-color: $blue_whale_bg;
+        }
+    }
 }
-
-
-
-// &:nth-child(3) {
-//     &::after {
-//         border-color: $tamarin-bg;
-//     }
-// }
-// &:nth-child(4) {
-//     &::after {
-//         border-color: $frog-bg;
-//     }
-// }
-// &:nth-child(5) {
-//     &::after {
-//         border-color: $owl-bg;
-//     }
-// }
-// &:nth-child(6) {
-//     &::after {
-//         border-color: $turtle-bg;
-//     }
-// }
-// &:nth-child(7) {
-//     &::after {
-//         border-color: $oryx-bg;
-//     }
-// }
-// &:nth-child(8) {
-//     &::after {
-//         border-color: $iguana-bg;
-//     }
-// }
-// &:nth-child(9) {
-//     &::after {
-//         border-color: $seahorse-bg;
-//     }
-// }
-// &:nth-child(10) {
-//     &::after {
-//         border-color: $armadillo-bg;
-//     }
-// }
-// &:nth-child(11) {
-//     &::after {
-//         border-color: $sloth-bg;
-//     }
-// }
-// &:nth-child(12) {
-//     &::after {
-//         border-color: $kakapo-bg;
-//     }
-// }
-// &:nth-child(13) {
-//     &::after {
-//         border-color: $echidna-bg;
-//     }
-// }
-// &:nth-child(14) {
-//     &::after {
-//         border-color: $penguin-bg;
-//     }
-// }
-// &:nth-child(15) {
-//     &::after {
-//         border-color: $damselfly-bg;
-//     }
-// }
-// &:nth-child(16) {
-//     &::after {
-//         border-color: $bear-bg;
-//     }
-// }
-// &:nth-child(17) {
-//     &::after {
-//         border-color: $parrotfish-bg;
-//     }
-// }
-// &:nth-child(18) {
-//     &::after {
-//         border-color: $camel-bg;
-//     }
-// }
-// &:nth-child(19) {
-//     &::after {
-//         border-color: $butterfly-bg;
-//     }
-// }
-// &:nth-child(20) {
-//     &::after {
-//         border-color: $ostrich-bg;
-//     }
-// }
 
 &.inactive {
     pointer-events: none;
@@ -467,15 +520,14 @@ div {
     ul {
         z-index: 1;
         pointer-events: none;
-        position: relative;
 
         li {
             position: absolute;
-            top: 50%;
+            top: 10%;
             left: 50%;
             width: 100%;
             text-align: center;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -10%);
 
             >* {
                 opacity: 0;
@@ -496,6 +548,41 @@ div {
                     @include transition-delay(0.4s);
                 }
             }
+        }
+    }
+}
+
+.all-animals-off-btn {
+    position: fixed;
+    top: 50%;
+    left: 2%;
+    transform: translate(-2%, -50%);
+    padding: 25px;
+
+    .btn__white-circle {
+        width: 40px;
+        height: 40px;
+        // background: red;
+
+        svg {
+            width: 18px;
+            height: 18px;
+        }
+    }
+    div{
+
+    }
+
+    .btn__textR {
+        width: 150px;
+        white-space: normal;
+
+    }
+
+    &:hover {
+        .btn__textR {
+            transform: translate(40px, -50%);
+            font-size: 1em;
         }
     }
 }

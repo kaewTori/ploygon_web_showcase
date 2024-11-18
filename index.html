@@ -252,9 +252,56 @@
         </div>
 
         <div class="all-animals inactive">
-            <a href="#" class="nav-btn all-animals-off-btn close">
-                <div class="icon"></div>
-                <div class="popout">Back to <span>animal name</span></div>
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+            <a href="javascript:;" class="btn nav-btn all-animals-off-btn close">
+                <span class="btn__circle"></span>
+                <span class="btn__white-circle">
+                    <svg fill="#000000" version="1.1" id="Layer_1" xmlns:x="&amp;ns_extend;" xmlns:i="&amp;ns_ai;"
+                        xmlns:graph="&amp;ns_graphs;" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" enable-background="new 0 0 24 24"
+                        xml:space="preserve" stroke="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <metadata>
+                                <sfw xmlns="&amp;ns_sfw;">
+                                    <slices> </slices>
+                                    <slicesourcebounds width="505" height="984" bottomleftorigin="true" x="0" y="-552">
+                                    </slicesourcebounds>
+                                </sfw>
+                            </metadata>
+                            <g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M10,21c-0.2,0-0.5-0.1-0.7-0.3l-9-8C0.1,12.6,0,12.3,0,12s0.1-0.6,0.3-0.7l9-8c0.3-0.3,0.7-0.3,1.1-0.2 C10.8,3.2,11,3.6,11,4v5c0,0.6-0.4,1-1,1S9,9.6,9,9V6.2L2.5,12L9,17.8V15c0-0.6,0.4-1,1-1s1,0.4,1,1v5c0,0.4-0.2,0.8-0.6,0.9 C10.3,21,10.1,21,10,21z">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M23,21c-0.4,0-0.8-0.2-0.9-0.6c0,0-2-4.4-12.1-4.4c-0.6,0-1-0.4-1-1s0.4-1,1-1c6.1,0,9.6,1.5,11.6,2.9 C19.5,10.1,10.4,10,10,10c-0.6,0-1-0.4-1-1c0-0.6,0.4-1,1-1c0.1,0,14,0.1,14,12c0,0.5-0.3,0.9-0.8,1C23.1,21,23.1,21,23,21z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </span>
+                <div class="popout btn__textR">Back to <span>animal name</span></div>
             </a>
             <div class="hover-detector inactive">
                 <div data-animalClick="vaquita"></div>
@@ -395,17 +442,6 @@
         </div>
 
         <!--โค้ดในส่วนของเมนูที่เกี่ยวกับผู้จัดทำ-->
-        <!-- <div class="aboutme">
-            <button class="aboutme-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
-                    text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
-                    clip-rule="evenodd" viewBox="0 0 363 511.49">
-                    <path fill="#bc4749"
-                        d="M46.73 0h256.78c16.33 0 31.2 6.71 41.98 17.48C356.29 28.29 363 43.17 363 59.5v443.54c0 4.66-3.79 8.45-8.45 8.45a8.41 8.41 0 01-5.42-1.96L181.42 378.99 13.64 509.68c-3.66 2.85-8.97 2.21-11.82-1.46a8.365 8.365 0 01-1.78-5.18L0 46.73c0-12.82 5.25-24.5 13.72-32.98C22.25 5.24 33.92 0 46.73 0zm138.05 112.91l17.21 40.27 43.63 3.9c3.12.25 4.31 4.18 2 6.16l-33.02 28.82 9.76 42.73c.73 3.09-2.79 5.41-5.36 3.7l-37.52-22.42-37.63 22.51c-2.64 1.61-5.9-.8-5.2-3.79l9.76-42.73-33.02-28.82c-2.37-2.04-1.07-5.92 2.15-6.1l43.52-3.91 17.22-40.32c1.2-2.89 5.28-2.78 6.5 0zm-3.28-50.87c31.14 0 59.38 12.64 79.82 33.09 20.44 20.41 33.09 48.64 33.09 79.81s-12.65 59.41-33.07 79.84c-20.43 20.43-48.67 33.07-79.84 33.07-31.18 0-59.4-12.64-79.83-33.07-20.43-20.46-33.08-48.7-33.08-79.84 0-31.13 12.64-59.35 33.08-79.8 20.47-20.47 48.69-33.1 79.83-33.1z" />
-                </svg>
-            </button>
-        </div> -->
-
         <div class="aboutme-btn">
             <a href="javascript:;" class="btn">
                 <span class="btn__circle"></span>
@@ -440,15 +476,48 @@
                         </g>
                     </svg>
                 </span>
-                <span class="btn__text">About me</span>
+                <!-- <span class="btn__text">About me</span> -->
             </a>
         </div>
 
         <!--โค้ดในส่วนหน้าจอหลังจากที่เรากดปุ่มไปแยกตามหัวข้อ-->
         <div class="overlay">
             <!--ปุ่มปิดหน้าจอ-->
-            <a class="nav-btn close" href="#">
+            <!-- <a class="nav-btn close" href="#">
                 X
+            </a> -->
+            <a href="javascript:;" class="btn nav-btn close">
+                <span class="btn__circle"></span>
+                <span class="btn__white-circle">
+                    <svg viewBox="0 -0.5 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" class="si-glyph si-glyph-close" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <title>1177</title>
+                            <defs> </defs>
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g transform="translate(1.000000, 6.000000)" fill="#434343">
+                                    <path
+                                        d="M1.053,4.938 L1.053,4.032 L1.948,4.032 L1.948,4.938 L1.053,4.938 L1.053,4.938 Z M0.048,3.932 L0.048,1.037 L0.953,1.037 L0.953,3.932 L0.048,3.932 L0.048,3.932 Z M1.053,0.938 L1.053,0.032 L1.948,0.032 L1.948,0.938 L1.053,0.938 L1.053,0.938 Z"
+                                        class="si-glyph-fill"> </path>
+                                    <path
+                                        d="M7.021,4.979 L7.021,4 L8,4 L8,4.979 L7.021,4.979 L7.021,4.979 Z M8.037,3.941 L8.037,1.037 L8.942,1.037 L8.942,3.941 L8.037,3.941 L8.037,3.941 Z M6.059,3.941 L6.059,1.037 L6.932,1.037 L6.932,3.941 L6.059,3.941 L6.059,3.941 Z M7,0.973 L7,0.001 L7.951,0.001 L7.951,0.973 L7,0.973 L7,0.973 Z"
+                                        class="si-glyph-fill"> </path>
+                                    <path
+                                        d="M3.059,4.931 L3.059,0.059 L3.942,0.059 L3.942,4.048 L4.973,4.048 L4.973,4.932 L3.059,4.931 Z"
+                                        class="si-glyph-fill"> </path>
+                                    <path
+                                        d="M14.058,4.947 L14.058,0.042 L15.958,0.042 L15.958,0.947 L14.918,0.947 L14.918,2.1 L15.979,2.1 L15.979,2.947 L14.94,2.947 L14.94,4.053 L15.958,4.053 L15.958,4.947 L14.058,4.947 Z"
+                                        class="si-glyph-fill"> </path>
+                                    <path
+                                        d="M10.079,4.916 L10.079,4.084 L11.942,4.084 L11.942,4.916 L10.079,4.916 L10.079,4.916 Z M12.007,3.947 L12.007,3.026 L12.943,3.026 L12.943,3.947 L12.007,3.947 L12.007,3.947 Z M11.031,2.964 L11.031,2.021 L11.963,2.021 L11.963,2.964 L11.031,2.964 L11.031,2.964 Z M10.037,1.958 L10.037,1.026 L10.963,1.026 L10.963,1.958 L10.037,1.958 L10.037,1.958 Z M11.079,0.916 L11.079,0.068 L12.942,0.068 L12.942,0.916 L11.079,0.916 L11.079,0.916 Z"
+                                        class="si-glyph-fill"> </path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </span>
             </a>
             <!--โค้ดในส่วนหน้าจอแสดงข้อมูลสัตว์รายตัว-->
             <div class="detail">

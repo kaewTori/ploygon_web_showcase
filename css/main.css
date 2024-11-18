@@ -508,25 +508,19 @@ ul li {
   transition: 0.6s ease-in;
   z-index: 9999;
 }
-.overlay .nav-btn.close {
-  top: 90%;
-  border-color: #B4BCB3;
-  position: relative;
-  justify-content: center;
-  align-items: center;
+.overlay .nav-btn {
+  position: fixed;
+  bottom: 7%;
+  left: 50%;
+  transform: translate(-50%, -7%);
 }
-.overlay a {
-  border-width: 2px;
-  border-color: #27AFBB;
-  border-style: dashed;
-  border-radius: 100px;
-  padding: 10px;
-}
-.overlay a:hover {
-  border-width: 5px;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  transition: 0.5s;
+.overlay .nav-btn:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+  transform: translate(-50%, -7%);
 }
 .overlay.active {
   pointer-events: auto;
@@ -548,16 +542,6 @@ ul li {
   width: 20px;
   background: transparent;
   border-radius: 20px;
-}
-
-.menu-animal-nav {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 50px;
-}
-
-.all-animal-stg h1 {
-  font-size: 60px;
 }
 
 .all-animals {
@@ -598,12 +582,13 @@ ul li {
   transform: translateY(0);
 }
 .all-animals .animal-nav-content ul li h4 {
-  font-size: 1.7em;
+  font-size: 1.4em;
   letter-spacing: 0.16em;
   margin-bottom: 0.5em;
 }
 .all-animals .animal-nav-content ul li h2 {
   margin-bottom: 0.2em;
+  font-size: 2.5em;
 }
 .all-animals .animal-nav-content ul li span {
   color: #706e6e;
@@ -617,6 +602,60 @@ ul li {
 }
 .all-animals .animal-nav-content ul li:nth-child(2) h4 {
   color: #f7c2e6;
+}
+.all-animals .animal-nav-content ul li:nth-child(3) h4 {
+  color: #83d0cb;
+}
+.all-animals .animal-nav-content ul li:nth-child(4) h4 {
+  color: #f292ed;
+}
+.all-animals .animal-nav-content ul li:nth-child(5) h4 {
+  color: #696eff;
+}
+.all-animals .animal-nav-content ul li:nth-child(6) h4 {
+  color: #439cfb;
+}
+.all-animals .animal-nav-content ul li:nth-child(7) h4 {
+  color: #6ff7e8;
+}
+.all-animals .animal-nav-content ul li:nth-child(8) h4 {
+  color: #45cde9;
+}
+.all-animals .animal-nav-content ul li:nth-child(9) h4 {
+  color: #9bb2e5;
+}
+.all-animals .animal-nav-content ul li:nth-child(10) h4 {
+  color: #e4a7c5;
+}
+.all-animals .animal-nav-content ul li:nth-child(11) h4 {
+  color: #9bafd9;
+}
+.all-animals .animal-nav-content ul li:nth-child(12) h4 {
+  color: #d8ded6;
+}
+.all-animals .animal-nav-content ul li:nth-child(13) h4 {
+  color: #96d4ca;
+}
+.all-animals .animal-nav-content ul li:nth-child(14) h4 {
+  color: #6274e7;
+}
+.all-animals .animal-nav-content ul li:nth-child(15) h4 {
+  color: #7ef29d;
+}
+.all-animals .animal-nav-content ul li:nth-child(16) h4 {
+  color: #deb8f5;
+}
+.all-animals .animal-nav-content ul li:nth-child(17) h4 {
+  color: #6ff7e8;
+}
+.all-animals .animal-nav-content ul li:nth-child(18) h4 {
+  color: #f292ed;
+}
+.all-animals .animal-nav-content ul li:nth-child(19) h4 {
+  color: #abbdff;
+}
+.all-animals .animal-nav-content ul li:nth-child(20) h4 {
+  color: #c7b3cc;
 }
 .all-animals .animal-nav-content .title-content {
   z-index: 3;
@@ -680,11 +719,6 @@ ul li {
   transition: 1.7s 1.6s;
   line-height: 1.3em;
   padding: 0 40px;
-}
-.all-animals .animal-nav-content .title-content p a {
-  letter-spacing: 0.2em;
-  display: inline-block;
-  color: red;
 }
 .all-animals .animal-nav-content .title-content.inactive {
   opacity: 0;
@@ -5241,6 +5275,60 @@ ul li {
 .all-animals .hover-detector div:nth-child(2)::after {
   border-color: #f7c2e6;
 }
+.all-animals .hover-detector div:nth-child(3)::after {
+  border-color: #83d0cb;
+}
+.all-animals .hover-detector div:nth-child(4)::after {
+  border-color: #f292ed;
+}
+.all-animals .hover-detector div:nth-child(5)::after {
+  border-color: #696eff;
+}
+.all-animals .hover-detector div:nth-child(6)::after {
+  border-color: #439cfb;
+}
+.all-animals .hover-detector div:nth-child(7)::after {
+  border-color: #6ff7e8;
+}
+.all-animals .hover-detector div:nth-child(8)::after {
+  border-color: #45cde9;
+}
+.all-animals .hover-detector div:nth-child(9)::after {
+  border-color: #9bb2e5;
+}
+.all-animals .hover-detector div:nth-child(10)::after {
+  border-color: #e4a7c5;
+}
+.all-animals .hover-detector div:nth-child(11)::after {
+  border-color: #9bafd9;
+}
+.all-animals .hover-detector div:nth-child(12)::after {
+  border-color: #d8ded6;
+}
+.all-animals .hover-detector div:nth-child(13)::after {
+  border-color: #96d4ca;
+}
+.all-animals .hover-detector div:nth-child(14)::after {
+  border-color: #6274e7;
+}
+.all-animals .hover-detector div:nth-child(15)::after {
+  border-color: #7ef29d;
+}
+.all-animals .hover-detector div:nth-child(16)::after {
+  border-color: #deb8f5;
+}
+.all-animals .hover-detector div:nth-child(17)::after {
+  border-color: #6ff7e8;
+}
+.all-animals .hover-detector div:nth-child(18)::after {
+  border-color: #f292ed;
+}
+.all-animals .hover-detector div:nth-child(19)::after {
+  border-color: #abbdff;
+}
+.all-animals .hover-detector div:nth-child(20)::after {
+  border-color: #c7b3cc;
+}
 .all-animals .hover-detector.inactive {
   pointer-events: none;
 }
@@ -5267,15 +5355,14 @@ ul li {
 .all-animals .animal-nav-content ul {
   z-index: 1;
   pointer-events: none;
-  position: relative;
 }
 .all-animals .animal-nav-content ul li {
   position: absolute;
-  top: 50%;
+  top: 10%;
   left: 50%;
   width: 100%;
   text-align: center;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -10%);
 }
 .all-animals .animal-nav-content ul li > * {
   opacity: 0;
@@ -5308,6 +5395,29 @@ ul li {
   -webkit-transition-delay: 0.4s;
   -moz-transition-delay: 0.4s;
   transition-delay: 0.4s;
+}
+.all-animals .all-animals-off-btn {
+  position: fixed;
+  top: 50%;
+  left: 2%;
+  transform: translate(-2%, -50%);
+  padding: 25px;
+}
+.all-animals .all-animals-off-btn .btn__white-circle {
+  width: 40px;
+  height: 40px;
+}
+.all-animals .all-animals-off-btn .btn__white-circle svg {
+  width: 18px;
+  height: 18px;
+}
+.all-animals .all-animals-off-btn .btn__textR {
+  width: 150px;
+  white-space: normal;
+}
+.all-animals .all-animals-off-btn:hover .btn__textR {
+  transform: translate(40px, -50%);
+  font-size: 1em;
 }
 
 @media only screen and (max-width: 1000px) {

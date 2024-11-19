@@ -232,15 +232,15 @@ $(document).ready(function () {
                 $(".menu-nav li:nth-child(3) .popout").addClass("text-change"),
                 setTimeout(function () {
                     $(".menu-nav li:nth-child(3) .popout").removeClass("text-change"),
-                        $(".menu-nav li:nth-child(3) .btn__textR").text("Get that racket off")
-                    $(".menu-nav li:nth-child(3) a path").attr("d", muteSvg)
+                        $(".menu-nav li:nth-child(3) .btn__textR").text("Beautify with sound")
+                    $(".menu-nav li:nth-child(3) a path").attr("d", musicSvg)
                 }, 150)) : (soundManager.mute(),
                     $(this).addClass("muted"),
                     $(".menu-nav li:nth-child(3) .popout").addClass("text-change"),
                     setTimeout(function () {
                         $(".menu-nav li:nth-child(3) .popout").removeClass("text-change"),
-                            $(".menu-nav li:nth-child(3) .btn__textR").text("Beautify with sound")
-                        $(".menu-nav li:nth-child(3) a path").attr("d", musicSvg)
+                            $(".menu-nav li:nth-child(3) .btn__textR").text("Get that racket off")
+                        $(".menu-nav li:nth-child(3) a path").attr("d", muteSvg)
                     }, 150)
             )
         }),

@@ -62,7 +62,7 @@ function nextorprevanimal() {
                 $(".overlay .detail h1").html(animalNames[newAnimal].toUpperCase()),
                 $(".overlay .detail h2:nth-child(3)").html("SCIENTIFIC NAME &nbsp; : &nbsp; " + animalScientificName[newAnimal].toUpperCase()).append("&nbsp;&nbsp; | &nbsp;&nbsp;" + animalType[newAnimal].toUpperCase()).append("<br>CONSERVATION STATUS &nbsp; : &nbsp; " + "<span>" + animalStatus[0][newAnimal].toUpperCase() + "</span>"),
                 $(".overlay .detail h2:nth-child(3) span").css("color", animalStatus[1][newAnimal]),
-                $(".overlay .detail p").html(animalDetail1[newAnimal].toUpperCase()),
+                $(".overlay .detail p").html(animalDetail1[newAnimal]),
 
                 0 == newAnimal ? ($(".prev .btn__text").text(animalNames[19]), $(".next .btn__text").text(animalNames[1])) :
                     19 == newAnimal ? ($(".prev .btn__text").text(animalNames[18]), $(".next .btn__text").text(animalNames[0])) :

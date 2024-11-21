@@ -544,16 +544,22 @@ ul li {
   padding-left: 10%;
   padding-right: 10%;
 }
+.overlay .detail h2 {
+  font-size: 1.3em;
+}
 .overlay .detail h2:nth-child(1) {
   margin-top: 7%;
 }
 .overlay .detail h1 {
-  font-size: 4em;
-  margin: 3px 0 3px 0;
+  font-size: 3em;
+  margin-top: 3px;
+  margin-bottom: 1px;
 }
 .overlay .detail p {
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 1px;
+  font-size: 1.1em;
 }
 
 .overlay::-webkit-scrollbar {

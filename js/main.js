@@ -58,10 +58,11 @@ function nextorprevanimal() {
                 $(".btn__text").removeClass("text-change"),
                 $(".animalinfo").removeClass("text-change"),
 
-                $(".overlay .detail h2").html(animalScientificName[newAnimal]),
-                $(".overlay .detail p:nth-child(2)").html(animalDetail1[newAnimal]),
-                $(".overlay .detail p:nth-child(3)").html(animalDetail2[newAnimal]),
-                $(".overlay .detail p:nth-child(4)").html(animalDetail3[newAnimal]),
+                $(".overlay .detail h2:nth-child(1)").html("PIECE NUMBER &nbsp; : &nbsp; ").append((newAnimal + 1)),
+                $(".overlay .detail h1").html(animalNames[newAnimal].toUpperCase()),
+                $(".overlay .detail h2:nth-child(3)").html("SCIENTIFIC NAME &nbsp; : &nbsp; " + animalScientificName[newAnimal].toUpperCase()).append("&nbsp;&nbsp; | &nbsp;&nbsp;" + animalType[newAnimal].toUpperCase()).append("<br>CONSERVATION STATUS &nbsp; : &nbsp; " + "<span>" + animalStatus[0][newAnimal].toUpperCase() + "</span>"),
+                $(".overlay .detail h2:nth-child(3) span").css("color", animalStatus[1][newAnimal]),
+                $(".overlay .detail p").html(animalDetail1[newAnimal].toUpperCase()),
 
                 0 == newAnimal ? ($(".prev .btn__text").text(animalNames[19]), $(".next .btn__text").text(animalNames[1])) :
                     19 == newAnimal ? ($(".prev .btn__text").text(animalNames[18]), $(".next .btn__text").text(animalNames[0])) :
@@ -153,34 +154,34 @@ function animalStatesShimmer(t) {
 
 function turnOnAnimalNav() {
     prevAnimal = $("#animalchanger").attr("class"),
-    $(".all-animals-off-btn .popout span").text(animalNames[newAnimal]),
-    $("#animalchanger").removeClass(),
-    $(".all-animals").removeClass("inactive"),
-    $("body").removeClass("animal-animations-on"),
-    $(".shadow").addClass("inactive"),
-    $(".hover-detector").removeClass("inactive"),
-    $(".animal-nav-content").removeClass("inactive"),
-    $("body").addClass("earlyburst"),
-    setTimeout(function() {
-        $("body").removeClass("earlyburst")
-    }, 500),
-    setTimeout(function() {
-        $(".hover-detector div:nth-child(" + (newAnimal + 1) + ")").addClass("active-animal")
-    }, 700),
-    setTimeout(function() {
-        $(".hover-detector").addClass("active"),
-        $(".animal-nav-content").addClass("active")
-    }, 5)
+        $(".all-animals-off-btn .popout span").text(animalNames[newAnimal]),
+        $("#animalchanger").removeClass(),
+        $(".all-animals").removeClass("inactive"),
+        $("body").removeClass("animal-animations-on"),
+        $(".shadow").addClass("inactive"),
+        $(".hover-detector").removeClass("inactive"),
+        $(".animal-nav-content").removeClass("inactive"),
+        $("body").addClass("earlyburst"),
+        setTimeout(function () {
+            $("body").removeClass("earlyburst")
+        }, 500),
+        setTimeout(function () {
+            $(".hover-detector div:nth-child(" + (newAnimal + 1) + ")").addClass("active-animal")
+        }, 700),
+        setTimeout(function () {
+            $(".hover-detector").addClass("active"),
+                $(".animal-nav-content").addClass("active")
+        }, 5)
 }
 function turnoffanimalnav() {
     "" != prevAnimal && $("#animalchanger").attr("class", prevAnimal),
-    $(".all-animals").addClass("inactive"),
-    $(".hover-detector").removeClass("active"),
-    $(".hover-detector div").removeClass("active-animal"),
-    $(".animal-nav-content").removeClass("active"),
-    setTimeout(function() {
-        $(".animal-nav-content").addClass("inactive")
-    }, 500)
+        $(".all-animals").addClass("inactive"),
+        $(".hover-detector").removeClass("active"),
+        $(".hover-detector div").removeClass("active-animal"),
+        $(".animal-nav-content").removeClass("active"),
+        setTimeout(function () {
+            $(".animal-nav-content").addClass("inactive")
+        }, 500)
 }
 
 newAnimal = 0;
@@ -204,14 +205,13 @@ $(document).ready(function () {
         }),
         $(".all-animal").on("click", function () {
             turnOnAnimalNav(),
-            turnoffslideshow()
+                turnoffslideshow()
         }),
         $(".overlay .close").on("click", function () {
             $(".overlay").toggleClass("active"),
                 setTimeout(function () {
                     $(".overlay div").removeClass("active")
                 }, 500)
-
         }),
         $(".aboutme-btn a").on("click", function () {
             overlayContent = ".overlay .author",
@@ -244,41 +244,41 @@ $(document).ready(function () {
                     }, 150)
             )
         }),
-        $(".all-animals-off-btn").on("click", function() {
+        $(".all-animals-off-btn").on("click", function () {
             turnoffanimalnav()
         }),
-        $(".hover-detector div").on("mouseover", function() {
+        $(".hover-detector div").on("mouseover", function () {
             $(".shard-wrap .shard").not(this).removeClass("active"),
-            $(".level-one").addClass("shadow-active");
+                $(".level-one").addClass("shadow-active");
             var t = $(this).index() + 1;
             $(".shard-wrap:nth-child(" + t + ") .shard").addClass("active"),
-            $(".animal-nav-content ul li:nth-child(" + t + ")").addClass("active"),
-            $(".animal-nav-content .title-content").addClass("inactive");
+                $(".animal-nav-content ul li:nth-child(" + t + ")").addClass("active"),
+                $(".animal-nav-content .title-content").addClass("inactive");
             var a = $(this).attr("data-animalClick");
             $(".animal-nav-content").attr("animal", a),
-            $(".animal-nav-content div").each(function() {
-                $(this).hasClass(a) ? $(this).addClass("active") : $(this).removeClass("active")
-            })
+                $(".animal-nav-content div").each(function () {
+                    $(this).hasClass(a) ? $(this).addClass("active") : $(this).removeClass("active")
+                })
         }),
-        $(".hover-detector").on("mouseout", function() {
+        $(".hover-detector").on("mouseout", function () {
             $(".animal-nav-content ul li").removeClass("active"),
-            $(".animal-nav-content .title-content").removeClass("inactive")
+                $(".animal-nav-content .title-content").removeClass("inactive")
 
         }),
-        $(".hover-detector div").on("click", function() {
+        $(".hover-detector div").on("click", function () {
             $(".hover-detector div").removeClass("active-animal"),
-            prevAnimal = "",
-            newAnimal = animalList.indexOf($(this).attr("data-animalClick")),
-            nextorprevanimal(),
-            $(".animal-nav-content div").each(function() {
-                $(this).removeClass("active")
-            }),
-            turnoffanimalnav()
+                prevAnimal = "",
+                newAnimal = animalList.indexOf($(this).attr("data-animalClick")),
+                nextorprevanimal(),
+                $(".animal-nav-content div").each(function () {
+                    $(this).removeClass("active")
+                }),
+                turnoffanimalnav()
         }),
-        $(".animal-nav-content ul li").on("click", function() {
+        $(".animal-nav-content ul li").on("click", function () {
             newAnimal = $(this).index(),
-            turnoffanimalnav(),
-            nextorprevanimal()        
+                turnoffanimalnav(),
+                nextorprevanimal()
         }),
         $("body").each(function () {
             animalStates($(this))

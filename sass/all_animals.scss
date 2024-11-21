@@ -67,14 +67,14 @@ $blue_whale_bg: #c7b3cc;
                 }
 
                 h2 {
-                    margin-bottom: 0.2em;
+                    margin-top: 2px;
+                    margin-bottom: 1em;
                     font-size: 2.5em;
                     line-height: 1.1;
-
                 }
 
                 span {
-                    color: #706e6e;
+                    color: #aeb4ba;
                     letter-spacing: 0.2em;
 
                     i {
@@ -229,14 +229,17 @@ $blue_whale_bg: #c7b3cc;
                 line-height: 0.9em;
                 margin: 6px 0 15px;
                 @include transform(translateY(5px));
+                color: #ff5757;
+
 
                 span {
                     display: block;
+                    color: #ff914d;
                 }
             }
 
             h4 {
-                color: #656b72;
+                color: #aeb4ba;
                 font-size: 0.8em;
                 margin-bottom: 25px;
                 letter-spacing: 0.2em;
@@ -504,7 +507,7 @@ div {
 
 .hover-detector {
     display: block;
-    @include transition(200s cubic-bezier(0.11, 0.01, 0.45, 0.74));
+    @include transition(300s cubic-bezier(0.11, 0.01, 0.45, 0.74));
 
     &.active {
         @include transform(rotate(1000deg));

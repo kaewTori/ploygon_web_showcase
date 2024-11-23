@@ -64,12 +64,17 @@ ul {
 
     .header-project {
         font-family: $head_font;
-        font-weight: 600;
+        font-weight: 1000;
         font-size: 7em;
     }
 
     .descri {
-        margin-bottom: 30px;
+        margin-bottom: 50px;
+
+        .des_bigger {
+            font-size: 2.3em;
+            font-weight: 1000;
+        }
     }
 
     .start-btn {
@@ -284,6 +289,8 @@ ul {
     margin-top: -15px;
     margin-bottom: -15px;
 
+
+
     &__circle,
     &__text,
     &__textR,
@@ -377,9 +384,9 @@ ul {
     color: #191919;
     background-color: transparent;
     position: relative;
-    width: 100px;
+    width: 110px;
     text-align: center;
-    padding: 25px 20px;
+    padding: 30px 20px;
     border-radius: 100%;
     background-color: #FCFCFC;
     mask-image: url("../asset/grit.png");
@@ -394,7 +401,7 @@ ul {
     --move5: inset(45% 0 6% 0);
     --move6: inset(14% 0 61% 0);
     clip-path: var(--move1);
-    content: 'what is this';
+    content: 'what is this?';
     position: absolute;
     top: 0;
     left: 0;
@@ -410,7 +417,7 @@ ul {
     cursor: pointer;
     background-color: transparent;
     box-shadow: 0px 10px 10px -10px red;
-    padding: 25px 20px;
+    padding: 30px 20px;
     background-color: rgb(25 25 25 / 70%);
     transform: scale(1.2);
     transition: 0.5s;

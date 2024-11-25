@@ -78,17 +78,23 @@ ul {
     }
 
     .start-btn {
+        position: absolute;
         padding: 10px;
         border-radius: 10px;
         border-color: #27AFBB;
         border-style: solid;
         border-width: 2px;
+        @include transition(0.5s);
+        @include transform(translateX(-50%));
 
         &:hover {
-            border-width: 5px;
-            @include transition(0.5s)
+            @include transition(0.5s);
+            font-size: 1.2em;
+            background-color: #27AFBB;
         }
+
     }
+
 }
 
 .stg-exhibi {
@@ -133,7 +139,7 @@ ul {
     .select-animal {
         margin-left: auto;
         margin-right: 30px;
-        text-align: right;
+        text-align: center;
         z-index: 9998;
 
         .popout {
@@ -169,6 +175,9 @@ ul {
         }
 
         li {
+            &:nth-child(1){
+                margin-bottom: -10px;
+            }
             position: relative;
 
         }
@@ -255,9 +264,9 @@ ul {
 
 .aboutme-btn {
     position: fixed;
-    right: 2%;
+    right: 0;
     bottom: 6%;
-    transform: translate(-2%, -6%);
+    margin-right: 50px;
 }
 
 .wave {

@@ -91,7 +91,7 @@ function startslideshow() {
         $(".menu-nav li:nth-child(2) .popout").addClass("text-change"),
         setTimeout(function () {
             $(".menu-nav li:nth-child(2) .popout").removeClass("text-change"),
-                $(".menu-nav li:nth-child(2) .btn__textR").text("stop")
+                $(".menu-nav li:nth-child(2) .btn__textR").text("Stop")
             $(".menu-nav li:nth-child(2) a path").attr("d", pauseSvg)
         }, 150),
         slideshowvar += 1,
@@ -104,7 +104,7 @@ function turnoffslideshow() {
         $(".menu-nav li:nth-child(2) .popout").addClass("text-change"),
         setTimeout(function () {
             $(".menu-nav li:nth-child(2) .popout").removeClass("text-change"),
-                $(".menu-nav li:nth-child(2) .btn__textR").text("Cycle Through"),
+                $(".menu-nav li:nth-child(2) .btn__textR").text("Shuffle"),
                 $(".menu-nav li:nth-child(2) a path").attr("d", playButtonSvg)
         }, 150),
         $(".slideshow-on").removeClass("slideshow-on")
@@ -232,14 +232,14 @@ $(document).ready(function () {
                 $(".menu-nav li:nth-child(3) .popout").addClass("text-change"),
                 setTimeout(function () {
                     $(".menu-nav li:nth-child(3) .popout").removeClass("text-change"),
-                        $(".menu-nav li:nth-child(3) .btn__textR").text("Beautify with sound")
+                        $(".menu-nav li:nth-child(3) .btn__textR").text("Music On")
                     $(".menu-nav li:nth-child(3) a path").attr("d", musicSvg)
                 }, 150)) : (soundManager.mute(),
                     $(this).addClass("muted"),
                     $(".menu-nav li:nth-child(3) .popout").addClass("text-change"),
                     setTimeout(function () {
                         $(".menu-nav li:nth-child(3) .popout").removeClass("text-change"),
-                            $(".menu-nav li:nth-child(3) .btn__textR").text("Get that racket off")
+                            $(".menu-nav li:nth-child(3) .btn__textR").text("Music Off")
                         $(".menu-nav li:nth-child(3) a path").attr("d", muteSvg)
                     }, 150)
             )

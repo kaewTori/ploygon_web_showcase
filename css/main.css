@@ -157,17 +157,27 @@ ul li {
   font-weight: 1000;
 }
 .start-screen .start-btn {
+  position: absolute;
   padding: 10px;
   border-radius: 10px;
   border-color: #27AFBB;
   border-style: solid;
   border-width: 2px;
-}
-.start-screen .start-btn:hover {
-  border-width: 5px;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   transition: 0.5s;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.start-screen .start-btn:hover {
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 1.2em;
+  background-color: #27AFBB;
 }
 
 .stg-exhibi {
@@ -216,7 +226,7 @@ ul li {
 .stage .select-animal {
   margin-left: auto;
   margin-right: 30px;
-  text-align: right;
+  text-align: center;
   z-index: 9998;
 }
 .stage .select-animal .popout {
@@ -266,6 +276,9 @@ ul li {
 }
 .stage .select-animal li {
   position: relative;
+}
+.stage .select-animal li:nth-child(1) {
+  margin-bottom: -10px;
 }
 .stage .menu-nav {
   margin-left: 30px;
@@ -354,9 +367,9 @@ ul li {
 
 .aboutme-btn {
   position: fixed;
-  right: 2%;
+  right: 0;
   bottom: 6%;
-  transform: translate(-2%, -6%);
+  margin-right: 50px;
 }
 
 .wave {
